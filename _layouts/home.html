@@ -7,12 +7,13 @@ layout: page
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | Muhammed'in blogu</title>
+    <title>{{ page.title }} | Muhammed'in sitesi</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="shortcut icon" href="https://mukonqi.ml/icon.png" type="image/x-icon">
 </head>
 <body>
     {{ content }}
-    <h1>Son yazılar</h1>
+    <h1>Son bloglar</h1>
 
     <ul class="posts">
     {% for post in site.posts %}
@@ -24,6 +25,5 @@ layout: page
         </a>
     {% endfor %}
     </ul>
-    <p class="yok">Başka içerik bulunmamaktadır.</p>
 </body>
 </html>
