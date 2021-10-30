@@ -1,0 +1,30 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Muhammed'in blogu</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    {{ content }}
+    <h1>Son yazılar</h1>
+
+    <ul class="posts">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}">
+        <li>
+            <h2>{{ post.title }}</h2>
+            {{ post.excerpt }}
+        </li>
+        </a>
+    {% endfor %}
+    </ul>
+    <p class="yok">Başka içerik bulunmamaktadır.</p>
+    <p class="about">Bu blog gücünü <a href="https://jekyllrb.com" target="_blank">Jekyll</a>'den ve <a href="https://github.com/Afacanc38/afacanc38.github.io" target="_blank">bu depo</a>dan almaktadır.</p>
+</body>
+</html>
