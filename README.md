@@ -4,4 +4,4 @@ Kişisel blogum.
 # Sitenin temeli:
 [Jekyll](https://jekyllrb.com)
 
-[Jekyll Teması](https://github.com/Afacanc38/afacanc.38.github.io)
+[Jekyll Teması](https://github.com/Afacanc38/afacanc38.github.io)
