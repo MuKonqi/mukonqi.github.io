@@ -1,5 +1,5 @@
 # [mukonqi.ml](https://mukonqi.ml)
-Kişisel blogum.
+Kişisel internet sitem ve blogum.
 
 # Sitenin temeli:
 [Jekyll](https://jekyllrb.com)
