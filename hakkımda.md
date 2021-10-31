@@ -19,4 +19,4 @@ title: Hakkımda
 
 ◻️ [Bütün Git Sağlayıcısı Hesaplarım](/git.html)
 
-◻️ [Matrix İletişim Adresim](https://matrix.to/@mukonqi:kde.org)
+◻️ [Matrix İletişim Adresim](https://matrix.to/#/@mukonqi:kde.org?via=kde.org)
