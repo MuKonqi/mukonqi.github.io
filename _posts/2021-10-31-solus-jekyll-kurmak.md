@@ -2,7 +2,7 @@
 layout: post
 title: Solus'a Jekyll Kurmak
 ---
-Selam, bugün Solus'a nasıl Jekyll kuracağını antalacağım.
+Selam, bugün Solus'a nasıl Jekyll kurulacağını antalacağım.
 
 ### Kısaca Jekyll nedir?
 Jekyll, düz metinleri statik internet sitelerine ya da bloglara dönüştürmemizi sağlar. 
@@ -13,7 +13,7 @@ Jekyll'i Solus hariç diğer işletim sistemlerine kurmak için [buraya](https:/
 Jekyll'i Solus'a kurmak için şu komutları uçbirimi açıp çalıştırmanız lazım:
 İlk komut:
 ```
-sudo eopkg install -c system.devel ruby ruby-devel```
+sudo eopkg install -c system.devel ruby ruby-devel
 ```
 İkinci komutlar:
 ```
