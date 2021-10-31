@@ -7,7 +7,7 @@ Merhaba, bugün Ubuntu'da nasıl telemetriyi devre dışı bırakabileceğinizi 
 Şu komutu uçbirimi açın ve çalıştırın:
 Not: Bazen sizden şifrenizi isteyecektir, lütfen şifreniz istendiğinde onu girin.
 
-```pkexec apt install git -y ; git clone https://github.com/LamdaLamdaLamda/disable-ubuntu-telemetry.git ; cd disable-ubuntu-telemetry ; chmod +x disableUbuntuOptOut.sh ; pkexec disableUbuntuOptOut.sh ; cd ; rm -rf ~/disable-ubuntu-telemetry```
+```pkexec apt install git -y ; git clone https://github.com/LamdaLamdaLamda/disable-ubuntu-telemetry.git ; cd disable-ubuntu-telemetry ; chmod +x disableUbuntuOptOut.sh ; pkexec bash ./disableUbuntuOptOut.sh ; cd ; rm -rf ~/disable-ubuntu-telemetry```
 
 Yararlandığım yerler:
 
