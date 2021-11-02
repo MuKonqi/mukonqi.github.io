@@ -7,6 +7,6 @@ title: Projelerim
 
 ◻️ [BetterSS ekran görüntüsü wrapperi](/betterss/index.html)
 
-◻️ [Kişisel genel sitem](https://github.com/MuKonqi/mukonqi.ml)
+◻️ [Kişisel sitem ve blogum](https://github.com/MuKonqi/mukonqi.ml)
 
 ◻️ [python-tkinter-hello-world](https://github.com/MuKonqi/python-tkinter-hello-world)
