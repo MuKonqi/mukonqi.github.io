@@ -11,13 +11,16 @@ title: BetterSS
 ## BetterSS'u kuracak program BetterSS Installer olup burada BetterSS Installer'i çalıştırma talimatları yer almaktadır.
 ### 1. yol: Terminalden çalıştırma:
 **Debian GNU/Linux tabanlı dağıtımlar**: Uçbirimi açıp şu komutu girin:
-sudo apt install git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py
+
+```sudo apt install git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py```
 
 **Fedora Linux tabanlı dağıtımlar**: Uçbirimi açıp şu komutu girin:
-sudo dnf install git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py
+
+```sudo dnf install git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py```
 
 **Pisi GNU/Linux tabanlı dağıtımlar**: Uçbirimi açıp şu komutu girin:
-sudo pisi it git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py
+
+```sudo pisi it git -y && git clone https://github.com/MuKonqi/BetterSS.git && cd BetterSS/Files && sudo python3 installer.py```
 ### 2. yol: Elle çalıştırma:
 1. installer.py adında bir dosya oluşturun.
 2. installer.py dosyasını açın.
