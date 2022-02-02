@@ -3,6 +3,6 @@ layout: home
 title: Ana Sayfa
 ---
 # Selamlar!
-## Ben Muhammed, burası benim hem blogum hem de sitem.
+## Ben Muhammed Abdurrahman, burası benim hem kişisel internet sitem hem de bloğum.
 
 ## Benle, projelerimle vs. ile ilgili daha fazla bilgiyi [buradan](/hakkımda.html) alabilirsiniz.
