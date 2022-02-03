@@ -12,8 +12,9 @@ title: Hakkımda
 ### Sebebi ise onların çoğu özgür, açık kaynaklı, ücretsiz oluyor. Bu yüzden de GNU/Linux dağıtımlarını seviyorum.
 
 ### Sizden ufak bir isteğim olacak.
-### Lütfen GNU/Linux işletim sistemine Linux ya da GNU demeyin.
+### Lütfen GNU/Linux işletim sistemine Linux ya da GNU demeyin -eğer bir dağıtımdan bahsediyorsanız o dağıtımın adını da tabii ki değiştirmeyin-.
 ### Ayrıca şunu bilmenizi isterim ki; GNU bir araç kiti değil, bir işletim sistemidir.
+
 ## Bağlantılar:
 ◻️ [Projelerim](/projeler.html)
 
