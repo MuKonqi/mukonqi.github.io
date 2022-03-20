@@ -1,4 +1,4 @@
-# [mukonqi.ml](https://mukonqi.ml)
+# [mukonqi.github.io](https://mukonqi.github.io)
 Kişisel internet sitem ve blogum.
 
 # Sitenin temeli:
