@@ -1,0 +1,22 @@
+h1, h2, #id21 {
+    color:cyan
+}
+a {
+    color:green
+}
+p {
+    color:gold
+}
+#id11 {
+    color:red
+}
+html {
+    background-color:white;
+}
+body {
+    width: 600px;
+    margin: 20 0 0 20;
+    background-color:black;
+    padding: 20 20 20 20;
+    border: 5px solid grey;
+}
