@@ -21,6 +21,10 @@ body {
 html {
     background-color: white
 }
+header img {
+    height: 60px;
+    margin: 20px;
+}
 header {
     background-color: darkgrey;
     position: fixed;
@@ -32,15 +36,12 @@ header {
     align-items: center;
     border-top: 20px solid white;
 }
-header h1 {
-    margin-left: 20px;
-    height: 40px
-}
 header * {
-    display: inline;
+    display: flex;
 }
 header li {
-    margin: 10px;
+    margin-top: 20px;   
+    margin-right: 10px;
 }
 header h3, header a{
     text-decoration: none;

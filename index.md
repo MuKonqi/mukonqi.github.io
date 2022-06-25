@@ -1,7 +1,9 @@
 ---
-layout: index
+layout: page
 title: Başlangıç
 ---
+<h1 align="center">Selamlar!</h1>
+
 Ben, gerçek adımla Muhammed Abdurrahman, takma adımla ise MuKonqi. Burası benim hem kişisel internet sitem hem de bloğum.
 
 İşletim sistemleri (özellikle GNU/Linux), Python (programlama dili), Tkinter (kütüphane), HTML (işaretleme dili), CSS (stil sayfası dili) ilgi alanlanlarımdandır. Python, Tkinter, HTML, CSS hakkında azıcık bilgiye sahibim.
