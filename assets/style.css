@@ -1,10 +1,7 @@
-h1, #id04 {
-    color:white;
+h1, #id03 {
+    color:cyan;
 }
-h2, #id03 {
-    color:cyan
-}
-p, a, h3, h4, h5, h6, text, ul, ol, #id00{
+p, a, h2, h3, h4, h5, h6, text, ul, ol, #id00{
     color:gold
 }
 #id01 {
@@ -13,13 +10,39 @@ p, a, h3, h4, h5, h6, text, ul, ol, #id00{
 #id02 {
     color: green
 }
-html {
-    background-color:white;
-}
+
 body {
     width: auto;
-    margin: 20 20 20 20;
+    margin: 40px 20px 20px 20px;
     background-color:black;
     padding: 20px 20px 20px 20px;
-    border: 5px solid grey;
+    border: 20px solid darkgrey;
+}
+html {
+    background-color: white
+}
+header {
+    background-color: darkgrey;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 20px solid white;
+}
+header h1 {
+    margin-left: 20px;
+    height: 40px
+}
+header * {
+    display: inline;
+}
+header li {
+    margin: 10px;
+}
+header h3, header a{
+    text-decoration: none;
+    color: black;
 }

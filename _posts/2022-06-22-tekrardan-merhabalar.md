@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tekrardan merhabalar!
+tag: mukonqi.github.io
 ---
 Merhabalar, ben Muhammed Abdurrahman. Uzun zaman sonra, yeniden [burada](https://mukonqi.github.io) Jekyll'e geçtik.
 

@@ -1,0 +1,22 @@
+---
+layout: page
+title: Son Bloglar
+---
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/metterxp/assets/style.css">
+    <title>{{ page.title }} | MetterXP</title>
+</head>
+<body>
+    {% for tag in site.tags %}
+        <h1 align="center">{{ tag[0] }}</h1>
+        {% for post in tag[1] %}
+        ◻️ <a href="{{ post.url }}">{{ post.title }}</a><br />
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

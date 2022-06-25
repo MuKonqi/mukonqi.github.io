@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Solus'a Jekyll Kurmak
+tag: GNU/Linux
 ---
 Selam, bugün Solus'a nasıl Jekyll kurulacağını antalacağım.
 

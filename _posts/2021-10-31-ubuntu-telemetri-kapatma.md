@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ubuntu Telemetriyi Kapatma
+tag: GNU/Linux
 ---
 Merhaba, bugün Ubuntu'da nasıl telemetriyi devre dışı bırakabileceğinizi anlatacağım.
 
