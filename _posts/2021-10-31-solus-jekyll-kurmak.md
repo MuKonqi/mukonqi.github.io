@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Solus'a Jekyll Kurmak
 tag: GNU/Linux
 ---
