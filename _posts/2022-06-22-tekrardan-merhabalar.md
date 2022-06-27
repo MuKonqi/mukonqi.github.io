@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Tekrardan Merhabalar!
 tag: mukonqi.github.io
 ---
