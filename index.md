@@ -14,7 +14,7 @@ Kullandığım işletim sistemleri:
 1. GNU/Linux (Fedora Linux WS 36) (DE: KDE, GNOME)
 2. Windows 8.1
 
-Oyunlardan ise en çok araç simulasyonlarını severim. Şuan da en çok ETS 2 oynamışlığım bulunmaktadır.Oyunlardan ise en çok araç simulasyonlarını severim. Şuan da en çok ETS 2 oynamışlığım bulunmaktadır.
+Oyunlardan ise en çok araç simulasyonlarını severim. Şuan da en çok ETS 2 oynamışlığım bulunmaktadır.
 
 <h5 align="center" id="id03">Muhammed'in Sitesi hakkında:</h5>
 <h6>Copyright (C) 2022, Muhammed Abdurrahman<br />Gücünü <a href="https://jekyllrb.com">Jekyll</a>'den alır.</h6>
