@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Ubuntu Telemetriyi Kapatma
 tag: GNU/Linux
 ---
