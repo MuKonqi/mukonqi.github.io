@@ -8,16 +8,26 @@
 </head>
 <body>
     <header>       
-        <nav>
-            <a href="/"><img src="/assets/icon.png" alt=""></a>        
+        <!-- <nav>
+            <a href="/"><img src="/assets/icon.png" alt=""></a>
             <ul>
-                <li><a href="/blog.html">Son Bloglar</a></li>
-                <li><a href="/projelerim.html">Projelerim</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/projeler.html">Projelerim</a></li>
                 <li><a href="https://github.com/MuKonqi">GitHub</a></li>
                 <li><a href="https://matrix.to/#/@mukonqi:kde.org">Matrix</a></li>
+                <li><a href="/mukonqi.github.io-hakkında.html">mukonqi.github.io Hakkında</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <a href="/"><img src="/assets/icon.png" alt=""></a>
+        <ul>
+            <h3><a href="/blog.html">Blog</a></h3>
+            <h3><a href="/projeler.html">Projelerim</a></h3>
+            <h3><a href="https://github.com/MuKonqi">GitHub</a></h3>
+            <h3><a href="https://matrix.to/#/@mukonqi:kde.org">Matrix</a></h3>
+            <h3><a href="/hakkında.html">Hakkında</a></h3>
+        </ul>
+        <h2>{{ page.title }}</h2>
     </header>
-    <main>{{ content }}</main>
+    <main><h4>{{ content }}</h4></main>
 </body>
 </html>

@@ -34,12 +34,4 @@ Aşağıda sırasıyla kod/komut, alıntı, alıntı içindeki belirtme örneği
 1. Sayılı liste, 1. madde
 2. Sayılı liste, 2. madde
 
-Not: En büyük başlığı (#, h1) kullanılırken *.MD'de HTML kodu olarak yazıp, onlara id ile renginin sarı olacağını demelisiniz. Gerekli id: id00 
-
-Örnek:
-
-```<h1 id="id00"> Selamün</h1>```
-
-Notun notu: Burada üstteki örnekl, kod/komut olarak yazdığım için başlık devreye girmedi.
-
 ~ Hepinize iyi günler dilerim. 

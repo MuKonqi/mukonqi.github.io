@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Başlangıç
+title: Selamlar!
 ---
-<h1 align="center">Selamlar!</h1>
 
-Ben, gerçek adımla Muhammed Abdurrahman, takma adımla ise MuKonqi. Burası benim hem kişisel internet sitem hem de bloğum.
+Ben, gerçek adımla Muhammed Abdurrahman, takma adımla ise MuKonqi.
 
 İşletim sistemleri (özellikle GNU/Linux), Python (programlama dili), Tkinter (kütüphane), HTML (işaretleme dili), CSS (stil sayfası dili) ilgi alanlanlarımdandır. Python, Tkinter, HTML, CSS hakkında azıcık bilgiye sahibim.
 
@@ -15,6 +14,3 @@ Kullandığım işletim sistemleri:
 2. Windows 8.1
 
 Oyunlardan ise en çok araç simulasyonlarını severim. Şuan da en çok ETS 2 oynamışlığım bulunmaktadır.
-
-<h5 align="center" id="id03">Muhammed'in Sitesi hakkında:</h5>
-<h6>Copyright (C) 2022, Muhammed Abdurrahman<br />Gücünü <a href="https://jekyllrb.com">Jekyll</a>'den alır.</h6>

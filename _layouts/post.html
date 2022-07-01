@@ -1,16 +1,33 @@
----
-layout: page
----
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }} | Muhammed'in Sitesi</title>
+    <title>{{ page.title }} | Muhammed'in Blogu</title>
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
 </head>
 <body>
-    <h1 align="center">{{ page.title }}</h2>
-    {{ content }}
+    <header>       
+        <!-- <nav>
+            <a href="/"><img src="/assets/blog.png" alt=""></a>
+            <ul>
+                <li><a href="/">Ana Sayfa</a></li>
+                <li><a href="/projeler.html">Projelerim</a></li>
+                <li><a href="https://github.com/MuKonqi">GitHub</a></li>
+                <li><a href="https://matrix.to/#/@mukonqi:kde.org">Matrix</a></li>
+                <li><a href="/mukonqi.github.io-hakkında.html">mukonqi.github.io Hakkında</a></li>
+            </ul>
+        </nav> -->
+        <a href="/"><img src="/assets/blog.png" alt=""></a>
+        <ul>
+            <h3><a href="/">Ana Sayfa</a></h3>
+            <h3><a href="/projeler.html">Projelerim</a></h3>
+            <h3><a href="https://github.com/MuKonqi">GitHub</a></h3>
+            <h3><a href="https://matrix.to/#/@mukonqi:kde.org">Matrix</a></h3>
+            <h3><a href="/hakkında.html">Hakkında</a></h3>
+        </ul>
+        <h2>{{ page.title }}</h2>
+    </header>
+    <main><h4>{{ content }}</h4></main>
 </body>
 </html>

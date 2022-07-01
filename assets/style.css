@@ -1,7 +1,7 @@
-h1, #id03 {
+#id03 {
     color:cyan;
 }
-p, a, h2, h3, h4, h5, h6, text, ul, ol, #id00{
+p, a, h1, h2, h3, h4, h5, h6, text, ul, ol, #id00{
     color:gold
 }
 #id01 {
@@ -10,7 +10,6 @@ p, a, h2, h3, h4, h5, h6, text, ul, ol, #id00{
 #id02 {
     color: green
 }
-
 body {
     width: auto;
     margin: 40px 20px 20px 20px;
@@ -39,11 +38,13 @@ header {
 header * {
     display: flex;
 }
-header li {
-    margin-top: 20px;   
-    margin-right: 10px;
-}
-header h3, header a{
+header a{
+    margin-right: 20px;
     text-decoration: none;
     color: black;
+}
+header h2{
+    margin-left: auto;
+    border-right: 20px solid darkgrey;
+    color: cyan
 }
