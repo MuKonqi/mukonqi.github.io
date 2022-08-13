@@ -34,8 +34,5 @@ GitHub: [MuKonqi](https://github.com/MuKonqi)
 * Mobilde işletim sistemi olarak:
 1. Andorid 12
 2. Andorid 9
-* Tarayıcı olarak:
-1. PC'de Mozilla Firefox
-2. Mobil cihazlarda Iceraven
 * Kod düzenleyici olarak:
 1. VS Code
