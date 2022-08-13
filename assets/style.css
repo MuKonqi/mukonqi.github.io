@@ -1,7 +1,7 @@
-#id03 {
+#id01, h3 {
     color: #376296;
 }
-p, a, h1, h2, h3, h4, h5, h6, text, ul, ol, #id00{
+p, h1, h2, h4, h5, h6, text, ul, ol, h6 a, #id00{
     color: orange
 }
 body {
@@ -32,11 +32,10 @@ header {
 header * {
     display: flex;
 }
-/* header a{
-    margin-right: 20px;
+a{
     text-decoration: none;
-    color: black;
-} */
+    color: white;
+}
 header h2{
     margin-left: auto;
     color: #376296

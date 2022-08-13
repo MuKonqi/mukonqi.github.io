@@ -2,31 +2,32 @@
 layout: page
 title: 👋 - Ana Sayfa
 ---
-### Selamlar!
+### ◻️ Selamlar!
 
 Takma adım MuKonqi ve MuKonqi04. Asıl adım Muhammed Abdurrahman'dır. Dünyada 13 yılımı bitirdim.
 
 Araç oyunlarını severim. En çok ETS2 oynamışlığım bulunmaktadır.
-### İletişim
+### ◻️ Sosyal
 Matrix: [@mukonqi:kde.org](https://matrix.to/#/@mukonqi:kde.org)
 
 Discord: [MuKonqi#9558](https://discord.com/channels/@me/980440858245623838)
-### [GitHub hesabım](https://github.com/MuKonqi)
-### Projelerim
-◻️ [MetterXP araç kutusu](https://mukonqi.github.io/metterxp)
 
-◻️ [BetterSS ekran görüntüsü wrapperi](https://github.com/MuKonqi/betterss)
+GitHub: [MuKonqi](https://github.com/MuKonqi)
+### ◻️ Projelerim
+[MetterXP araç kutusu](https://mukonqi.github.io/metterxp)
 
-◻️ [peytehow (Python3 ve Tkinter için örnek uygulama)](https://github.com/MuKonqi/peytehow)
+[BetterSS ekran görüntüsü wrapperi](https://github.com/MuKonqi/betterss)
 
-◻️ [apiutaller (GNU/Linux için uygulama kurucusu ve kaldırıcısı)](https://github.com/MuKonqi/apiutaller)
+[peytehow (Python3 ve Tkinter için örnek uygulama)](https://github.com/MuKonqi/peytehow)
 
-◻️ [yasfetch (Python3 ile yazılmış GNU/Linux için yine bir başka basit bilgi alma uygulaması)](https://github.com/MuKonqi/yasfetch)
+[apiutaller (GNU/Linux için uygulama kurucusu ve kaldırıcısı)](https://github.com/MuKonqi/apiutaller)
 
-◻️ [teafunknown [herhangi bir program için (örn. bir kurucu/kaldırıcı)] veya eğlenmek için yazılmış bir betik](https://github.com/MuKonqi/teafunknown)
+[yasfetch (Python3 ile yazılmış GNU/Linux için yine bir başka basit bilgi alma uygulaması)](https://github.com/MuKonqi/yasfetch)
 
-◻️ [Kişisel internet sitem ve bloğum](https://github.com/MuKonqi/mukonqi.github.io)
-### Kullanıyorum...
+[teafunknown [herhangi bir program için (örn. bir kurucu/kaldırıcı)] veya eğlenmek için yazılmış bir betik](https://github.com/MuKonqi/teafunknown)
+
+[Kişisel internet sitem ve bloğum](https://github.com/MuKonqi/mukonqi.github.io)
+### ◻️ Kullanıyorum...
 * PC'de işletim sistemi olarak:
 1. GNU/Linux [Fedora Linux WS 36 (DE: KDE, GNOME)]
 2. Windows 8.1

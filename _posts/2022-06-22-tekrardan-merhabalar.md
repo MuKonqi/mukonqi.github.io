@@ -15,11 +15,11 @@ Aşağıda sırasıyla kod/komut, alıntı, alıntı içindeki belirtme örneği
 > Dünyaya şöyle bir selam çaktı: Merhaba `değişik` dünya!
 
 
-<h1 id="id00"> En Büyük Başlık</h1>
+# En Büyük Başlık
 
 ## Ondan Azıcık Küçük Başlık<
 
-### İlkinden Birazcık Küçük Başlık
+<h3 id="id00">İlkinden Birazcık Küçük Başlık</h3>
 
 #### Sonuncusundan Birazcık Büyük Başlık
 

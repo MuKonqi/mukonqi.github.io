@@ -12,9 +12,9 @@ title: Son Bloglar
 </head>
 <body>
     {% for tag in site.tags %}
-        <h2 id="id03" align="center">{{ tag[0] }}</h2>
+        <h3>◻️ {{ tag[0] }}</h3>
         {% for post in tag[1] %}
-        <h4>◻️ <a href="{{ post.url }}">{{ post.title }}</a><br /></h4>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a><br /></h4>
         {% endfor %}
     {% endfor %}
 </body>
