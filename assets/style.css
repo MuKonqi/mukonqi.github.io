@@ -36,12 +36,13 @@ a{
     text-decoration: none;
     color: white;
 }
-header h2{
-    margin-left: auto;
-    color: #376296
-}
 body h2{
     display:none
+}
+header h2{
+    margin-left: auto;
+    color: #376296;
+    display:block;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
