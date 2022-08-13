@@ -1,14 +1,8 @@
 #id03 {
-    color:cyan;
+    color: #376296;
 }
 p, a, h1, h2, h3, h4, h5, h6, text, ul, ol, #id00{
-    color:gold
-}
-#id01 {
-    color:red
-}
-#id02 {
-    color: green
+    color: orange
 }
 body {
     width: auto;
@@ -38,13 +32,12 @@ header {
 header * {
     display: flex;
 }
-header a{
+/* header a{
     margin-right: 20px;
     text-decoration: none;
     color: black;
-}
+} */
 header h2{
     margin-left: auto;
-    border-right: 20px solid darkgrey;
-    color: cyan
+    color: #376296
 }

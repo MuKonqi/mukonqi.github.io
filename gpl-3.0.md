@@ -2,7 +2,7 @@
 layout: page
 title: GNU GPL 3.0
 ---
-<h1 align="center">GNU General Public License, Version 3.0; 29 June 2007</h1>
+<h1 align="center">GNU General Public License, Version 3.0, 29 June 2007</h1>
 
 Copyright (C) 2007 Free Software Foundation, Inc.
 <https://fsf.org/>

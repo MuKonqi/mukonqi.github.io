@@ -1,16 +1,40 @@
 ---
 layout: page
-title: Selamlar!
+title: 👋 - Ana Sayfa
 ---
+### Selamlar!
 
-Ben, gerçek adımla Muhammed Abdurrahman, takma adımla ise MuKonqi.
+Takma adım MuKonqi ve MuKonqi04. Asıl adım Muhammed Abdurrahman'dır. Dünyada 13 yılımı bitirdim.
 
-İşletim sistemleri (özellikle GNU/Linux), Python (programlama dili), Tkinter (kütüphane), HTML (işaretleme dili), CSS (stil sayfası dili) ilgi alanlanlarımdandır. Python, Tkinter, HTML, CSS hakkında azıcık bilgiye sahibim.
+Araç oyunlarını severim. En çok ETS2 oynamışlığım bulunmaktadır.
+### İletişim
+Matrix: [@mukonqi:kde.org](https://matrix.to/#/@mukonqi:kde.org)
 
-Özellikle işletim sistemlerinden GNU/Linux dağıtımlarını severim. Sebebi ise onların çoğu özgür, açık kaynaklı, ücretsiz oluyor.
+Discord: [MuKonqi#9558](https://discord.com/channels/@me/980440858245623838)
+### [GitHub hesabım](https://github.com/MuKonqi)
+### Projelerim
+◻️ [MetterXP araç kutusu](https://mukonqi.github.io/metterxp)
 
-Kullandığım işletim sistemleri:
-1. GNU/Linux (Fedora Linux WS 36) (DE: KDE, GNOME)
+◻️ [BetterSS ekran görüntüsü wrapperi](https://github.com/MuKonqi/betterss)
+
+◻️ [peytehow (Python3 ve Tkinter için örnek uygulama)](https://github.com/MuKonqi/peytehow)
+
+◻️ [apiutaller (GNU/Linux için uygulama kurucusu ve kaldırıcısı)](https://github.com/MuKonqi/apiutaller)
+
+◻️ [yasfetch (Python3 ile yazılmış GNU/Linux için yine bir başka basit bilgi alma uygulaması)](https://github.com/MuKonqi/yasfetch)
+
+◻️ [teafunknown [herhangi bir program için (örn. bir kurucu/kaldırıcı)] veya eğlenmek için yazılmış bir betik](https://github.com/MuKonqi/teafunknown)
+
+◻️ [Kişisel internet sitem ve bloğum](https://github.com/MuKonqi/mukonqi.github.io)
+### Kullanıyorum...
+* PC'de işletim sistemi olarak:
+1. GNU/Linux [Fedora Linux WS 36 (DE: KDE, GNOME)]
 2. Windows 8.1
-
-Oyunlardan ise en çok araç simulasyonlarını severim. Şuan da en çok ETS 2 oynamışlığım bulunmaktadır.
+* Mobilde işletim sistemi olarak:
+1. Andorid 12
+2. Andorid 9
+* Tarayıcı olarak:
+1. PC'de Mozilla Firefox
+2. Mobil cihazlarda Iceraven
+* Kod düzenleyici olarak:
+1. VS Code
