@@ -36,27 +36,16 @@ header img {
     height: 60px;
     margin: 20px;
 }
-floater1{
+footer{
     background-color: darkgrey;
     position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    height: 55px;
+    height: 60px;
     display: block;
-    align-items: center;
-    border-bottom: 40px solid darkgrey;  
-}
-floater2{
-    background-color: darkgrey;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 75px;
-    display: inline;
-    align-items: center;
-    border-bottom: 40px solid darkgrey;  
+    align-items: center; 
+    border-bottom: 20px solid darkgrey;
 }
 header {
     background-color: darkgrey;
