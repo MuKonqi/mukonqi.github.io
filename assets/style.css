@@ -1,5 +1,5 @@
 @media screen and (prefers-color-scheme: dark) {
-    body {
+    body{
       background-color: black;
     }
     a {
@@ -8,7 +8,7 @@
     }
 }
 @media screen and (prefers-color-scheme: light) {
-    body {
+    body{
       background-color: white;
     }
     a {
@@ -101,9 +101,6 @@ header h2{
     }
     header h2{
         display:none;
-    }
-    html {
-        background-color: black
     }
     body h6{
         display: block;

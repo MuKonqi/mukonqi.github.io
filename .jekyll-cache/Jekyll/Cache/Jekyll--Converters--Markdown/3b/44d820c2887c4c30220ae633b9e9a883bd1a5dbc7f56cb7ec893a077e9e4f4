@@ -1,0 +1,39 @@
+I"i<p>Merhabalar, ben Muhammed Abdurrahman. Uzun zaman sonra, yeniden <a href="https://mukonqi.github.io">burada</a> <a href="https://jekyllrb.com">Jekyll</a>‘e geçtik.</p>
+
+<p>Artık kendi temamızı kullanıyoruz. Bu temayı isteyen herkes GPLv3 lisansına uyarak kullanabilir.</p>
+
+<p>Aşağıda sırasıyla kod/komut, alıntı, alıntı içindeki belirtme örneği yer almaktadır.</p>
+
+<p><code class="language-plaintext highlighter-rouge">echo Merhaba dünya!</code></p>
+<blockquote>
+  <p>Biz “Merhaba dünya!” kelimesini terminale yazdırdık.</p>
+</blockquote>
+
+<blockquote>
+  <p>Dünyaya şöyle bir selam çaktı: Merhaba <code class="language-plaintext highlighter-rouge">değişik</code> dünya!</p>
+</blockquote>
+
+<h1 id="en-büyük-başlık">En Büyük Başlık</h1>
+
+<h2 id="ondan-azıcık-küçük-başlık">Ondan Azıcık Küçük Başlık&lt;</h2>
+
+<h3 id="id00">İlkinden Birazcık Küçük Başlık</h3>
+
+<h4 id="sonuncusundan-birazcık-büyük-başlık">Sonuncusundan Birazcık Büyük Başlık</h4>
+
+<h5 id="küçükten-azıcık-büyük-başlık">Küçükten Azıcık Büyük Başlık</h5>
+
+<h6 id="en-küçük-başlık">En Küçük Başlık</h6>
+
+<ul>
+  <li>İşaretli liste, 1. madde</li>
+  <li>İşaretli liste, 2. madde</li>
+</ul>
+
+<ol>
+  <li>Sayılı liste, 1. madde</li>
+  <li>Sayılı liste, 2. madde</li>
+</ol>
+
+<p>~ Hepinize iyi günler dilerim.</p>
+:ET
