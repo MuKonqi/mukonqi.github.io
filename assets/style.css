@@ -19,19 +19,48 @@
 #id01, h3 {
     color: #376296;
 }
-p, h1, h2, h4, h5, h6, text, ul, ol, h6 a, #id00{
+p, h1, h2, h4, h5, h6, text, ul, ol, #id00{
     color: orange
 }
 html {
+    background-color: darkgrey;
     border: 20px solid darkgrey;
 }
 body {
-    margin: 60px 0px 0px 0px;
-    padding: 0px 0px 0px 20px;
+    margin: 20px 0px 60px 0px;
+    padding: 20px 20px 20px 20px;
 }
 header img {
     height: 60px;
     margin: 20px;
+}
+body h6{
+    display: none;
+}
+floater1 h6, floater2 h6{
+    display: block;
+}
+floater1{
+    background-color: darkgrey;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    display: inline;
+    align-items: center;
+    border-bottom: 40px solid darkgrey;  
+}
+floater2{
+    background-color: darkgrey;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    display: inline;
+    align-items: center;
+    border-bottom: 40px solid darkgrey;  
 }
 header {
     background-color: darkgrey;
@@ -81,5 +110,11 @@ header h2{
     }
     html {
         background-color: black
+    }
+    body h6{
+        display: block;
+    }
+    floater h6, floater{
+        display: none;
     }
 }
