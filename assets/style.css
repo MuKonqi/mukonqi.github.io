@@ -24,11 +24,13 @@ p, h1, h2, h4, h5, h6, text, ul, ol, #id00{
 }
 html {
     background-color: darkgrey;
-    border: 20px solid darkgrey;
+    border-top: 20px solid darkgrey;
+    border-left: 20px solid darkgrey;
+    border-right: 20px solid darkgrey;
 }
 body {
-    margin: 20px 0px 60px 0px;
-    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 20px 100px 20px;
 }
 header img {
     height: 60px;
@@ -40,8 +42,8 @@ floater1{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    height: 40px;
-    display: inline;
+    height: 55px;
+    display: block;
     align-items: center;
     border-bottom: 40px solid darkgrey;  
 }
@@ -51,7 +53,7 @@ floater2{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    height: 60px;
+    height: 75px;
     display: inline;
     align-items: center;
     border-bottom: 40px solid darkgrey;  
@@ -79,8 +81,8 @@ header h2{
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
-        margin: 40px 0px 80px 0px;
-        padding: 20px 20px 20px 20px;       
+        margin: 40px 0px 0px 0px;
+        padding: 20px 20px 100px 20px;       
     }
     html {
         border: 0px;
