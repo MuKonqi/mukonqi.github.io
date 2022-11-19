@@ -16,7 +16,10 @@
         color: black
     }
 }
-#id01, h3 {
+#mobile_title, #mobile_license {
+    display: none;
+}
+h3{
     color: #376296;
 }
 p, h1, h2, h4, h5, h6, text, ul, ol, #id00{
@@ -32,22 +35,35 @@ body {
     margin: 20px 0px 0px 0px;
     padding: 20px 20px 100px 20px;
 }
-header img {
-    height: 60px;
-    margin: 20px;
-}
 footer{
+    /* display: block; */
     background-color: darkgrey;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 0px;
     right: 0px;
     height: 60px;
-    display: block;
-    align-items: center; 
-    border-bottom: 20px solid darkgrey;
+    display: flex;
+    align-items: center;
 }
-header {
+footer a{
+    color: #376296;
+}
+#clock{
+    margin-left: 40px;
+    color: #376296; 
+}
+#pc_license{
+    color: #376296;
+    margin-right: auto;
+    margin-left: auto;
+}
+#jekyll{
+    color: #376296;
+    margin-right: 40px;
+}
+header{
+    /* display: block; */
     background-color: darkgrey;
     position: fixed;
     top: 0;
@@ -57,17 +73,28 @@ header {
     display: flex;
     align-items: center;
 }
+header img {
+    height: 60px;
+    margin: 20px;
+}
 header * {
     display: flex;
 }
-body h2{
-    display:none
-}
-header h2{
+header h2 {
     margin-left: auto;
     color: #376296;
-    display:block;
 }
+/* header #p1{
+    margin-right: auto;
+    color: #376296;
+}
+header #p2{
+    margin-left: auto;
+    color: #376296;
+}
+header a{
+    color: #376296;
+} */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
         margin: 40px 0px 0px 0px;
@@ -87,7 +114,10 @@ header h2{
         align-items: center;
         border-top: 0px;
     }
-    body h2{
+    #mobile_title, #mobile_license {
+        color: #376296;
+        margin-left: auto;
+        margin-right: auto;
         display:block;
     }
     header h2{
@@ -95,5 +125,8 @@ header h2{
     }
     body h6{
         display: block;
+    }
+    #clock, #pc_license, #jekyll {
+        display: none;
     }
 }
