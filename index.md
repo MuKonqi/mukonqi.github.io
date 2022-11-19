@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 👋 - Ana Sayfa
 ---
 ### ◻️ Selamlar!
 
