@@ -6,7 +6,7 @@ title: 👋 - Ana Sayfa
 
 İnternette kullandığım isimler MuKonqi ile MuKonqi04'dür. Asıl adım Muhammed Abdurrahman'dır. 13 yaşımı doldurmuş bulunmaktayım.
 
-Araç oyunlarını severim. Şuan da En çok ETS2 oynamışlığım bulunmaktadır.
+Araç oyunlarını severim. Şuan da en çok ETS2 oynamışlığım bulunmaktadır.
 ### ◻️ Sosyal
 Matrix: [@mukonqi:kde.org](https://matrix.to/#/@mukonqi:kde.org)
 
