@@ -2,20 +2,9 @@
 layout: post
 title: Son Bloglar
 ---
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/style.css">
-    <title>{{ page.title }} | Muhammed'in bloğu</title>
-    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
-</head>
-<body>
-    {% for tag in site.tags %}
-        <h3>◻️ {{ tag[0] }}</h3>
-        {% for post in tag[1] %}
-        <h4><a href="{{ post.url }}">{{ post.title }}</a><br /></h4>
-        {% endfor %}
+{% for tag in site.tags %}
+    <h3>◻️ {{ tag[0] }}</h3>
+    {% for post in tag[1] %}
+    <h4><a href="{{ post.url }}">{{ post.title }}</a><br /></h4>
     {% endfor %}
-</body>
-</html>
+{% endfor %}

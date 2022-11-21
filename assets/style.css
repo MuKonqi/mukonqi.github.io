@@ -36,7 +36,6 @@ body {
     padding: 20px 20px 100px 20px;
 }
 footer{
-    /* display: block; */
     background-color: darkgrey;
     position: fixed;
     bottom: 0;
@@ -63,7 +62,6 @@ footer a{
     margin-right: 40px;
 }
 header{
-    /* display: block; */
     background-color: darkgrey;
     position: fixed;
     top: 0;
@@ -84,17 +82,6 @@ header h2 {
     margin-left: auto;
     color: #376296;
 }
-/* header #p1{
-    margin-right: auto;
-    color: #376296;
-}
-header #p2{
-    margin-left: auto;
-    color: #376296;
-}
-header a{
-    color: #376296;
-} */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
         margin: 40px 0px 0px 0px;
