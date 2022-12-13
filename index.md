@@ -4,7 +4,7 @@ title: 👋 - Ana Sayfa
 ---
 ### ◻️ Selamlar!
 
-İnternette kullandığım isimler MuKonqi ile MuKonqi04'dür. Asıl adım Muhammed Abdurrahman'dır. 13 yaşımı doldurmuş bulunmaktayım.
+İnternette kullandığım isimler MuKonqi ile MuKonqi04'dür. Asıl adım Muhammed Abdurrahman'dır. 14 yaşımı doldurmuş bulunmaktayım.
 
 Araç oyunlarını severim. Şuan da en çok ETS2 oynamışlığım bulunmaktadır.
 ### ◻️ Sosyal
