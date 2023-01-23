@@ -16,14 +16,18 @@
         color: black
     }
 }
-#mobile_title, #mobile_license {
+#mobile_title, #mobile_license, #mobile_search {
     display: none;
+}
+
+a {
+    color: lightgreen;
 }
 h3{
     color: #376296;
 }
 p, h1, h2, h4, h5, h6, text, ul, ol, #id00{
-    color: orange
+    color: orangered;
 }
 html {
     background-color: darkgrey;
@@ -36,13 +40,13 @@ body {
     padding: 20px 20px 100px 20px;
 }
 footer{
-    background-color: darkgrey;
     position: fixed;
+    display: flex;
+    background-color: darkgrey;
     bottom: 0;
     left: 0px;
     right: 0px;
     height: 60px;
-    display: flex;
     align-items: center;
 }
 footer a{
@@ -62,8 +66,8 @@ footer a{
     margin-right: 40px;
 }
 header{
-    background-color: darkgrey;
     position: fixed;
+    background-color: darkgrey;
     top: 0;
     left: 20px;
     right: 20px;
@@ -78,7 +82,7 @@ header img {
 header * {
     display: flex;
 }
-header h2 {
+header h2{
     margin-left: auto;
     color: #376296;
 }
@@ -101,7 +105,7 @@ header h2 {
         align-items: center;
         border-top: 0px;
     }
-    #mobile_title, #mobile_license {
+    #mobile_title, #mobile_license, #mobile_search  {
         color: #376296;
         margin-left: auto;
         margin-right: auto;
@@ -113,7 +117,7 @@ header h2 {
     body h6{
         display: block;
     }
-    #clock, #pc_license, #jekyll {
+    #clock, #pc_license, #jekyll{
         display: none;
     }
 }

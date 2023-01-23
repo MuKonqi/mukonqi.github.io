@@ -1,7 +1,8 @@
 ---
 layout: page
-title: GNU General Public License, Version 3.0, 29 June 2007
+title: Bu Sitenin Lisansı
 ---
+# GNU General Public License, Version 3.0, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc.
 <https://fsf.org/>

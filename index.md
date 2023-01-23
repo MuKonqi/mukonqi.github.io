@@ -4,9 +4,11 @@ title: 👋 - Ana Sayfa
 ---
 ### ◻️ Selamlar!
 
-İnternette kullandığım isimler MuKonqi ile MuKonqi04'dür. Asıl adım Muhammed Abdurrahman'dır. 14 yaşımı doldurmuş bulunmaktayım.
+İnternette kullandığım isimler MuKonqi ile MuKonqi04'dür. Adım ise Muhammed Abdurrahman'dır. 14 yaşımı doldurmuş bulunmaktayım.
 
-Araç oyunlarını severim. Şuan da en çok ETS2 oynamışlığım bulunmaktadır.
+2021'den beri basit projeler üzerinde çalışıyorum.  
+
+Oyun tercihlerim ise genellikle araç oyunlarıdır.
 ### ◻️ Sosyal
 Matrix: [@mukonqi:kde.org](https://matrix.to/#/@mukonqi:kde.org)
 
@@ -32,13 +34,13 @@ GitHub: [MuKonqi](https://github.com/MuKonqi)
 
 [MetterXP araç kutusunun internet sitesi](https://github.com/MuKonqi/metterxp/tree/site)
 
-Özelleştirme: [newtab](https://github.com/MuKonqi/newtab)
+[Özelleştirme: newtab](https://github.com/MuKonqi/newtab)
 ### ◻️ Kullanıyorum...
 * Bilgisayarda işletim sistemi olarak:
 1. Windows 10 Home
 2. Solus Linux 4.3 Fortitude, GNOME masaüstü ortamı ile
 * Mobilde işletim sistemi olarak:
-1. Android 12
-2. Android 9
+1. Telefonumda Android 12
+2. Telefonumda Android 9
 * Kod düzenleyici olarak:
 1. VS Code
