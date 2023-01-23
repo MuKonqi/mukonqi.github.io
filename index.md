@@ -41,6 +41,6 @@ GitHub: [MuKonqi](https://github.com/MuKonqi)
 2. Solus Linux 4.3 Fortitude, GNOME masaüstü ortamı ile
 * Mobilde işletim sistemi olarak:
 1. Telefonumda Android 12
-2. Telefonumda Android 9
+2. Tabletimde Android 9
 * Kod düzenleyici olarak:
 1. VS Code
