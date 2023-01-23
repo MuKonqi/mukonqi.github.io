@@ -4,7 +4,7 @@
     }
     a {
         text-decoration: none;
-        color: white
+        color: lightgreen
     }
 }
 @media screen and (prefers-color-scheme: light) {
@@ -13,15 +13,11 @@
     }
     a {
         text-decoration: none;
-        color: black
+        color: darkgreen
     }
 }
 #mobile_title, #mobile_license {
     display: none;
-}
-
-a {
-    color: lightgreen;
 }
 h3{
     color: #376296;
