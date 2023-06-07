@@ -37,8 +37,8 @@ GitHub: [MuKonqi](https://github.com/MuKonqi)
 [Özelleştirme: newtab](https://github.com/MuKonqi/newtab)
 ### ◻️ Kullanıyorum...
 * Bilgisayarda işletim sistemi olarak:
-1. Windows 10 Home
-2. Solus Linux 4.3 Fortitude, GNOME masaüstü ortamı ile
+1. Windows 11 Home
+2. Pop!_OS 22.04
 * Mobilde işletim sistemi olarak:
 1. Telefonumda Android 12
 2. Tabletimde Android 9
