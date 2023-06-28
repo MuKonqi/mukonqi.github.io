@@ -1,0 +1,86 @@
+@media screen and (prefers-color-scheme: dark) {
+    .content, .lisans, .content1, .content2 {
+        background-color: black;
+    }
+}
+@media screen and (prefers-color-scheme: light) {
+    .content , .lisans, .content1, .content2 {
+        background-color: white;
+    }
+}
+a {
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    background-color: darkgrey;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+}
+.header img {
+    height: 83px;
+    margin: 20px;
+}
+.header * {
+    display: flex;
+    margin: 10px;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+}
+.header .pc, .header .nav{
+    margin-left: auto;
+}
+.content, .content2, .content1, .lisans {
+    text-align: center;
+    border: 20px solid darkgrey;
+    border-radius: 20px;
+    padding: 10px;
+}
+#txt, .lisans, .content *, .content1 *, .content2 * {
+    color: #376396
+}
+.lisans a, .content a, .content1 a, .content2 a{
+    color: darkgrey
+}
+.lisans, .content1, .content2 {
+    margin-top: 83px;
+}
+body {
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+}
+html{
+    background-color: #376396;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media screen and (prefers-color-scheme: dark) {
+        html {
+            background-color: black;
+        }
+    }
+    @media screen and (prefers-color-scheme: light) {
+        html {
+            background-color: white;
+        }
+    }
+    body {
+        margin: 20px 0px 0px 0px;
+        padding: 20px 10px 0px 10px;
+    }
+    .header .pc{
+        display: none;
+    }
+    .content, .content2, .content1, .lisans {
+        text-align: center;
+        border: 0px solid darkgrey;
+        padding: 10px;
+    }
+    .lisans, .content1, .content2 {
+        margin-top: 48px;
+    }
+}
