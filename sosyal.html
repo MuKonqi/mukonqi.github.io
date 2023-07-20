@@ -8,6 +8,23 @@
     <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
 </head>
 <body>
+    <style>
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .sosyal, html {
+                background-color: #376296;
+            }
+            @media screen and (prefers-color-scheme: dark) {
+                .sosyal * {
+                    color: black;
+                }
+            }
+            @media screen and (prefers-color-scheme: light) {
+                .sosyal * {
+                    color: white;
+                }
+            }
+        }
+    </style>
     <div class="header">
         <a href="/index.html"><img src="/icon.png"></a>
         <div class="pc">

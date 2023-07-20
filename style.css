@@ -8,7 +8,7 @@
         background-color: white;
     }
 }
-.header .mobile, .index .m-lisans {
+.header .mobile{
     display: none;
 }
 a {
@@ -38,7 +38,7 @@ a {
 .header .pc, .header .nav{
     margin-left: auto;
 }
-.lisans a, .index a, .sosyal a, .sistemim a, .kutular a, .index .m-lisans * {
+.lisans a, .index a, .sosyal a, .sistemim a, .kutular a {
     color: darkgrey
 }
 #txt, .lisans, .index *, .sosyal *, .sistemim *, .top {
@@ -84,7 +84,7 @@ a {
     align-content: center;
     gap: 20px;
 }
-.kutular, .index .m-lisans {
+.kutular {
     background-color: #2f2f2f;
 }
 body {
@@ -115,9 +115,6 @@ html{
     .header .mobile {
         display: flex;
         margin-left: auto;
-    }
-    .index .m-lisans {
-        display: grid;
     }
     .index, .lisans, .sosyal, .projelerim, .sistemim {
         text-align: center;
