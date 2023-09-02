@@ -30,6 +30,17 @@
         .err *{
             color: var(--color3);
         }
+        .lang .mobile .links {
+            font-weight: bold;
+        }
+        @media only screen and (max-device-height : 767px){
+            .lang {
+                transform: translate(-50%, -100%);
+            }
+            .lang .mobile .links {
+                height: 20px;
+            }
+        }
     </style>
     <div class="header">
         <div class="photo"><a href="/index.html"><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
@@ -44,8 +55,8 @@
             <div class="links"><h1><a href="/turkish/index.html">Türkçe (Turkish)</a></h1></div>
         </div>
         <div class="mobile">
-            <div class="links"><h3><a href="/english/index.html">English (İngilizce)</a></h3></div><br>
-            <div class="links"><h3><a href="/turkish/index.html">Türkçe (Turkish)</a></h3></div>
+            <div class="links"><a href="/english/index.html">English (İngilizce)</a></div><br>
+            <div class="links"><a href="/turkish/index.html">Türkçe (Turkish)</a></div>
         </div>
     </div>
     <div class="err">
