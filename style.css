@@ -1,111 +1,213 @@
 @media screen and (prefers-color-scheme: dark) {
-    .index, .lisans, .sosyal, .sistemim, .projelerim {background-color: black;}
+    :root {
+        --color1: #2f2f2f;
+        --color2: black;
+        --color3: #a9a9a9;
+        --color4: darkgreen;
+    }
 }
 @media screen and (prefers-color-scheme: light) {
-    .index , .lisans, .sosyal, .sistemim, .projelerim {background-color: white;}
+    :root {
+        --color1: #a9a9a9;
+        --color2: white;
+        --color3: #2f2f2f;
+        --color4: lightgreen;
+    }
 }
-.header .mobile, .m-nav, .github {display: none;}
+.header .short, .header .long, .lang .mobile {display: none;}
+.lang .links, html {background-color: var(--color2)}
+.text * {color: var(--color2)}
+.header, .text .links, .footer, .nav {background-color: var(--color1);}
+.text .links a, .text .box a,  .text .description a, .footer * {color: var(--color3)}
 a {text-decoration: none;}
 .header {
+    font-family: monospace;
     position: fixed;
-    background-color: #a9a9a9;
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 92px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
-.header img {
-    height: 82px;
-    margin: 0px;
+.header .photo img{
+    height: 80px;
+    width: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+.header .text {
+    margin: 0px auto 0px auto;
+    align-items: center;
+    text-align: center;
 }
 .header * {
     display: flex;
     margin: 10px;
     text-align: justify;
     text-align-last: left;
-    color: black;
+    color: #376296;
 }
-.header .pc, .header .nav{margin-left: auto;}
-.lisans a, .index a, .sosyal a, .sistemim a, .kutular a {color: #a9a9a9}
-#txt, .lisans, .index *, .sosyal *, .sistemim *, .top, .m-nav * {color: #376296}
-.lisans, .sosyal, .sistemim, .projelerim {margin-top: 82px;}
-.index{
+.lang {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    border: 21px solid #a9a9a9;
-    border-radius: 42px;
-    padding: 14px;
 }
-.lisans {
+.lang .pc .links {
+    padding: 25px;
+    border: 25px solid transparent;
+    border-radius: 25px;
+    width: 75vw;
+    gap: 25px;
+}
+.lang .pc .links:hover, .lang .pc .links:active {
+    transform: scale(1.1);
+}
+.lang .pc .links:hover{
+    outline: var(--color1) solid 10px;
+}
+.lang .pc .links:active {
+    background-color: var(--color1);
+    outline: var(--color2) solid 10px;
+}
+.text {
+    margin-top: 50px
+}
+.text .title {
     text-align: center;
-    border: 21px solid #a9a9a9;
-    border-radius: 63px;
-    padding: 21px;
 }
-.sosyal {
-    text-align: center;
-    border: 9px solid transparent;
-    border-radius: 74px;
-    padding: 21px;    
-}
-.sistemim {
-    text-align: center;
-    border: 4px;
-    border-radius: 4px;
-    background-color: #2f2f2f;
-    padding: 16px;
-}
-.projelerim {
-    text-align: center;
-    border: 20px solid;
-    border-radius: 10px;
-    padding: 21px;
-}
-.linkler {
+.text .links, .text .box {
     display: grid;
+    text-align: center;
     align-items: center;
     align-content: center;
-    gap: 20px;
+    margin: auto 50px auto 50px;
+    border: 10px solid transparent;
+    border-radius: 10px;
 }
-.kutular, .m-nav {background-color: #2f2f2f;}
-.github {background-color: #376296; padding: 14px;}
+.text .links p, .text .box p, .lang * {
+    color: #376296;
+}
+.text .links:hover, .text .links:active {
+    transform: scale(1.1);
+}
+.text .links:hover{
+    outline: var(--color4) solid 10px;
+}
+.text .links:active, .text .box {
+    background-color: var(--color4);
+    outline: var(--color1) solid 10px;
+}
+.text .description {
+    margin: 0px 75px;
+}
+.text .description #metterxp {
+    background-color: #a9a9a9;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 10px;
+    border: 7.5px outset;
+    height: 15px;
+    border-color: white #bababa #bababa white;
+}
+.text .description #metterxp:hover {
+    background-color: #376296;
+    border-color: #c7e0ff #30527a #30527a #c7e0ff;
+}
+.text .description #metterxp * {
+    color: black;
+}
+.text .description #metterxp:hover * {
+    color: white;
+}
+.footer {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    outline: var(--color1) solid 10px;
+}
+.footer a{
+    color: red;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 20px 0px 0px 0px;
-    padding: 20px;
-}
-html{
+    margin: 20px 50px 50px 50px;
+    padding: 25px;
     background-color: #376296;
+    outline: var(--color1) solid 10px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    @media screen and (prefers-color-scheme: dark) {html {background-color: black;}}
-    @media screen and (prefers-color-scheme: light) {html {background-color: white;}}
-    body {
-        margin: 20px 0px 7px 0px;
-        padding: 20px 10px 0px 10px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px), only screen and (min-device-height : 320px) and (max-device-height : 639px){
+    .header {
+        height: 40px;
     }
-    .header .pc, .header .nav{display: none;}
-    .header .mobile {
+    .header .photo img {
+        height: 40px;
+        width: 24px;
+    }
+    .header .text, .header .language, .header .long, .header .license, .lang .pc {
+        display: none;
+    }
+    .header .short {
+        height: 40px;
         display: flex;
-        margin-left: auto;
+        margin: 0px 0px 0px auto;
+        align-items: center;
+        align-content: center;
     }
-    .m-nav, .github {display: grid;}
-    .index, .lisans, .sosyal, .projelerim, .sistemim {
-        text-align: center;
-        border: 0px;
-        border-radius: 0px;
-        padding: 7px;
+    .lang .mobile {
+        display: block;
     }
-    .sistemim {
-        border: 4px;
-        border-radius: 4px;
+    .lang .mobile .links {
+        padding: 5px;
+        border: 5px solid transparent;
+        border-radius: 25px;
+        width: 75vw;
     }
-    .m-nav{
-        text-align: center;
-        padding: 7px;
-        margin-top: 21px;
+    .lang .mobile .links:hover, .lang .mobile .links:active {
+        transform: scale(1.05);
     }
-    .lisans, .sosyal, .projelerim, .sistemim {margin-top: 69px;}
-    .index {margin-top: 37px;}
+    .lang .mobile .links:hover{
+        outline: var(--color1) solid 5px;
+    }
+    .lang .mobile .links:active {
+        background-color: var(--color1);
+        outline: var(--color2) solid 5px;
+    }
+    .text {
+        margin-top: 30px
+    }
+    .text .links, .text .box {
+        margin: 0px;
+    }
+    .text .links:hover, .text .links:active {
+        transform: scale(1.025);
+    }
+    .text .description {
+        margin: 0px 15px;
+    }
+    body {
+        margin: 0px;
+        border: 10px solid var(--color1);
+    }
+    .footer {
+        left: 0px;
+        right: 0px;
+        outline: 0px;
+    }
+    @media only screen and (min-device-width : 456px) {
+        .header .long {
+            height: 40px;
+            display: flex;
+            margin: 0px 0px 0px auto;
+            align-items: center;
+            align-content: center;
+        }
+    }
 }

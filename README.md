@@ -1,5 +1,7 @@
 # [mukonqi.github.io](https://mukonqi.github.io)
-Kişisel internet sitem.
+My personal web site.
 
-## Lisans:
+## License:
 AGPL v3.0
+
+Credit: [Default Konqi Image](https://community.kde.org/File:Mascot_konqi.png)

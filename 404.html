@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Welcome - Hoşgeldiniz</title>
+    <title>404: Welcome - Hoşgeldiniz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" type="image/x-icon">
@@ -18,12 +18,24 @@
         .header .text {
             margin: 0px auto 0px auto;
         }
+        .err {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: var(--color1);
+            border-radius: 20px;
+        }
+        .err *{
+            color: var(--color3);
+        }
     </style>
     <div class="header">
         <div class="photo"><a href="/index.html"><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
-        <div class="text"><h3>Student - Öğrenci | Muhammed S. (MuKonqi)<br>Hello! - Selamlar!</h3></div>
+        <div class="text"><h3>Student - Öğrenci | Muhammed S. (MuKonqi)<br>404: Hello! - Selamlar!</h3></div>
         <div class="license"><h3>(C)<br>2023</h3></div>        
-        <div class="short"><h3>Hello! - Selamlar!</h3></div>
+        <div class="short"><h3>404: Hello! - Selamlar!</h3></div>
         <div class="long"><h3>(C) 2023</h3></div>
     </div>
     <div class="lang">
@@ -35,6 +47,10 @@
             <div class="links"><h3><a href="/english/index.html">English (İngilizce)</a></h3></div><br>
             <div class="links"><h3><a href="/turkish/index.html">Türkçe (Turkish)</a></h3></div>
         </div>
+    </div>
+    <div class="err">
+        <p>Whoops. We couldn't find the page you wanted. For the pages we did find, you are at the beginning of everything.</p>
+        <p>Hay aksi. İstediğiniz sayfayı bulamadık. Bulunabilen sayfalar için her şeyin başlangıcıdasınız.</p>
     </div>
 </body>
 </html>

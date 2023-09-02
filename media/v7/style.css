@@ -1,0 +1,111 @@
+@media screen and (prefers-color-scheme: dark) {
+    .index, .lisans, .sosyal, .sistemim, .projelerim {background-color: black;}
+}
+@media screen and (prefers-color-scheme: light) {
+    .index , .lisans, .sosyal, .sistemim, .projelerim {background-color: white;}
+}
+.header .mobile, .m-nav, .github {display: none;}
+a {text-decoration: none;}
+.header {
+    position: fixed;
+    background-color: #a9a9a9;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+}
+.header img {
+    height: 82px;
+    margin: 0px;
+}
+.header * {
+    display: flex;
+    margin: 10px;
+    text-align: justify;
+    text-align-last: left;
+    color: black;
+}
+.header .pc, .header .nav{margin-left: auto;}
+.lisans a, .index a, .sosyal a, .sistemim a, .kutular a {color: #a9a9a9}
+#txt, .lisans, .index *, .sosyal *, .sistemim *, .top, .m-nav * {color: #376296}
+.lisans, .sosyal, .sistemim, .projelerim {margin-top: 82px;}
+.index{
+    text-align: center;
+    border: 21px solid #a9a9a9;
+    border-radius: 42px;
+    padding: 14px;
+}
+.lisans {
+    text-align: center;
+    border: 21px solid #a9a9a9;
+    border-radius: 63px;
+    padding: 21px;
+}
+.sosyal {
+    text-align: center;
+    border: 9px solid transparent;
+    border-radius: 74px;
+    padding: 21px;    
+}
+.sistemim {
+    text-align: center;
+    border: 4px;
+    border-radius: 4px;
+    background-color: #2f2f2f;
+    padding: 16px;
+}
+.projelerim {
+    text-align: center;
+    border: 20px solid;
+    border-radius: 10px;
+    padding: 21px;
+}
+.linkler {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.kutular, .m-nav {background-color: #2f2f2f;}
+.github {background-color: #376296; padding: 14px;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+}
+html{
+    background-color: #376296;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media screen and (prefers-color-scheme: dark) {html {background-color: black;}}
+    @media screen and (prefers-color-scheme: light) {html {background-color: white;}}
+    body {
+        margin: 20px 0px 7px 0px;
+        padding: 20px 10px 0px 10px;
+    }
+    .header .pc, .header .nav{display: none;}
+    .header .mobile {
+        display: flex;
+        margin-left: auto;
+    }
+    .m-nav, .github {display: grid;}
+    .index, .lisans, .sosyal, .projelerim, .sistemim {
+        text-align: center;
+        border: 0px;
+        border-radius: 0px;
+        padding: 7px;
+    }
+    .sistemim {
+        border: 4px;
+        border-radius: 4px;
+    }
+    .m-nav{
+        text-align: center;
+        padding: 7px;
+        margin-top: 21px;
+    }
+    .lisans, .sosyal, .projelerim, .sistemim {margin-top: 69px;}
+    .index {margin-top: 37px;}
+}
