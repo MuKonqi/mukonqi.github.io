@@ -20,12 +20,57 @@
 .header, .text .links, .footer, .nav {background-color: var(--color1);}
 .text .links a, .text .box a,  .text .description a, .footer * {color: var(--color3)}
 a {text-decoration: none;}
+.lang {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.lang .pc .links {
+    padding: 25px;
+    border-radius: 25px;
+    width: 75vw;
+}
+.lang .pc .links:hover, .lang .pc .links:active {
+    transform: scale(1.1);
+}
+.lang .pc .links:hover{
+    outline: var(--color1) solid 10px;
+}
+.lang .pc .links:active {
+    background-color: var(--color1);
+    outline: var(--color2) solid 10px;
+}
+@media only screen and (max-device-width: 767px), only screen and (max-device-height: 559px){
+    .lang .pc {
+        display: none;
+    }
+    .lang .mobile {
+        display: block;
+    }
+    .lang .mobile .links {
+        border-radius: 25px;
+        width: 75vw;
+        padding: 5px;
+    }
+    .lang .mobile .links:hover, .lang .mobile .links:active {
+        transform: scale(1.05);
+    }
+    .lang .mobile .links:hover{
+         outline: var(--color1) solid 5px;
+    }
+    .lang .mobile .links:active {
+        background-color: var(--color1);
+        outline: var(--color2) solid 5px;
+    }
+}
 .header {
     font-family: monospace;
     position: fixed;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    left: 40px;
+    right: 40px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -49,30 +94,6 @@ a {text-decoration: none;}
     text-align-last: left;
     color: #376296;
 }
-.lang {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.lang .pc .links {
-    padding: 25px;
-    border: 25px solid transparent;
-    border-radius: 25px;
-    width: 75vw;
-    gap: 25px;
-}
-.lang .pc .links:hover, .lang .pc .links:active {
-    transform: scale(1.1);
-}
-.lang .pc .links:hover{
-    outline: var(--color1) solid 10px;
-}
-.lang .pc .links:active {
-    background-color: var(--color1);
-    outline: var(--color2) solid 10px;
-}
 .text {
     margin-top: 50px
 }
@@ -85,8 +106,8 @@ a {text-decoration: none;}
     align-items: center;
     align-content: center;
     margin: auto 50px auto 50px;
-    border: 10px solid transparent;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 50px;
 }
 .text .links p, .text .box p, .lang * {
     color: #376296;
@@ -128,30 +149,35 @@ a {text-decoration: none;}
 }
 .footer {
     position: absolute;
-    left: 50px;
-    right: 50px;
+    left: 40px;
+    right: 40px;
     text-align: center;
-    outline: var(--color1) solid 10px;
+    border: 10px solid var(--color1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .footer a{
     color: red;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 20px 50px 50px 50px;
+    margin: 20px 40px 50px 40px;
     padding: 25px;
     background-color: #376296;
-    outline: var(--color1) solid 10px;
+    border: 10px solid var(--color1);
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px), only screen and (min-device-height : 320px) and (max-device-height : 767px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px), only screen and (max-device-height: 767px){
+    html {background-color: #376296;}
     .header {
         height: 40px;
+        left: 0px;
+        right: 0px;
     }
     .header .photo img {
         height: 40px;
         width: 24px;
     }
-    .header .text, .header .language, .header .long, .header .license, .lang .pc {
+    .header .text, .header .language, .header .long, .header .license {
         display: none;
     }
     .header .short {
@@ -160,25 +186,6 @@ body {
         margin: 0px 0px 0px auto;
         align-items: center;
         align-content: center;
-    }
-    .lang .mobile {
-        display: block;
-    }
-    .lang .mobile .links {
-        padding: 5px;
-        border: 5px solid transparent;
-        border-radius: 25px;
-        width: 75vw;
-    }
-    .lang .mobile .links:hover, .lang .mobile .links:active {
-        transform: scale(1.05);
-    }
-    .lang .mobile .links:hover{
-        outline: var(--color1) solid 5px;
-    }
-    .lang .mobile .links:active {
-        background-color: var(--color1);
-        outline: var(--color2) solid 5px;
     }
     .text {
         margin-top: 30px

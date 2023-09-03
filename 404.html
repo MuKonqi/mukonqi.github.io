@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>404: Welcome - Hoşgeldiniz</title>
+    <title>Whoops - Hay Aksi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" type="image/x-icon">
@@ -18,36 +18,49 @@
         .header .text {
             margin: 0px auto 0px auto;
         }
-        .err {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            left: 10px;
-            padding: 10px;
-            background-color: var(--color1);
+        .header {
+            height: 100px;
             border-radius: 20px;
+            margin: 10px;
         }
-        .err *{
-            color: var(--color3);
-        }
-        .lang .mobile .links {
-            font-weight: bold;
-        }
-        @media only screen and (max-device-height : 767px){
+        .header .shortmobile, .header .longmobile {display: none;}
+        @media only screen and (min-device-width : 320px) and (max-device-width : 767px), only screen and (max-device-height: 400px){
             .lang {
-                transform: translate(-50%, -100%);
+                transform: translate(-50%, -25%);
             }
-            .lang .mobile .links {
-                height: 20px;
+            .header {
+                height: 60px;
+            }
+            .header .photo img {
+                height: 60px;
+                width: 36px;
+            }
+            .header .text {
+                display: none;
+            }
+            @media only screen and (max-device-width : 679px) {
+                .header .longmobile {
+                    display: none;
+                }
+                .header .shortmobile {
+                    display: block;
+                }
+            }
+            @media only screen and (min-device-width : 680px) {
+                .header .mobile {
+                    display: none;
+                }
+                .header .longmobile {
+                    display: block;
+                }
             }
         }
     </style>
     <div class="header">
         <div class="photo"><a href="/index.html"><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
-        <div class="text"><h3>Student - Öğrenci | Muhammed S. (MuKonqi)<br>404: Hello! - Selamlar!</h3></div>
-        <div class="license"><h3>(C)<br>2023</h3></div>        
-        <div class="short"><h3>404: Hello! - Selamlar!</h3></div>
-        <div class="long"><h3>(C) 2023</h3></div>
+        <div class="text"><h3>Whoops. We couldn't find the page you wanted. For the pages we can find, you are at the beginning of everything.<br>Hay aksi. İstediğiniz sayfayı bulamadık. Bulunabilen sayfalar için her şeyin başlangıcıdasınız.</h3></div>        
+        <div class="shortmobile"><h6>Whopps. Page Not Found<br>Hay Aksi. Sayfa Bulunamadı</h6></div>
+        <div class="longmobile"><h6>Whoops. We couldn't find the page you wanted. For the pages we can find, you are at the beginning of everything.<br>Hay aksi. İstediğiniz sayfayı bulamadık. Bulunabilen sayfalar için her şeyin başlangıcıdasınız.</h6></div>
     </div>
     <div class="lang">
         <div class="pc">
@@ -55,13 +68,9 @@
             <div class="links"><h1><a href="/turkish/index.html">Türkçe (Turkish)</a></h1></div>
         </div>
         <div class="mobile">
-            <div class="links"><a href="/english/index.html">English (İngilizce)</a></div><br>
-            <div class="links"><a href="/turkish/index.html">Türkçe (Turkish)</a></div>
+            <div class="links"><h3><a href="/english/index.html">English (İngilizce)</a></h3></div><br>
+            <div class="links"><h3><a href="/turkish/index.html">Türkçe (Turkish)</a></h3></div>
         </div>
-    </div>
-    <div class="err">
-        <p>Whoops. We couldn't find the page you wanted. For the pages we did find, you are at the beginning of everything.</p>
-        <p>Hay aksi. İstediğiniz sayfayı bulamadık. Bulunabilen sayfalar için her şeyin başlangıcıdasınız.</p>
     </div>
 </body>
 </html>
