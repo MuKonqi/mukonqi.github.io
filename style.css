@@ -1,25 +1,30 @@
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --color1: #2f2f2f;
-        --color2: black;
+        --color2: #000000;
         --color3: #a9a9a9;
-        --color4: darkgreen;
+        --color4: #18521d;
+        --color5: #323d33;
+        --color6: #ffffff;
     }
 }
 @media screen and (prefers-color-scheme: light) {
     :root {
         --color1: #a9a9a9;
-        --color2: white;
+        --color2: #ffffff;
         --color3: #2f2f2f;
-        --color4: lightgreen;
+        --color4: #548058;
+        --color5: #4c5e4e;
+        --color6: #000000;
     }
 }
 .header .short, .header .long, .lang .mobile {display: none;}
 .lang .links, html {background-color: var(--color2)}
 .text * {color: var(--color2)}
-.header, .text .links, .footer, .nav {background-color: var(--color1);}
-.text .links a, .text .box a,  .text .description a, .footer * {color: var(--color3)}
+.header, .footer, .nav {background-color: var(--color1);}
+.text .description a, .footer * {color: var(--color3)}
 a {text-decoration: none;}
+.text .links a, .text .box a {color: #a9a9a9;}
 .lang {
     position: absolute;
     top: 50%;
@@ -35,12 +40,11 @@ a {text-decoration: none;}
 .lang .pc .links:hover, .lang .pc .links:active {
     transform: scale(1.1);
 }
-.lang .pc .links:hover{
-    outline: var(--color1) solid 10px;
+.lang .pc .links:active, .lang .mobile .links:active {
+    background-color: var(--color5);
 }
-.lang .pc .links:active {
-    background-color: var(--color1);
-    outline: var(--color2) solid 10px;
+.lang .pc .links *, .lang .mobile .links * {
+    color: var(--color6);
 }
 .header {
     font-family: monospace;
@@ -59,7 +63,7 @@ a {text-decoration: none;}
     margin-right: 0px;
     padding-left: 0px;
 }
-.header .text {
+.header .text, .header .shortmobile, .header .longmobile {
     margin: 0px auto 0px auto;
     align-items: center;
     text-align: center;
@@ -72,12 +76,13 @@ a {text-decoration: none;}
     color: #376296;
 }
 .text {
-    margin-top: 50px
+    margin-top: 40px;
 }
 .text .title {
     text-align: center;
 }
 .text .links, .text .box {
+    background-color: var(--color5);
     display: grid;
     text-align: center;
     align-items: center;
@@ -92,11 +97,10 @@ a {text-decoration: none;}
 .text .links:hover, .text .links:active {
     transform: scale(1.1);
 }
-.text .links:hover{
-    outline: var(--color4) solid 10px;
-}
 .text .links:active, .text .box {
     background-color: var(--color4);
+}
+.text .box {
     outline: var(--color1) solid 10px;
 }
 .text .description {
@@ -123,6 +127,12 @@ a {text-decoration: none;}
 }
 .text .description #metterxp:hover * {
     color: white;
+}
+.text .contact .links {
+    background-color: #1c262b;
+}
+.text .contact .links:hover, .text .contact .links:active {
+    background-color: #28423f;
 }
 .footer {
     position: absolute;
@@ -158,13 +168,6 @@ body {
     }
     .lang .mobile .links:hover, .lang .mobile .links:active {
         transform: scale(1.05);
-    }
-    .lang .mobile .links:hover{
-         outline: var(--color1) solid 5px;
-    }
-    .lang .mobile .links:active {
-        background-color: var(--color1);
-        outline: var(--color2) solid 5px;
     }
     .header {
         height: 40px;
