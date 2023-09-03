@@ -69,8 +69,8 @@ a {text-decoration: none;}
     font-family: monospace;
     position: fixed;
     top: 0px;
-    left: 40px;
-    right: 40px;
+    left: 0px;
+    right: 0px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@ a {text-decoration: none;}
     align-content: center;
     margin: auto 50px auto 50px;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 .text .links p, .text .box p, .lang * {
     color: #376296;
