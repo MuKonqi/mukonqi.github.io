@@ -42,29 +42,6 @@ a {text-decoration: none;}
     background-color: var(--color1);
     outline: var(--color2) solid 10px;
 }
-@media only screen and (max-device-width: 767px), only screen and (max-device-height: 559px){
-    .lang .pc {
-        display: none;
-    }
-    .lang .mobile {
-        display: block;
-    }
-    .lang .mobile .links {
-        border-radius: 25px;
-        width: 75vw;
-        padding: 5px;
-    }
-    .lang .mobile .links:hover, .lang .mobile .links:active {
-        transform: scale(1.05);
-    }
-    .lang .mobile .links:hover{
-         outline: var(--color1) solid 5px;
-    }
-    .lang .mobile .links:active {
-        background-color: var(--color1);
-        outline: var(--color2) solid 5px;
-    }
-}
 .header {
     font-family: monospace;
     position: fixed;
@@ -166,8 +143,29 @@ body {
     background-color: #376296;
     border: 10px solid var(--color1);
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px), only screen and (max-device-height: 767px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     html {background-color: #376296;}
+    .lang .pc {
+        display: none;
+    }
+    .lang .mobile {
+        display: block;
+    }
+    .lang .mobile .links {
+        border-radius: 25px;
+        width: 75vw;
+        padding: 5px;
+    }
+    .lang .mobile .links:hover, .lang .mobile .links:active {
+        transform: scale(1.05);
+    }
+    .lang .mobile .links:hover{
+         outline: var(--color1) solid 5px;
+    }
+    .lang .mobile .links:active {
+        background-color: var(--color1);
+        outline: var(--color2) solid 5px;
+    }
     .header {
         height: 40px;
         left: 0px;
