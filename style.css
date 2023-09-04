@@ -20,11 +20,11 @@
 }
 .header .short, .header .long, .lang .mobile {display: none;}
 .lang .links, html {background-color: var(--color2)}
-.text * {color: var(--color2)}
 .header, .footer, .nav {background-color: var(--color1);}
+.text * {color: var(--color2)}
+.text a *{color: #a9a9a9;}
 .text .description a, .footer * {color: var(--color3)}
 a {text-decoration: none;}
-.text .links a, .text .box a {color: #a9a9a9;}
 .lang {
     position: absolute;
     top: 50%;
@@ -32,18 +32,18 @@ a {text-decoration: none;}
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.lang .pc .links {
+.lang .links {
     padding: 25px;
     border-radius: 25px;
     width: 75vw;
 }
-.lang .pc .links:hover, .lang .pc .links:active {
-    transform: scale(1.1);
+.lang .links:hover, .lang .pc .links:active {
+    transform: scale(1.2);
 }
-.lang .pc .links:active, .lang .mobile .links:active {
+.lang .links:active, .lang .links:active {
     background-color: var(--color5);
 }
-.lang .pc .links *, .lang .mobile .links * {
+.lang .links *, .lang .links * {
     color: var(--color6);
 }
 .header {
@@ -88,11 +88,8 @@ a {text-decoration: none;}
     align-items: center;
     align-content: center;
     margin: auto 50px auto 50px;
-    padding: 10px;
+    padding: 25px;
     border-radius: 25px;
-}
-.text .links p, .text .box p, .lang * {
-    color: #376296;
 }
 .text .links:hover, .text .links:active {
     transform: scale(1.1);
@@ -129,6 +126,7 @@ a {text-decoration: none;}
     color: white;
 }
 .text .contact .links {
+    padding: 15px;
     background-color: #1c262b;
 }
 .text .contact .links:hover, .text .contact .links:active {
@@ -155,19 +153,13 @@ body {
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     html {background-color: #376296;}
-    .lang .pc {
-        display: none;
-    }
-    .lang .mobile {
-        display: block;
-    }
-    .lang .mobile .links {
+    .lang .links {
         border-radius: 25px;
         width: 75vw;
         padding: 5px;
     }
-    .lang .mobile .links:hover, .lang .mobile .links:active {
-        transform: scale(1.05);
+    .lang .links:hover, .lang .links:active {
+        transform: scale(1.12);
     }
     .header {
         height: 40px;
@@ -195,7 +187,7 @@ body {
         margin: 0px;
     }
     .text .links:hover, .text .links:active {
-        transform: scale(1.025);
+        transform: scale(1.1);
     }
     .text .description {
         margin: 0px 15px;
