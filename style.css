@@ -137,12 +137,13 @@ a {text-decoration: none;}
     left: 40px;
     right: 40px;
     text-align: center;
-    border: 10px solid var(--color1);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 .footer a{
     color: red;
+}
+.footer, .header {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -165,6 +166,7 @@ body {
         height: 40px;
         left: 0px;
         right: 0px;
+        border-radius: 0px;
     }
     .header .photo img {
         height: 40px;
@@ -187,7 +189,7 @@ body {
         margin: 0px;
     }
     .text .links:hover, .text .links:active {
-        transform: scale(1.1);
+        transform: scale(1.06);
     }
     .text .description {
         margin: 0px 15px;
