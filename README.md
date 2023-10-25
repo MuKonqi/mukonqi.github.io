@@ -1,5 +1,5 @@
 # [mukonqi.github.io](https://mukonqi.github.io)
-My personal web site.
+My personal web site and my personel theme.
 
 ## License:
 GNU AGPL v3.0

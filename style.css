@@ -103,7 +103,7 @@ a {text-decoration: none;}
 .text .description {
     margin: 0px 75px;
 }
-.text .description #metterxp {
+.text .description .metterxp {
     background-color: #a9a9a9;
     display: grid;
     text-align: center;
@@ -115,14 +115,14 @@ a {text-decoration: none;}
     height: 15px;
     border-color: white #bababa #bababa white;
 }
-.text .description #metterxp:hover {
+.text .description .metterxp:hover {
     background-color: #376296;
     border-color: #c7e0ff #30527a #30527a #c7e0ff;
 }
-.text .description #metterxp * {
+.text .description .metterxp h3 {
     color: black;
 }
-.text .description #metterxp:hover * {
+.text .description .metterxp:hover h3 {
     color: white;
 }
 .text .contact .links {
@@ -151,6 +151,42 @@ body {
     padding: 25px;
     background-color: #376296;
     border: 10px solid var(--color1);
+}
+@keyframes a-t300 {
+    0% {
+        color: black;
+    }
+    34% {
+        color: blue;
+    }
+    67% {
+        color: gray;
+    }
+}
+@keyframes a-th8s {
+    0% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+}
+@keyframes a-sale {
+    0% {
+        color: black;
+    }
+    50% {
+        color: yellow;
+    }
+}
+.t300 p {
+    animation: a-t300 4s infinite;
+}
+.th8s p {
+    animation: a-th8s 4s infinite;    
+}
+.sale p {
+    animation: a-sale 4s infinite;    
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     html {background-color: #376296;}

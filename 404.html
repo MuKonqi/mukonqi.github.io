@@ -67,4 +67,15 @@
         <a href="/turkish/index.html"><div class="links"><h3>Türkçe (Turkish)</h3></div></a>
     </div>
 </body>
+<script>
+    alert("Whoops. We couldn't find the page you wanted. For the pages we can find, you are at the beginning of everything.\nHay aksi. İstediğiniz sayfayı bulamadık. Bulunabilen sayfalar için her şeyin başlangıcındasınız.\n\nOtomatik yönlendirme az sonra denenecektir.\nAutomatic redirection will be tried shortly.")
+    var language = navigator.language || navigator.browserLanguage || navigor.languages;
+    if (language.indexOf('en') > -1) {
+    document.location.href = '/english/index.html';
+    } else if (language.indexOf('tr') > -1) {
+    document.location.href = '/turkish/index.html';
+    } else {
+        alert("Automatic redirection according to your browser language failed. Please select it yourself.\nTarayıcı dilinize göre otomatik yönlendirme başarısız oldu. Lütfen kendiniz seçin.")
+    }
+</script>
 </html>
