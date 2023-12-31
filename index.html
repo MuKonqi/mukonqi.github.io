@@ -17,26 +17,30 @@
             border: 0px solid var(--color1);
         }
         .header {
-            left: 0px;
-            right: 0px;
-            border-radius: 0px;
+            top: 10px;
         }
         .header .text {
             margin: 0px auto 0px auto;
         }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
+            .header {
+                top: 0px;
+            }
+        }
     </style>
     <div class="header">
-        <div class="photo"><a href="/index.html"><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
-        <div class="text"><h3>Student - Öğrenci | Muhammed S. (MuKonqi)<br>Please select a language. - Lütfen bir dil seçin.</h3></div>
-        <div class="text-2"><h3>Selecting - Seçim</h3></div>
-        <div class="license"><h3>(C) 2023-2024</h3></div> 
+        <div class="main"><a href="/index.html"><h1>Mu</h1><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
+        <div class="main-mobile"><a href="/index.html"><h3>Mu</h3><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a></div>
+        <div class="text"><h3>Welcome - Hoşgeldiniz<br>Please select a language. - Lütfen bir dil seçin.</h3></div>
+        <div class="text-mobile"><b>↓ ↓ ↓ ↓ ↓</b></div>
+        <div class="copyright"><b>(C) 2023-2024</b></div> 
     </div>
     <div class="lang">
         <a href="/english/index.html"><div class="links"><h3>English (İngilizce)</h3></div></a><br>
         <a href="/turkish/index.html"><div class="links"><h3>Türkçe (Turkish)</h3></div></a>
     </div>
 </body>
-<script>
+<!-- <script>
     var language = navigator.language || navigator.browserLanguage || navigor.languages;
     if (language.indexOf('en') > -1) {
     document.location.href = '/english/index.html';
@@ -45,5 +49,5 @@
     } else {
         alert("Automatic redirection according to your browser language failed. Please select it yourself.\nTarayıcı dilinize göre otomatik yönlendirme başarısız oldu. Lütfen kendiniz seçin.")
     }
-</script>
+</script> -->
 </html>

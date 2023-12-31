@@ -18,7 +18,7 @@
         --color6: #000000;
     }
 }
-.header .text-2, .lang .mobile {display: none;}
+.header .text-mobile, .header .main-mobile, .header .links-mobile, .header .language-mobile, .lang .mobile {display: none;}
 .lang .links, html {background-color: var(--color2)}
 .header, .footer, .nav {background-color: var(--color1);}
 .text * {color: var(--color2)}
@@ -50,23 +50,49 @@ a {text-decoration: none;}
     font-family: monospace;
     position: fixed;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    left: 10px;
+    right: 10px;
     height: 80px;
     display: flex;
+    padding: 0px;
+    align-items: center;
+    border-radius: 20px;
+}
+.header .main *, .header .main-mobile *{
+    padding: 0px;
+    margin: 0px;
     align-items: center;
 }
-.header .photo img{
+.header .main, .header .main-mobile {
+    padding: 0px;
+    margin: 0px 0px 0px 40px;
+}
+.header .main img{
     height: 80px;
     width: 48px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
+    margin: 0px;
 }
-.header .text, .header .shortmobile, .header .longmobile {
+.header .text {
     margin: 0px auto 0px auto;
     align-items: center;
     text-align: center;
+}
+.header .text, header .text *{
+    margin: 0px;
+    padding: 0px;
+}
+.header .links {    
+    margin: auto;
+    padding: 0px;
+}
+.header .links .link {
+    background-color: var(--color3);
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header .links .link:active, .header .links .box {
+    background-color: var(--color1);
 }
 .header * {
     display: flex;
@@ -91,7 +117,7 @@ a {text-decoration: none;}
     padding: 25px;
     border-radius: 25px;
 }
-.text .links:hover, .text .links:active {
+.text .links:hover, .text .links:active, .header .links .link:hover, .header .links .links:active {
     transform: scale(1.1);
 }
 .text .links:active, .text .box {
@@ -178,7 +204,7 @@ body {
     animation: a-th8s 4s infinite;    
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
-    .header .text, .header .text-2 { display: none; }
+    .header .text, .header .text-mobile, .header .main, .header .links, .header .language { display: none; }
     .lang .links {
         border-radius: 25px;
         width: 75vw;
@@ -193,19 +219,43 @@ body {
         right: 0px;
         border-radius: 0px;
     }
-    .header .photo img {
+    .header .main-mobile img {
         height: 40px;
         width: 24px;
     }
-    .header .license {
+    .header .main-mobile {
+        display: flex;
+        margin: 0px 0px 0px 10px;
+    }
+    .header .links-mobile {
+        display: flex;
+        margin: 0px auto 0px auto;
+    }
+    .header .links-mobile *{
+        margin: 0px;
+    }
+    .header .links-mobile a{
+        background-color: var(--color3);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .header .links-mobile a:active {
+        background-color: var(--color1);
+    }
+    .header .language-mobile {
+        display: flex;
+        margin: 0px 10px 0px 0px;
+    }
+    .header .language-mobile *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .header .copyright {
         height: 40px;
         display: flex;
         margin: 0px 0px 0px auto;
         align-items: center;
         align-content: center;
-    }
-    .header .language {
-        margin: 0px 0px 0px auto;
     }
     .text {
         margin-top: 30px
@@ -229,13 +279,10 @@ body {
         outline: 0px;
         border-radius: 0px;
     }
-    @media only screen and (min-device-width : 456px) {
-        .header .text-2 {
-            height: 40px;
-            display: flex;
-            margin: 0px 0px 0px auto;
-            align-items: center;
-            align-content: center;
-        }
+    .header .text-mobile {
+        display: flex;
+        margin: 0px 0px 0px auto;
+        align-items: center;
+        align-content: center;
     }
 }
