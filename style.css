@@ -178,7 +178,6 @@ body {
     animation: a-th8s 4s infinite;    
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
-    html {background-color: #376296;}
     .header .text, .header .text-2 { display: none; }
     .lang .links {
         border-radius: 25px;
@@ -221,13 +220,14 @@ body {
         margin: 0px 15px;
     }
     body {
-        margin: 0px 0px 60px 0px;
+        margin: 0px 0px 0px 0px;
         border: 10px solid var(--color1);
     }
     .footer {
         left: 0px;
         right: 0px;
         outline: 0px;
+        border-radius: 0px;
     }
     @media only screen and (min-device-width : 456px) {
         .header .text-2 {
