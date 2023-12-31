@@ -179,6 +179,7 @@ body {
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     html {background-color: #376296;}
+    .header .text, .header .text-2 { display: none; }
     .lang .links {
         border-radius: 25px;
         width: 75vw;
@@ -197,15 +198,15 @@ body {
         height: 40px;
         width: 24px;
     }
-    .header .text, .header .text-2 {
-        display: none;
-    }
     .header .license {
         height: 40px;
         display: flex;
         margin: 0px 0px 0px auto;
         align-items: center;
         align-content: center;
+    }
+    .header .language {
+        margin: 0px 0px 0px auto;
     }
     .text {
         margin-top: 30px
