@@ -18,7 +18,7 @@
         --color6: #000000;
     }
 }
-.header .short, .header .long, .lang .mobile {display: none;}
+.header .text-2, .lang .mobile {display: none;}
 .lang .links, html {background-color: var(--color2)}
 .header, .footer, .nav {background-color: var(--color1);}
 .text * {color: var(--color2)}
@@ -171,22 +171,11 @@ body {
         color: red;
     }
 }
-@keyframes a-sale {
-    0% {
-        color: black;
-    }
-    50% {
-        color: yellow;
-    }
-}
 .t300 p {
     animation: a-t300 4s infinite;
 }
 .th8s p {
     animation: a-th8s 4s infinite;    
-}
-.sale p {
-    animation: a-sale 4s infinite;    
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     html {background-color: #376296;}
@@ -208,10 +197,10 @@ body {
         height: 40px;
         width: 24px;
     }
-    .header .text, .header .language, .header .long, .header .license {
+    .header .text, .header .text-2 {
         display: none;
     }
-    .header .short {
+    .header .license {
         height: 40px;
         display: flex;
         margin: 0px 0px 0px auto;
@@ -231,7 +220,7 @@ body {
         margin: 0px 15px;
     }
     body {
-        margin: 0px;
+        margin: 0px 0px 60px 0px;
         border: 10px solid var(--color1);
     }
     .footer {
@@ -240,7 +229,7 @@ body {
         outline: 0px;
     }
     @media only screen and (min-device-width : 456px) {
-        .header .long {
+        .header .text-2 {
             height: 40px;
             display: flex;
             margin: 0px 0px 0px auto;
