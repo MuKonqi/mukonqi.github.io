@@ -43,14 +43,15 @@
     </div>
 </body>
 <script>
-    alert("Whoops. We couldn't find the page you wanted so you are in 404 page.\nHay aksi. 404 sayfasındasınız çünkü istediğiniz sayfayı bulamadık\n\nAutomatic redirection will be tried shortly.\nOtomatik yönlendirme az sonra denenecektir.")
     var language = navigator.language || navigator.browserLanguage || navigor.languages;
     if (language.indexOf('en') > -1) {
+        alert("Whoops. We couldn't find the page you wanted so you are in 404 page.\nYou will now be automatically redirected.");
     document.location.href = '/english/index.html';
     } else if (language.indexOf('tr') > -1) {
+        alert("Hay aksi. 404 sayfasındasınız çünkü istediğiniz sayfayı bulamadık.\nŞimdi otomatik olarak yeniden yönlendirileceksiniz.");
     document.location.href = '/turkish/index.html';
     } else {
-        alert("Automatic redirection according to your browser language failed. Please select it yourself.\nTarayıcı dilinize göre otomatik yönlendirme başarısız oldu. Lütfen kendiniz seçin.")
+        alert("Whoops. We couldn't find the page you wanted so you are in 404 page.\nAutomatic redirection according to your browser language failed. Please select language yourself.\n\nHay aksi. 404 sayfasındasınız çünkü istediğiniz sayfayı bulamadık.\nTarayıcı dilinize göre otomatik yönlendirme başarısız oldu. Lütfen dili kendiniz seçin.")
     }
 </script>
 </html>
