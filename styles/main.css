@@ -55,6 +55,7 @@ a {text-decoration: none;}
     height: 10px;
     display: flex;
     background-color: black;
+    cursor: default;
 }
 .header {
     font-size: smaller;
