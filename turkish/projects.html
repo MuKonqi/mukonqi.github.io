@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>MuKonqi: Projeler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/metterxp.css">
     <link rel="shortcut icon" href="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" type="image/x-icon">
 </head>
 <body>
@@ -13,6 +14,7 @@
             color: var(--color2);
         }
     </style>
+    <div class="space"></div>
     <div class="header">
         <div class="main"><a href="/turkish/index.html"><h1>Mu</h1><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a><h3>: </h3></div>
         <div class="text"><h3>Projeler</h3></div>
@@ -28,7 +30,7 @@
         <div class="links-mobile_2"><h3><a href="/turkish/index.html#links">Bağlantılar</a></h3></div>
     </div>
     <div class="text">
-        <div class="title"><h3>İletişim</h3></div>
+        <div class="title" id="title-top"><h3>İletişim</h3></div>
         <div class="contact">
             <a href="https://github.com/MuKonqi"><div class="links"><span style="color: #376296">GitHub</span><span style="color: #a9a9a9;">MuKonqi</span></div></a><br>
             <a href="https://matrix.to/#/@mukonqi:kde.org"><div class="links"><span style="color: #376296">Matrix</span><span style="color: #a9a9a9;">@mukonqi:kde.org</span></div></a><br>
@@ -52,41 +54,51 @@
         <div class="text">Burada eğitim-öğretim görmeye 11 Eylül 2023'te başladım, ve inşAllah herhangi bir problem olmazsa 2027'de mezun olacağım. Bu liseye 500 üzerinden 483,20 LGS puanıyla girdim ve buraya girmek için mininum puan 481,6389 idi. Türkiye'de yüzdelik dilimim 0,90, Bursa genelinde ise 0,88.</div>
         <div class="title"><h3>Bağlantılar</h3></div>
         <a href="/turkish/projects.html#text"><div class="box" id="text">Projeler</div></a>
-        <br><br><div class="description">
+        <div class="description">
             <div class="title"><h3>BetterXP (devam etmiyor)</h3></div>
             <p>Terminalden kurtulun'u taban alan <a href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP</a> projesini geliştirmeye başladım. Bu meraktan ve Terminalden kurtulun'un ana sayfasından logoyu kaldırmaktan geliyordu. İlk BetterXP sürümü benim iyileştirmeleri içeriyordu. Ama sonraki 1.x altındaki sürümler iyileştimelere ek olarak Fedora Linux ve Solus desteği içeriyordu. Destek ekleme sebeplerimden beri o zaman distrohopper idim. 
                 <br>Ondan sonra, 2.0 çıktı ama o pek yaşamadı. GUI için renkleri değiştirdim ve bazı iyileştirmeler yaptım. Ve sonunda o öldü çünkü kod çok ama çok karmaşıktı ve daha iyi bir isim istedim. BetterXP daha iyi içindi, MetterXP maksimum.</p>
             <div class="title"><h3>BetterSS (durduruldu)</h3></div>
             <p>O benim 2. projem ama devam etmedi çünkü onu çok yararlı bulmadım. Yaptığı tüm şey Flameshot programını başlatmaktı, o kadar.</p>
-            <div class="title"><h3>Peytehow</h3></div>
-            <p>Python ve Tkinter ile arayüzlü program nasıl yapılır?<br>Onun amacı gerçekten sadece bu.</p><br><br>
-            <a href="#metterxp" id="metterxp"><div class="metterxp"><h3>MetterXP</h3></div></a><br>
-            <p>v3.0 sayesinde en iyi projem. Gelişmiş araçlardan bahsetmek gerekirse:
-                <ul>
-                    <li>Uygulama mağazası</li>
-                    <li>Masaüstü Ortamı ve Pencere Yöneticisi mağazası</li>
-                    <li>Paket Yöneticisi mağazası</li>
-                    <li>Yazılımları yapılandırma</li>
-                    <li>.bashrc dosyasını yapılandırma</li>
-                    <li>Dosya yöneticilerini kök haklarıyla açma</li>
-                    <li>Bazı GNU/Linux dağıtımları hakkında bilgilendirme</li>
-                    <li>Tema sistemi
+            <div class="title" id="metterxp"><h3>Peytehow</h3></div>
+            <p>Python ve Tkinter ile arayüzlü program nasıl yapılır?<br>Onun amacı gerçekten sadece bu.</p>
+            <div class="metterxp" id="metterxp-mobile">
+                <a href="#metterxp"><div class="metterxp-title"><h3>Merhabalar ziyaretçi! • MetterXP</h3></div></a>
+                <a href="#metterxp"><div class="metterxp-title-mobile"><h3>MetterXP</h3></div></a>
+                <a href="#metterxp-mobile"><div class="metterxp-title-mobile-2"><h3>MetterXP</h3></div></a>
+                <div class="metterxp-text">
+                    <p>v3.0 sayesinde en iyi projem. Gelişmiş araçlardan bahsetmek gerekirse:</p>
                         <ul>
-                            <li>On yedi tema
+                            <li>Uygulama mağazası</li>
+                            <li>Masaüstü Ortamı ve Pencere Yöneticisi mağazası</li>
+                            <li>Paket Yöneticisi mağazası</li>
+                            <li>Yazılımları yapılandırma</li>
+                            <li>.bashrc dosyasını yapılandırma</li>
+                            <li>Dosya yöneticilerini kök haklarıyla açma</li>
+                            <li>Bazı GNU/Linux dağıtımları hakkında bilgilendirme</li>
+                            <li>Tema sistemi
                                 <ul>
-                                    <li>Geliştiriciden (ben)</li>
-                                    <li>Basit renk temaları</li>
-                                    <li>İnsanların temaları</li>
+                                    <li>On yedi tema
+                                        <ul>
+                                            <li>Geliştiriciden (ben)</li>
+                                            <li>Basit renk temaları</li>
+                                            <li>İnsanların temaları</li>
+                                        </ul>
+                                    </li>
+                                    <li>Özelleştirebilir tema</li>
                                 </ul>
                             </li>
-                            <li>Özelleştirebilir tema</li>
+                            <li>Daha fazlası!</li>
                         </ul>
-                    </li>
-                    <li>Daha fazlası!</li>
-                </ul>
-                <br>Aslında v1.0'ın en önemli yeniliği benim içindi: Modül sistemi. Bu sayede her modülün kendine ait bir modülü oldu ve bu da yeni güncellemeler yapmamı çok kolaylaştırdı.
-                <br>v2.0 sürümünün en büyük avantajları tema sistemi ve İngilizce dilinin eklenmesiydi. Ancak bu tema sisteminin en büyük dezavantajı ayarların /usr/local/bin/metterxp/settings klasöründe saklanmasıydı. Yani bir bilgisayarda sadece 1 ayar, eğer 2 kullanıcı varsa bunu birlikte kullanmak zorundaydılar.
-                <br>Sürüm 3.0 ile birlikte bilgiler artık /home/kullanıcıadı/.by-mukonqi/metterxp/ klasöründe saklanmaktadır. Bu mutluluk demektir ve artık herkes kendi zevkinin ve kendi dilinin tadını çıkarabilir! Ayrıca tüm yenilikler için: <a href="https://github.com/MuKonqi/metterxp/releases/tag/v3.0">Buraya tıklayın.</a></p><br><br>
+                        <p>
+                            <br>Aslında v1.0'ın en önemli yeniliği benim içindi: Modül sistemi. Bu sayede her modülün kendine ait bir modülü oldu ve bu da yeni güncellemeler yapmamı çok kolaylaştırdı.
+                            <br>v2.0 sürümünün en büyük avantajları tema sistemi ve İngilizce dilinin eklenmesiydi. Ancak bu tema sisteminin en büyük dezavantajı ayarların /usr/local/bin/metterxp/settings klasöründe saklanmasıydı. Yani bir bilgisayarda sadece 1 ayar, eğer 2 kullanıcı varsa bunu birlikte kullanmak zorundaydılar.
+                            <br>Sürüm 3.0 ile birlikte bilgiler artık /home/kullanıcıadı/.by-mukonqi/metterxp/ klasöründe saklanmaktadır. Bu mutluluk demektir ve artık herkes kendi zevkinin ve kendi dilinin tadını çıkarabilir!</p>
+                        <br><a href="https://github.com/MuKonqi/metterxp/releases/tag/v3.0"><div class="metterxp-button"><b>Yenilikler</b></div></a>
+                        <a href="https://github.com/MuKonqi/metterxp/wiki"><div class="metterxp-button"><b>Viki</b></div></a>
+                        <a href="https://github.com/mukonqi/metterxp/"><div class="metterxp-button"><b>Kaynak Kodları</b></div></a><br>
+                </div>
+            </div>
             <div class="title"><h3>Apiutaller</h3></div>
             <p>Hem BetterXP hem de MetterXP'nin kendi yükleyicileri vardı (sihirbaz değil), ancak ben genel bir yükleyici sihirbazı yapmak istedim, bu yüzden Apiutaller sihirbazını yayınladım. Apiutaller ayrıca sonraki projelerimin çoğunda kendi işimi kolaylaştırdı.
                 <br>Apiutaller v2.0 ile çocukça ve gereksiz sempatik ifadelerden kurtuldu. Aynı zamanda yeniden kurma özelliği eklendi. Tüm değişiklikler için: <a href="https://github.com/MuKonqi/apiutaller/releases/tag/v2.0">Buraya tıklayın.</a></p>
@@ -100,7 +112,6 @@
             <p>Mukander projesinin amacı komutları başlatmaktır. Kullanıcı isterse sudo ile de başlatabilir. Açıkçası bu haliyle asla bir terminal olamaz.</p>
             <p>Bu üçü arasında benim için gerçekten işe yarayan bu. Not oluşturabiliyor, silebiliyor ve düzenleyebiliyor. Bu benim için yeterli.</p>
             <p>Muktart'ın yaptığı şey: ls komutunu /usr/share/applications klasörünün ögeleri görmek için çalıştır sonra uygulamaları listele ve isteğe göre normal ya da sudo ile başlat.<br>Bu arada insanlar başlat menüsü icat edilmeden önce uygulamaları böyle başlatıyormuş (!).</p>
-            <br><br><br>
             <div class="title"><h3>Kişisel İnternet Sitem (burası)</h3></div>
             <p>Not: Bazı sürümler eksik olabilir. Aşağıdaki renkli metinlere önizlemeleri görmek için tıklayabilirsiniz.</p>
             <p><a href="/media/v1/index.html" target="_blank">Stil yok. Sadece başlık ortalama.</a></p>
@@ -118,11 +129,12 @@
             <p>Her ikisi de büyüdükçe ve daha karmaşık hale geldikçe bir site yapma dürtüsü hissettim, ancak v3.0 ile wiki'yi eklediğimde bu duygu kayboldu. Ayrıca MetterXP artık çok basit ve çalıştırması kolay.</p>
             <div class="title"><h3>newtab (kaldırıldı)</h3></div>
             <p>Sadece yeni sekme sayfası. Tarayıcıların yeni sekmesi kadar kullanışlı değildi, bu yüzden kaldırdım.</p>
-        </div><br><br>
-        <a href="/turkish/starting-informatics.html#text"><div class="links">Bilişime Başlangıç</div></a><br>
-        <a href="/turkish/gaming-adventure.html#text"><div class="links">Oyun Macerası</div></a><br>
-        <a href="/turkish/lgs-process.html#text"><div class="links">LGS Süreci</div></a><br>
-        <a href="/turkish/setup.html#text"><div class="links">Kurulum</div></a><br><br><br>
+    </div>
+    <a href="/turkish/starting-informatics.html#text"><div class="links">Bilişime Başlangıç</div></a><br>
+    <a href="/turkish/gaming-adventure.html#text"><div class="links">Oyun Macerası</div></a><br>
+    <a href="/turkish/lgs-process.html#text"><div class="links">LGS Süreci</div></a><br>
+    <a href="/turkish/setup.html#text"><div class="links">Kurulum</div></a><br>
+    </div>
     <div class="footer"><p>Telif Hakkı (C) 2023-2024 Muhammed S.<br>Bu internet sitesi <a href="https://www.gnu.org/licenses/agpl-3.0-standalone.html">GNU AGPLv3</a> ile lisanslanmıştır.</p>
         <p><a href="/english/projects.html#text" id="language">View the English Version of This Page</a></p></div>
 </body>

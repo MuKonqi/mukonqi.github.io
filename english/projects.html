@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>MuKonqi: Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/metterxp.css">
     <link rel="shortcut icon" href="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" type="image/x-icon">
 </head>
 <body>
@@ -13,6 +14,7 @@
             color: var(--color2);
         }
     </style>
+    <div class="space"></div>
     <div class="header">
         <div class="main"><a href="/english/index.html"><h1>Mu</h1><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png"></a><h3>: </h3></div>
         <div class="text"><h3>Projects</h3></div>
@@ -28,7 +30,7 @@
         <div class="links-mobile_2"><h3><a href="/english/index.html#links">Links</a></h3></div>
     </div>
     <div class="text">
-        <div class="title"><h3>Contact</h3></div>
+        <div class="title" id="title-top"><h3>Contact</h3></div>
         <div class="contact">
             <a href="https://github.com/MuKonqi"><div class="links"><span style="color: #376296">GitHub</span><span style="color: #a9a9a9;">MuKonqi</span></div></a><br>
             <a href="https://matrix.to/#/@mukonqi:kde.org"><div class="links"><span style="color: #376296">Matrix</span><span style="color: #a9a9a9;">@mukonqi:kde.org</span></div></a><br>
@@ -52,41 +54,51 @@
         <div class="text">I started studying here from September 11 2023 and if there are no problems, I'll graduate in 2027. I entered this high school with an LGS score of 483,20 out of 500 and the minimum score to enter here was 481,6389. While my percentile was 0,90 in Turkiye in general, it was 0,88 in Bursa in general.</div>
         <div class="title"><h3>Links</h3></div>
         <a href="/english/projects.html#text"><div class="box" id="text">Projects</div></a><br>
-        <br><br><div class="description">
+        <div class="description">
             <div class="title"><h3>BetterXP (discontinued)</h3></div>
             <p>I started to build <a href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP</a> based on Terminalden kurtulun. This was both out of curiosity and to remove the logo from the home page of the Terminalden kurtulun project. The first BetterXP releases contained my own improvements. But in the later versions under 1.x I added new support to those improvements, namely Fedora Linux and Solus support. One of the reasons for adding support was that I was a distrohopper at the time. 
                 <br>After that, 2.0 came out and that was short-lived. I changed the colors there and I made some improvements for GUI. And finally it died because the code was very, very complicated and I wanted a better name. BetterXP was for better, MetterXP is for maximum.</p>
             <div class="title"><h3>BetterSS (stopped)</h3></div>
             <p>It was my second project, but it was discontinued because I did not find it very useful. All it did was run the Flameshot program.</p>
-            <div class="title"><h3>Peytehow</h3></div>
-            <p>How to make a GUI program with Python and Tkinter<br>It's purpose was really just that.</p><br><br>
-            <a href="#metterxp" id="metterxp"><div class="metterxp"><h3>MetterXP</h3></div></a><br>
-            <p>My best project thanks v3.0. To talk about advenced tools:
-                <ul>
-                    <li>Application store</li>
-                    <li>Desktop Environment and Windows Manager store</li>
-                    <li>Package Manager store</li>
-                    <li>Configuring softwares</li>
-                    <li>Configuring .bashrc file</li>
-                    <li>Opening file managers with root rights</li>
-                    <li>Inform about some GNU/Linux distributions</li>
-                    <li>Theme system
+            <div class="title" id="metterxp"><h3>Peytehow</h3></div>
+            <p>How to make a GUI program with Python and Tkinter<br>It's purpose was really just that.</p>
+            <div class="metterxp" id="metterxp-mobile">
+                <a href="#metterxp"><div class="metterxp-title"><h3>Hello visitor! • MetterXP</h3></div></a>
+                <a href="#metterxp"><div class="metterxp-title-mobile"><h3>MetterXP</h3></div></a>
+                <a href="#metterxp-mobile"><div class="metterxp-title-mobile-2"><h3>MetterXP</h3></div></a>
+                <div class="metterxp-text">
+                    <p>My best project thanks v3.0. To talk about advenced tools:
                         <ul>
-                            <li>Seventeen theme
+                            <li>Application store</li>
+                            <li>Desktop Environment and Windows Manager store</li>
+                            <li>Package Manager store</li>
+                            <li>Configuring softwares</li>
+                            <li>Configuring .bashrc file</li>
+                            <li>Opening file managers with root rights</li>
+                            <li>Inform about some GNU/Linux distributions</li>
+                            <li>Theme system
                                 <ul>
-                                    <li>From developer (me)</li>
-                                    <li>Basic color themes</li>
-                                    <li>People's themes</li>
+                                    <li>Seventeen theme
+                                        <ul>
+                                            <li>From developer (me)</li>
+                                            <li>Basic color themes</li>
+                                            <li>People's themes</li>
+                                        </ul>
+                                    </li>
+                                    <li>Customizable theme</li>
                                 </ul>
                             </li>
-                            <li>Customizable theme</li>
+                            <li>And more!</li>
                         </ul>
-                    </li>
-                    <li>And more!</li>
-                </ul>
-                <br>The most important innovation of v1.0 was actually for me: The module system. In this way, each module had its own module and this made it very easy for me to make new updates.
-                <br>The biggest advantages of version v2.0 were the theme system and the addition of English language. But the biggest disadvantage of this theme system was that the settings were stored in the /usr/local/bin/metterxp/settings folder. So only 1 setting on a computer, if there were 2 users they had to use it together.
-                <br>With version 3.0, the information is now stored in the /home/username/.by-mukonqi/metterxp/ folder. This means happiness and now everyone can enjoy their own taste and their own language! Also for all the innovations: <a href="https://github.com/MuKonqi/metterxp/releases/tag/v3.0">Click here.</a></p><br><br>
+                        <p>
+                            <br>The most important innovation of v1.0 was actually for me: The module system. In this way, each module had its own module and this made it very easy for me to make new updates.
+                            <br>The biggest advantages of version v2.0 were the theme system and the addition of English language. But the biggest disadvantage of this theme system was that the settings were stored in the /usr/local/bin/metterxp/settings folder. So only 1 setting on a computer, if there were 2 users they had to use it together.
+                            <br>With version 3.0, the information is now stored in the /home/username/.by-mukonqi/metterxp/ folder. This means happiness and now everyone can enjoy their own taste and their own language!</p>
+                        <br><a href="https://github.com/MuKonqi/metterxp/releases/tag/v3.0"><div class="metterxp-button"><b>Innovations</b></div></a>
+                        <a href="https://github.com/MuKonqi/metterxp/wiki"><div class="metterxp-button"><b>Wiki</b></div></a>
+                        <a href="https://github.com/mukonqi/metterxp/"><div class="metterxp-button"><b>Source Codes</b></div></a><br>
+                </div>
+            </div>
             <div class="title"><h3>Apiutaller</h3></div>
             <p>Both BetterXP and MetterXP had their own installers (not wizard), but I wanted to make a global installer wizard, so I released the Apiutaller wizard. Apiutaller also made my own work easier in many of my subsequent projects.
                 <br>With v2.0, Apiutaller got rid of childish and unnecessary sympathetic expressions. Also reinstallation feature added. For all the changes: <a href="https://github.com/MuKonqi/apiutaller/releases/tag/v2.0">Click here.</a></p>
@@ -100,7 +112,6 @@
             <p>The purpose of the Mukander project is to launch commands. It can start with sudo if the user wants. Obviously it can never be a terminal as it is.</p>
             <p>Of these three, this is the one that really works for me. It can create, delete and edit notes. That's enough for me.</p>
             <p>What Muktart did: Run ls command for looking /usr/share/applications directory's items later lists the applications and launches them on user's demand (normally or with sudo).<br>By the way, people start applications like this before start menu was invented (!).</p>
-            <br><br><br>
             <div class="title"><h3>My Personal Web Site (this)</h3></div>
             <p>Note: Some versions can be missing. You can click on the colored texts below for previews.</p>
             <p><a href="/media/v1/index.html" target="_blank">No style. Just title average.</a></p>
@@ -118,11 +129,11 @@
             <p>As they both got bigger and more sophisticated I felt the urge to make a site, but when I added the wiki with v3.0 that feeling disappeared. In addition, MetterXP is now very simple and easy to run.</p>
             <div class="title"><h3>newtab (removed)</h3></div>
             <p>Just new tab page. It wasn't as useful as a browsers' new tab, so I removed it.</p>
-        </div><br><br>
+        </div>
         <a href="/english/starting-informatics.html#text"><div class="links">Starting Informatics</div></a><br>
         <a href="/english/gaming-adventure.html#text"><div class="links">Gaming Adventure</div></a><br>
         <a href="/english/lgs-process.html#text"><div class="links">LGS Process</div></a><br>
-        <a href="/english/setup.html#text"><div class="links">Setup</div></a><br><br><br>
+        <a href="/english/setup.html#text"><div class="links">Setup</div></a><br>
     </div>
     <div class="footer"><p>Copyright (C) 2023-2024 Muhammed S. (MuKonqi)<br>This web site licensed with <a href="https://www.gnu.org/licenses/agpl-3.0-standalone.html">GNU AGPLv3</a>.</p>
         <p><a href="/turkish/projects.html#text" id="language">Bu Sayfanın Türkçe Halini Görüntüle</a></p></div>
