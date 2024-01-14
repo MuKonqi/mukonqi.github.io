@@ -217,12 +217,15 @@ body {
     .lang .links:hover, .lang .links:active {
         transform: scale(1.12);
     }
+    .space {
+        background-color: #376296;
+    }
     .header {
         height: 40px;
-        left: 0px;
-        right: 0px;
-        border-radius: 0px;
-        top: 0px;
+        left: 10px;
+        right: 10px;
+        border-radius: 100px;
+        top: 10px;
     }
     .header .main-mobile img {
         height: 40px;
@@ -270,8 +273,11 @@ body {
         margin: 30px 15px;
     }
     body {
-        margin: 0px 0px 0px 0px;
-        border: 10px solid var(--color1);
+        margin: 10px 0px 0px 0px;
+        border: 0px;
+    }
+    html {
+        background-color: #376296;
     }
     .footer {
         left: 0px;

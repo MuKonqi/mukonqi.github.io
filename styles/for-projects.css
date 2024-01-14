@@ -1,3 +1,14 @@
+#stopped *{
+    color: darkred;
+}
+#stopped *:hover, #stopped *:active, #normal *:hover, #normal *:active {
+    background-color: var(--color3);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+
+
 .text .description .metterxp .metterxp-title, .text .description .metterxp .metterxp-title-mobile, .text .description .metterxp .metterxp-title-mobile-2 {
     background-color: lightgray;
     display: grid;
