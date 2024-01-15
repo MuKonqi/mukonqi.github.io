@@ -54,7 +54,7 @@ a {text-decoration: none;}
     bottom: 0px;
     height: 10px;
     display: flex;
-    background-color: black;
+    background-color: var(--color2);
     cursor: default;
 }
 .header {
