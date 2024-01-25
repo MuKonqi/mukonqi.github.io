@@ -1,50 +1,16 @@
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --color1: #2f2f2f;
-        --color2: #000000;
+        --color1: #000000;
+        --color2: #2f2f2f;
         --color3: #a9a9a9;
-        --color4: #18521d;
-        --color5: #323d33;
-        --color6: #ffffff;
     }
 }
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --color1: #a9a9a9;
-        --color2: #ffffff;
+        --color1: #ffffff;
+        --color2: #a9a9a9;
         --color3: #2f2f2f;
-        --color4: #548058;
-        --color5: #4c5e4e;
-        --color6: #000000;
     }
-}
-.header .text-mobile, .header .main-mobile, .header .links-mobile, .header .links-mobile_2, .lang .mobile {display: none;}
-.lang .links, html {background-color: var(--color2)}
-.header, .footer, .nav {background-color: var(--color1);}
-.text * {color: var(--color2)}
-.text a *{color: #a9a9a9;}
-.text .description a, .footer * {color: var(--color3)}
-a {text-decoration: none;}
-.lang {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.lang .links {
-    padding: 25px;
-    border-radius: 25px;
-    width: 75vw;
-}
-.lang .links:hover, .lang .pc .links:active {
-    transform: scale(1.2);
-}
-.lang .links:active, .lang .links:active {
-    background-color: var(--color5);
-}
-.lang .links *, .lang .links * {
-    color: var(--color6);
 }
 .space {
     position: fixed;
@@ -54,11 +20,10 @@ a {text-decoration: none;}
     bottom: 0px;
     height: 10px;
     display: flex;
-    background-color: var(--color2);
+    background-color: var(--color1);
     cursor: default;
 }
-.header {
-    font-size: smaller;
+.header, .language-mobile {
     position: fixed;
     top: 10px;
     left: 10px;
@@ -67,7 +32,10 @@ a {text-decoration: none;}
     display: flex;
     padding: 0px;
     align-items: center;
-    border-radius: 20px;
+    text-align: center;
+    border-radius: 100px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .header .main *, .header .main-mobile *{
     padding: 0px;
@@ -83,149 +51,111 @@ a {text-decoration: none;}
     width: 48px;
     margin: 0px;
 }
-.header .text {
-    margin: 0px auto 0px auto;
+.header .text, .header .text * {
+    margin: 0px 0px 0px 0px;
     align-items: center;
     text-align: center;
-}
-.header .text, header .text *{
-    margin: 0px;
     padding: 0px;
 }
 .header .links {    
-    margin: 0px 40px 0px auto;
+    margin: 0px auto 0px auto;
     padding: 0px;
 }
 .header .links * {
     margin: auto;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    text-align: center;
 }
 .header .links .link {
-    background-color: var(--color3);
+    background-color: #376296;
     margin: 0px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
-.header .links .link:active {
+.header .links .link:active, .header .links .link:hover {
     background-color: var(--color1);
+    outline: var(--color3) solid 10px;
+    transform: scale(1.2)
 }
-.header * {
+.header .language {
+    background-color: var(--color3);
+    margin: 0px 40px 0px 0px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.header .language:active, .header .language:hover {
+    background-color: var(--color1);
+    outline: #376296 solid 10px;
+    transform: scale(1.2)
+}
+.header *, .language-mobile {
     display: flex;
-    margin: 10px;
-    text-align: justify;
-    text-align-last: left;
-    color: #376296;
-}
-#title-top {
-    margin-top: 65px;
-}
-.text .title {
+    align-items: center;
     text-align: center;
+}
+#spoiler {
+    color: #376296;
+    background-color: #376296;
+}
+#spoiler:active, #spoiler:hover{
+    color: var(--color3);
+    background-color: transparent;
 }
 .text .links, .text .box {
-    background-color: var(--color5);
     display: grid;
     text-align: center;
-    align-items: center;
-    align-content: center;
-    margin: auto 50px auto 50px;
-    padding: 25px;
-    border-radius: 25px;
-}
-.text .links:hover, .text .links:active, .header .links .link:hover, .header .links .links:active, .footer p #language:active, .footer p #language:hover {
-    transform: scale(1.1);
-}
-.text .links:active, .text .box {
-    background-color: var(--color4);
-}
-.text .box {
-    outline: var(--color1) solid 10px;
-}
-.text .description {
-    margin: 40px 80px;
-}
-.text .contact .links {
+    margin: auto 100px auto 100px;
     padding: 15px;
+    border-radius: 25px;
     background-color: #1c262b;
 }
-.text .contact .links:hover, .text .contact .links:active {
+.text .links:hover, .text .links:active {
+    transform: scale(1.1);
+    outline: var(--color2) solid 10px;
     background-color: #28423f;
 }
 .footer {
     position: absolute;
-    left: 40px;
-    right: 40px;
+    left: 0px;
+    right: 0px;
     text-align: center;
 }
 .footer a{
     color: red;
 }
-.footer p #language{
-    background-color: var(--color3);
-    color: var(--color2);
-    padding: 10px;
-    border-radius: 100px;
-}
-.footer p #language:active {
-    background-color: var(--color1);
-    color: var(--color6);
-}
-.footer *, footer{
-    padding: 0px;
-}
-.footer, .header {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.footer {
+    padding: 0px 10px 0px 10px;
 }
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    margin: 10px 40px 100px 40px;
+    margin: 0px 0px 25px 0px;
     padding: 25px;
-    background-color: #376296;
-    border: 10px solid var(--color1);
+    background-color: var(--color1);
 }
-@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-    .header .links {display: none;}
-    .header .links-mobile_2 {
-        display: flex;
-        margin: 0px 40px 0px auto;
-        padding: 0px;
-    }
-    .header .links-mobile_2 * {
-        margin: 0px;
-        padding: 0px 0px 0px 10px;
-    }
-    .header .links-mobile_2 a{
-        background-color: var(--color3);
-        padding: 10px;
-        border-radius: 10px;
-    }
-    .header .links-mobile_2 a:active {
-        background-color: var(--color1);
-    }
-    .text .description {
-        margin: 30px 15px;
-    }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
-    .header .text, .header .text-mobile, .header .main, .header .links, .header .links-mobile_2 {display: none;}
-    .lang .links {
-        border-radius: 25px;
-        width: 75vw;
-        padding: 5px;
-    }
-    .lang .links:hover, .lang .links:active {
-        transform: scale(1.12);
-    }
-    .space {
-        background-color: #376296;
-    }
+.header .main-mobile, .language-mobile {display: none;}
+.header, .footer, html, .language-mobile {background-color: var(--color2);}
+.text *, .header .links .link, .header .links-mobile .link, .footer *, .links, .language-mobile * {color: var(--color3)}
+.text h3, .header * {color: #376296;}
+* {font-weight: bold;}
+a {text-decoration: none;}
+#text-top {margin-top: 80px;}
+.text .title, .text .intro {text-align: center;}
+.text .description {margin: auto 50px auto 50px;}
+.header .links .link:active, .header .links .link:hover {transform: scale(1.2);}
+#space {margin: 0px 0px 0px 10px;}
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .header .text, .header .main, .header .language {display: none;}
+    .header .links .link:active, .header .links .link:hover  {transform: scale(1.1);}
+    .text .description {margin: auto 5px auto 5px;}
+    .text .links {margin: 0px;}
+    .text .links:hover, .text .links:active {transform: scale(1.055);}
+    #text-top {margin-top: 70px;}
     .header {
         height: 40px;
-        left: 10px;
-        right: 10px;
-        border-radius: 100px;
-        top: 10px;
+        padding: 0px 5px 0px 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
     .header .main-mobile img {
         height: 40px;
@@ -233,62 +163,38 @@ body {
     }
     .header .main-mobile {
         display: flex;
-        margin: 0px 0px 0px 10px;
+        margin: 0px 0px 0px 20px;
     }
-    .header .links-mobile {
+    .header .links {
+        margin: 0px 20px 0px auto;
+        padding: 0px;
+    }
+    .header .links * {
+        margin: 0px auto 0px 0px;
+        padding: 0px 5px 0px 5px;
+    }
+    .header .links .link:active, .header .links .link:hover, .header #active {
+        outline: var(--color3) solid 0px;
+        transform: scale(1.0)
+    }
+    .language-mobile {
+        top: 50px;
+        height: auto;
         display: flex;
-        margin: 0px 10px 0px auto;
+        height: 30px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        text-align: center;
     }
-    .header .links-mobile *{
-        margin: 0px;
-    }
-    .header .links-mobile a{
-        background-color: var(--color3);
-        padding: 5px;
-        border-radius: 10px;
-    }
-    .header .links-mobile a:active {
-        background-color: var(--color1);
-    }
-    .header .copyright {
-        height: 40px;
-        display: flex;
-        margin: 0px 0px 0px auto;
-        align-items: center;
-        align-content: center;
-    }
-    #title-top {
-        margin-top: 0px;
-    }
-    .text {
-        margin-top: 30px
-    }
-    .text .links, .text .box {
-        margin: 0px;
-    }
-    .text .links:hover, .text .links:active {
-        transform: scale(1.06);
-    }
-    .text .description {
-        margin: 30px 15px;
+    .language-mobile #text {
+        position: absolute;
+        padding: 0px;
+        left: 0px;
+        right: 0px;
+        top: 5px;
     }
     body {
         margin: 10px 0px 0px 0px;
         border: 0px;
-    }
-    html {
-        background-color: #376296;
-    }
-    .footer {
-        left: 0px;
-        right: 0px;
-        outline: 0px;
-        border-radius: 0px;
-    }
-    .header .text-mobile {
-        display: flex;
-        margin: 0px 0px 0px auto;
-        align-items: center;
-        align-content: center;
     }
 }

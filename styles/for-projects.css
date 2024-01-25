@@ -1,3 +1,4 @@
+.text h3 {color: #376296;}
 #stopped *{
     color: darkred;
 }
@@ -6,9 +7,6 @@
     padding: 10px;
     border-radius: 100px;
 }
-
-
-
 .text .description .metterxp .metterxp-title, .text .description .metterxp .metterxp-title-mobile, .text .description .metterxp .metterxp-title-mobile-2 {
     background-color: lightgray;
     display: grid;
@@ -42,7 +40,7 @@
     padding: 25px;
     margin-bottom: 10px;
     border-radius: 100px;
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 .text .description .metterxp .metterxp-title-mobile, .text .description .metterxp .metterxp-title-mobile-2 {display: none;}
 .text .description .metterxp .metterxp-text {
@@ -78,27 +76,6 @@
 .text .description .metterxp .metterxp-button:hover b {
     color: white;
 }
-@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-    .text .description .metterxp .metterxp-title {display: none;}
-    .text .description .metterxp .metterxp-title-mobile {
-        border-radius: 10px;
-    }
-    .text .description .metterxp .metterxp-title-mobile {display: grid;}
-    .text .description .metterxp .metterxp-text {
-        padding: 0px 0px;
-        background-color: transparent;
-    }
-    .text .description .metterxp .metterxp-text p {
-        padding: 5px;
-    }
-    .text .description .metterxp .metterxp-text * {
-        color: var(--color2);
-    }
-    .text .description .metterxp .metterxp-button {
-        margin: 0px 5px;
-        padding: 7.5px;
-    }
-}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     .text .description .metterxp .metterxp-title { display: none; }
     .text .description .metterxp .metterxp-title-mobile-2 {
@@ -113,7 +90,7 @@
         padding: 5px;
     }
     .text .description .metterxp .metterxp-text * {
-        color: var(--color2);
+        color: var(--color3);
     }
     .text .description .metterxp .metterxp-button {
         margin: 0px 5px;
