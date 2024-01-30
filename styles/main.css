@@ -102,6 +102,14 @@
     color: var(--color3);
     background-color: transparent;
 }
+#stopped *{
+    color: darkred;
+}
+#stopped *:hover, #stopped *:active, #normal *:hover, #normal *:active {
+    background-color: var(--color3);
+    padding: 10px;
+    border-radius: 100px;
+}
 .text .links, .text .box {
     display: grid;
     text-align: center;
