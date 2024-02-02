@@ -152,7 +152,7 @@ a {text-decoration: none;}
 .text .description {margin: auto 50px auto 50px;}
 .header .links .link:active, .header .links .link:hover {transform: scale(1.2);}
 #space {margin: 0px 0px 0px 10px;}
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px), only screen and (min-device-height : 320px) and (max-device-height : 480px) {
     .header .text, .header .main, .header .language {display: none;}
     .header .links .link:active, .header .links .link:hover  {transform: scale(1.1);}
     .text .description {margin: auto 5px auto 5px;}
