@@ -102,10 +102,16 @@
     color: var(--color3);
     background-color: transparent;
 }
-#stopped *{
+#archived *{
+    color: yellow;
+}
+#stopped *, #removed *{
     color: darkred;
 }
-#stopped *:hover, #stopped *:active, #normal *:hover, #normal *:active {
+#removed *{
+    text-decoration: line-through var(--color3);
+}
+#stopped *:hover, #stopped *:active, #normal *:hover, #normal *:active, #archived *:hover, #archived *:active, #removed *:hover, #removed *:active  {
     background-color: var(--color3);
     padding: 10px;
     border-radius: 100px;
