@@ -2,6 +2,8 @@
 My personal website and my personel theme.
 
 ## License:
-GNU AGPL v3.0
+AGPLv3-or-later
 
-###### Credit: [Default Konqi Image](https://community.kde.org/File:Mascot_konqi.png)
+###### Credit: 
+- [Default Konqi Image](https://community.kde.org/File:Mascot_konqi.png)
+- [Roboto Black Font](https://fonts.google.com/specimen/Roboto)
