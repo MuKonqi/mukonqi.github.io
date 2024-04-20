@@ -2,41 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>MuKonqi: Whoops - Hay Aksi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <title>MuKonqi: 404 Error</title>
     <meta name="author" content="Muhammed S.">
-    <meta name="description" content="Error page on MuKonqi's website.">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/for-selectings.css">
-    <link rel="icon" href="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" type="image/x-icon">
+    <link rel="icon" href="/konqi.png" type="image/x-icon">
 </head>
-<body>
-    <a href="javascript:window.location.replace('/main.html');"><div class="space"></div></a>
-    <div class="header">
-        <div class="main"><a href="/index.html"><h1>Mu</h1><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" alt="Konqi"></a></div>
-        <div class="main-mobile"><a href="/index.html"><h3>Mu</h3><img src="https://community.kde.org/images.community/thumb/4/40/Mascot_konqi.png/360px-Mascot_konqi.png" alt="Konqi"></a>: :( - 404</div>
-        <div class="text"><h3>Whoops. You are in 404 page.<br>Hay aksi. 404 sayfasındasınız.</h3></div>        
-        <div class="copyright"><b>(C) 2023-2024</b></div> 
-    </div>
-    <div class="lang">
-        <a href="/english/index.html"><div class="links"><h3>English (İngilizce)</h3></div></a><br>
-        <a href="/turkish/index.html"><div class="links"><h3>Türkçe (Turkish)</h3></div></a>
-    </div>
-</body>
 <script>
-    var language = navigator.language || navigator.browserLanguage || navigor.languages;
-    if (language.indexOf('en') > -1) {
-        alert("Whoops. We couldn't find the page you wanted so you are in 404 page.\nYou will now be automatically redirected.");
-    document.location.href = '/english/index.html';
-    } else if (language.indexOf('tr') > -1) {
-        alert("Hay aksi. 404 sayfasındasınız çünkü istediğiniz sayfayı bulamadık.\nŞimdi otomatik olarak yeniden yönlendirileceksiniz.");
-    document.location.href = '/turkish/index.html';
-    } else {
-        alert("Whoops. We couldn't find the page you wanted so you are in 404 page.\nAutomatic redirection according to your browser language failed. Please select language yourself.\n\nHay aksi. 404 sayfasındasınız çünkü istediğiniz sayfayı bulamadık.\nTarayıcı dilinize göre otomatik yönlendirme başarısız oldu. Lütfen dili kendiniz seçin.")
-    }
+    document.location.href = '/index.html';
 </script>
 </html>

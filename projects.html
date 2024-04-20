@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MuKonqi: Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="description" content="MuKonqi's projects.">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/konqi.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        .project {
+            background-color: var(--color2);
+            margin: 36px 12px;
+            border-radius: 12px;
+        }
+        .project .title {
+            background-color: var(--color3);
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .project p {
+            padding: 12px;
+        }
+        #archived *{
+            color: yellow;
+        }
+        #stopped *, #removed *{
+            color: darkred;
+        }
+        #removed *{
+            text-decoration: line-through var(--color1);
+        }
+    </style>
+    <div class="space"></div>
+    <div class="header">
+        <div class="mukonqi"><a href="/index.html"><strong>Mu</strong><img src="/konqi.png" alt="Konqi" title="Go to the main page"></a></div>      
+        <div class="link clicked"><a href="/projects.html"><strong>Projects</strong></a></div>
+        <div class="github"><a href="https://github.com/mukonqi/" target="_blank"><img alt="GitHub" src="https://github.com/fluidicon.png" title="Go to the GitHub"></a></div>
+    </div>
+    <div class="text">
+        <div class="project"><div class="title"><a href="https://mukonqi.github.io/grelintb" id="normal"><h3>GrelinTB</h3></a></div>
+        <p>I coded the first version when I had time during a 16-day vacation in 2024. Because default Tkinter was looking really bad also I was bored and wanted to learn something new.<br>
+            So GrelinTB was born, I really like <a href="https://github.com/TomSchimansky/CustomTkinter/">CustomTkinter</a> and I also realized the power of object oriented programming.<br>
+            Since I code object-oriented, everything except the changelogs and the license is in the whole window. It looks much more beautiful.<br>
+            Until v1.2.0.0 there were 2 disadvantages compared to MetterXP, one was fixed with v1.2.0.0. The other one was fixed with v1.3.0.0. Finally there are no disadvantages compared to MetterXP.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/MuKonqi/mukonqi.github.io" id="normal"><h3>mukonqi.github.io</h3></a></div>
+        <p>There was no CSS on the site in 2021, only plain HTML. Then, as I learned CSS (by the way, I still haven't learned it completely), it became like this.</p></div>    
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukotes" id="archived"><h3>Mukotes (archived)</h3></a></div>
+        <p>This is a very basic notes editor, but GrelinTB's notes feature is much better.</p>   </div>        
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukander" id="archived"><h3>Mukander (archived)</h3></a></div>
+        <p>The purpose is to launch commands. It can start with sudo if the user wants. Obviously it can never be a terminal as it is.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/muktart" id="archived"><h3>Muktart (archived)</h3></a></div>
+        <p>What Muktart did: run ls to see the items of the /usr/share/applications folder, then list the applications and start them either normally or with sudo. Well, it's unnecessary since there is such a thing as a start menu.</p></div>            
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/projgit" id="archived"><h3>Projgit (archived)</h3></a></div>
+        <p>I did it to make easier to publish changes to Git repositories, but these days I publish changes to VS Code's extension :D So I don't even use it.</p> </div>
+        <div class="project"><div class="title"><a href="https:/github.com/mukonqi/peytehow" id="archived"><h3>Peytehow (archived)</h3></a></div>
+        <p>How to make an interfaced program with Python and Tkinter?<br>It's purpose is really just that but it doesn't even have some basic features.</p> </div>
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/apiutaller" id="archived"><h3>Apiutaller (archived)</h3></a></div>
+        <p>Both BetterXP and MetterXP had their own installers but I made Apiutaller to be generic. It worked for a while, but it was too bloated for me, so I didn't use it in GrelinTB and made a bash script myself.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/yasfetch" id="archived"><h3>Yasfetch (archived)</h3></a></div>
+        <p>It works very, very slowly. There are very good alternatives.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/teaf" id="archived"><h3>TEAf (archived)</h3></a></div>
+        <p>I just wanted to show that Apiutaller works well, and it works, but it was just that, it's not really necessary.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/mukonqi/asla" id="archived"><h3>ASLA (archived)</h3></a></div>
+        <p>I coded most of it on the school's smart board and made the final touches at home. My purpose of doing it was pure boredom :D Since the project is over, there is no reason why it should not be in the archive, it is already a fun project.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/MuKonqi/metterxp" id="stopped"><h3>MetterXP (stopped)</h3></a></div>
+        <p>My former "big" project, but I stopped it because the interface and the code were too complicated, the code was not coded well at all, so I started a new project from scratch: <a href="https://github.com/mukonqi/grelintb">GrelinTB</a></p></div>
+        <div class="project"><div class="title"><a href="https://github.com/MuKonqi/metterxp/tree/betterxp" id="stopped"><h3>BetterXP (stopped)</h3></a></div>
+        <p>I started developing the <a href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP</a> project based on Terminalden kurtulun. This came out of curiosity and removing the logo from the Terminalden kurtulun homepage. The improvements included support for Fedora Linux and Solus. I also changed the colors in version 2 and that was it.</p></div>
+        <div class="project"><div class="title"><a href="https://github.com/MuKonqi/betterss" id="stopped"><h3>BetterSS (stopped)</h3></a></div>
+        <p>It was my second project, but it was discontinued because I did not find it very useful. All it did was run the Flameshot program.</p></div>
+        <div class="project"><div class="title" id="removed"><h3>My Personal Blog (removed)</h3></div>
+        <p>When I started using a theme that supports blogging (I'm not sure but I think it was <a href="https://github.com/Afacanc38" target="_blank">Afacanc38</a>'s theme) I wrote a few blogs, but then I removed the blogs because I don't want to blog anymore, I don't have time to blog and sometimes I had problems with Jekyll. Maybe in the future I can make my own blog theme just for fun...</p></div>
+        <div class="project"><div class="title" id="removed"><h3>MetterXP's and BetterXP's web sites (removed)</h3></div>
+        <p>As they both grew and became more complex I felt the need to make a site but with v3.0 I added a wiki.</p></div>
+        <div class="project"><div class="title" id="removed"><h3>newtab (removed)</h3></div>
+        <p>Just new tab page. It wasn't as useful as a browsers' new tab, so I removed it.</p></div>
+    </div>
+    <div class="footer"><p>Copyright (&copy;) 2024 MuKonqi (Muhammed S.)<br>This website licensed under <a href="/LICENSE.txt">MIT License</a>.</p></div>
+</body>
+</html>

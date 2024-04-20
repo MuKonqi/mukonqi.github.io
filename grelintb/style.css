@@ -1,0 +1,112 @@
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --color1: #000000;
+        --color2: #2f2f2f;
+        --color3: #a9a9a9;
+    }
+}
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --color1: #ffffff;
+        --color2: #a9a9a9;
+        --color3: #2f2f2f;
+    }
+}
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color2);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.header .grelintb {
+    padding: 0px;
+    margin: 0px 0px 0px 36px;
+    align-items: center;
+}
+.header .grelintb img {
+    height: 48px;
+    width: 48px;
+    margin: 0px;
+}
+.header .description {
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 0px 12px;
+    padding: 0px;
+}
+.header .link {
+    align-items: center;
+    text-align: center;
+    margin: 0px 12px 0px 0px;
+    padding: 0px;
+}
+.header .download {
+    margin: 0px 12px 0px auto;
+}
+.header .github {
+    margin: 0px 36px 0px 0px;
+}
+.header .github img {
+    height: 48px;
+    width: 48px;
+    margin: 0px;   
+}
+.text {
+    background-color: var(--color2);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding: 24px;
+}
+code {
+    padding: 3px;
+    background-color: var(--color3);
+    border-radius: 6px;
+    color: var(--color1);
+}
+.features a *:hover, .features a *:active {
+    transform: scale(1.024);
+    background-color: var(--color3);
+    border-radius: 24px;
+}
+.features img {
+    margin: auto;
+    width: 64%;
+    height: 36%;
+    display: block;
+}
+.footer {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    color: var(--color3)
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0px 0px 0px 0px;
+    padding: 24px;
+    background-color: var(--color1);
+}
+html {background-color: var(--color1);}
+.text {color: var(--color3)}
+.header *, a {color: #376296}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .header .description {display: none;}
+    .header {height: 40px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+    .header .grelintb {margin: 0px 0px 0px 6px;}
+    .header .grelintb img{height: 36px; width: 36px;}
+    .header .github {margin: 0px 6px 0px 0px;}
+    .header .github img {height: 36px; width: 36px;}
+    .text {border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+    .features img {width: 96%; height: 54%;}
+    body {padding: 0px;}
+}
