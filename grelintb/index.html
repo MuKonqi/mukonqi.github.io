@@ -28,7 +28,7 @@
             <h3><li>Why GrelinTB names as great toolbox?</li></h3>
             <p>Because GrelinTB comes with various tools. Here are examples: Useful information about the system, a simple note editor, a simple store for applications and DEs and WMs, various scripts for applications, a simple configuration tool for Bash and Zsh, a tool to change the name of the computer, information about some distributions and a simple calculator. <a href="#features">For more details, scroll down the page or click this sentence.</a></p>
             <h3><li>Why GrelinTB only for "some" Linux distributions and what are they?</li></h3>
-            <p>Because GrelinTB provides a store feature. There are so many Linux distributions today, it's hard for a developer to adapt store feature to all of them. But GrelinTB also provides support for Flatpak, which is universal.<br />Supportted Linux distributions:</p>
+            <p>Because GrelinTB provides a store feature. There are so many Linux distributions today, it's hard for a developer to adapt store feature to all of them. But GrelinTB also provides support for Flatpak, which is universal.<br>Supportted Linux distributions:</p>
             <ul>
                 <li>Fedora Linux (best support) based distributions</li>
                 <li>Debian GNU/Linux based distributions</li>
@@ -59,8 +59,17 @@
                 <li>GrelinTB's codes are really more optimize because it is coded from scratch with object oriented programming. MetterXP wasn't coded from scratch so it has very remnats because it is based on BetterXP and BetterXP based on Terminalden kurtulun.</li>
             </ul>
         </div>
+        <div class="changelogs">
+            <h2 align="center">Changelogs For <text id="version"></text></h2>
+            <h3><li>Primary Changelog</li></h3>
+            <p id="primary"></p>
+            <h3><li>Major Changelog</li></h3>
+            <p id="major"></p>
+            <h3><li>Minor Changelog</h3>
+            <p id="minor"></p>
+        </div>
         <div class="features" id="features">
-            <h2 align="center" style="margin-top: 24px">Features</h2>
+            <h2 align="center">Features</h2>
             <h3><li>Sidebar</li></h3>
             <ul>
                 <li>A button with hidden style for showing application's name for opening this repository.</li>
@@ -117,6 +126,32 @@
             </ul>
         </div>
     </div>
-    <div class="footer"><p>Copyright (&copy;) 2024 <a href="https://mukonqi.github.io" target="_blank">MuKonqi (Muhammed S.)</a><br>This website licensed under <a href="/LICENSE.txt">MIT License</a>.</p></div>
+    <div class="footer"><p>Copyright (&copy;) 2024 <a href="/index.html" target="_blank">MuKonqi (Muhammed S.)</a><br>This website licensed under <a href="/LICENSE.txt">MIT License</a>.</p></div>
+    <script>
+        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/version.txt")
+        .then(function(response) {
+            response.text().then(function(text) {
+            document.getElementById('version').textContent = text;
+            });
+        });
+        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/primary-changelog.txt")
+        .then(function(response) {
+            response.text().then(function(text) {
+            document.getElementById('primary').textContent = text.replace(/-/g, "");;
+            });
+        });
+        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/major-changelog.txt")
+        .then(function(response) {
+            response.text().then(function(text) {
+            document.getElementById('major').textContent = text.replace(/-/g, "");;
+            });
+        });
+        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/minor-changelog.txt")
+        .then(function(response) {
+            response.text().then(function(text) {
+            document.getElementById('minor').textContent = text.replace(/-/g, "");;
+            });
+        });
+    </script>
 </body>
 </html>

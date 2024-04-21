@@ -58,11 +58,11 @@
     width: 48px;
     margin: 0px;   
 }
-.text {
+.text .description, .text .changelogs, .text .features {
     background-color: var(--color2);
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
     padding: 24px;
+    border-radius: 12px;
+    margin-top: 12px;
 }
 code {
     padding: 3px;
@@ -83,8 +83,8 @@ code {
 }
 .footer {
     position: absolute;
-    left: 10px;
-    right: 10px;
+    left: 0px;
+    right: 0px;
     text-align: center;
     color: var(--color3)
 }
@@ -98,7 +98,7 @@ body {
 }
 html {background-color: var(--color1);}
 .text {color: var(--color3)}
-.header *, a {color: #376296}
+.header *, a, h1, h2, h3, h4, h5, h6 {color: #376296}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .header .description {display: none;}
     .header {height: 40px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
@@ -106,7 +106,7 @@ html {background-color: var(--color1);}
     .header .grelintb img{height: 36px; width: 36px;}
     .header .github {margin: 0px 6px 0px 0px;}
     .header .github img {height: 36px; width: 36px;}
-    .text {border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+    .text .description, .text .changelogs, .text .features {border-radius: 0px; margin: 0px;}
     .features img {width: 96%; height: 54%;}
     body {padding: 0px;}
 }
