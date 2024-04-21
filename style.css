@@ -30,7 +30,7 @@
     align-items: center;
     text-align: center;
     background-color: var(--color2);
-    border-radius: 60px;
+    border-radius: 48px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
@@ -68,9 +68,12 @@
     width: 48px;
     margin: 0px;   
 }
-.text {
-    padding: 24px;
-    margin-top: 24px;
+.text img {
+    margin: auto;
+    width: 64%;
+    height: 36%;
+    display: block;
+    border-radius: 24px;
 }
 .footer {
     position: absolute;
@@ -79,19 +82,26 @@
     text-align: center;
     color: var(--color3);
     background-color: var(--color2);
+    border-top-left-radius: 96px;
+    border-top-right-radius: 96px;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
-    margin: 0px 0px 0px 0px;
-    padding: 24px;
+    margin: 0px;
+    padding: 36px;
     background-color: var(--color1);
 }
 html {background-color: var(--color1);}
 .text, .header .link * {color: var(--color3)}
+.text {margin-top: 60px; }
 .header *, a, h1, h2, h3, h4, h5, h6 {color: #376296}
 a {text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {text-align: center;}
 .header .github {margin: 0px 36px 0px 0px;}
 .footer a {color: red}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .text img {width: 96%; height: 54%;}
+    .footer {border-radius: 0px;}
+}
