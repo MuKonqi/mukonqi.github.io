@@ -50,30 +50,41 @@
     width: 36px;
     margin: 0px;
 }
+.header .links {
+    padding: 0px;
+    margin: 0px 36px 0px auto;
+    align-items: center;
+    text-align: center;
+}
 .header .link {
+    margin: 6px;
     background-color: #376296;
     padding: 12px;
     align-items: center;
     text-align: center;
     border-radius: 24px;
-    margin: 0px auto 0px auto;
-    transform: translate(-7%);
 }
 .header .link:active, .header .link:hover, .header .clicked {
     background-color: var(--color1);
     outline: var(--color3) solid 6px;
+}
+.header .github {
+    margin: 0px 36px 0px 0px;
 }
 .header .github img {
     height: 48px;
     width: 48px;
     margin: 0px;   
 }
+.text {
+    margin-top: 60px; 
+}
 .text img {
     margin: auto;
-    width: 64%;
-    height: 36%;
+    width: 80%;
+    height: 45%;
     display: block;
-    border-radius: 24px;
+    border-radius: 12px;
 }
 .footer {
     position: absolute;
@@ -93,15 +104,15 @@ body {
     padding: 36px;
     background-color: var(--color1);
 }
+a {text-decoration: none;}
 html {background-color: var(--color1);}
 .text, .header .link * {color: var(--color3)}
-.text {margin-top: 60px; }
 .header *, a, h1, h2, h3, h4, h5, h6 {color: #376296}
-a {text-decoration: none;}
 h1, h2, h3, h4, h5, h6 {text-align: center;}
-.header .github {margin: 0px 36px 0px 0px;}
 .footer a {color: red}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .text img {width: 96%; height: 54%;}
-    .footer {border-radius: 0px;}
+    .text img {
+        width: 96%; 
+        height: 54%;
+    }
 }

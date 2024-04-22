@@ -25,6 +25,9 @@
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
         }
+        .project .title:hover, .project .title:active {
+            padding: 2px;
+        }
         .project p {
             padding: 12px;
         }
@@ -40,9 +43,11 @@
     </style>
     <div class="space"></div>
     <div class="header">
-        <div class="mukonqi"><a href="/index.html"><strong>Mu</strong><img src="/konqi.png" alt="Konqi" title="Go to main page"></a></div>      
-        <div class="link clicked"><a href="/projects.html"><strong  title="You're here right now.">Projects</strong></a></div>
-        <div class="github"><a href="https://github.com/mukonqi/" target="_blank"><img alt="GitHub" src="https://github.com/fluidicon.png" title="Go to my GitHub."></a></div>
+        <div class="mukonqi" title="Return back to main page."><a href="/index.html"><strong>Mu</strong><img src="/konqi.png" alt="Konqi"></a></div>      
+        <div class="links">
+            <a href="/projects.html" title="You're here right now."><div class="link projects clicked"><strong>Projects</strong></div></a>
+            <a href="/setup.html" title="Go to setup page."><div class="link setup"><strong>Setup</strong></div></a>
+        </div>
     </div>
     <div class="text">
         <div class="project"><div class="title"><a href="/grelintb/index.html" id="normal"><h3>GrelinTB</h3></a></div>
@@ -73,7 +78,7 @@
         <div class="project"><div class="title"><a href="https://github.com/MuKonqi/metterxp" id="stopped"><h3>MetterXP (stopped)</h3></a></div>
         <p>My former "big" project, but I stopped it because the interface and the code were too complicated, the code was not coded well at all, so I started a new project from scratch: <a href="https://github.com/mukonqi/grelintb">GrelinTB</a></p></div>
         <div class="project"><div class="title"><a href="https://github.com/MuKonqi/metterxp/tree/betterxp" id="stopped"><h3>BetterXP (stopped)</h3></a></div>
-        <p>I started developing the <a href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP</a> project based on Terminalden kurtulun. This came out of curiosity and removing the logo from the Terminalden kurtulun homepage. The improvements included support for Fedora Linux and Solus. I also changed the colors in version 2 and that was it.</p></div>
+        <p>I started developing the <a href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP</a> project based on Terminalden kurtulun. This came out with removing the logo from the Terminalden kurtulun homepage. The improvements included support for Fedora Linux and Solus. I also changed the colors in version 2 and that was it.</p></div>
         <div class="project"><div class="title"><a href="https://github.com/MuKonqi/betterss" id="stopped"><h3>BetterSS (stopped)</h3></a></div>
         <p>It was my second project, but it was discontinued because I did not find it very useful. All it did was run the Flameshot program.</p></div>
         <div class="project"><div class="title" id="removed"><h3>My Personal Blog (removed)</h3></div>
@@ -83,6 +88,6 @@
         <div class="project"><div class="title" id="removed"><h3>newtab (removed)</h3></div>
         <p>Just new tab page. It wasn't as useful as a browsers' new tab, so I removed it.</p></div>
     </div>
-    <div class="footer"><p>Copyright (&copy;) 2024 MuKonqi (Muhammed S.)<br>This website licensed under <a href="/LICENSE.txt">MIT License</a>.</p></div>
+    <div class="footer"><p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed Under <a href="/LICENSE.txt">MIT License</a></p></div>
 </body>
 </html>
