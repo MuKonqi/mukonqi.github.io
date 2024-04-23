@@ -83,8 +83,13 @@
     margin: auto;
     width: 80%;
     height: 45%;
-    display: block;
     border-radius: 12px;
+}
+.text #img *:hover, text #img *:active {
+    transform: scale(1.024);
+    background-color: var(--color3);
+    border-radius: 24px;
+    padding: 12px;
 }
 .footer {
     position: absolute;
@@ -95,6 +100,9 @@
     background-color: var(--color2);
     border-top-left-radius: 96px;
     border-top-right-radius: 96px;
+}
+li, ul {
+    list-style: inside square;
 }
 body {
     font-family: "Roboto", sans-serif;

@@ -60,7 +60,7 @@
 }
 .text .description, .text .changelogs, .text .features {
     background-color: var(--color2);
-    padding: 24px;
+    padding: 12px;
     border-radius: 12px;
     margin-top: 12px;
 }
@@ -87,6 +87,9 @@ code {
     right: 0px;
     text-align: center;
     color: var(--color3)
+}
+li, ul {
+    list-style: inside;
 }
 body {
     font-family: "Roboto", sans-serif;
