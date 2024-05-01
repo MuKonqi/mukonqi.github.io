@@ -62,11 +62,11 @@
         <div class="changelogs">
             <h2 align="center">Changelogs For <text id="version"></text></h2>
             <h3><li>Primary Changelog</li></h3>
-            <p id="primary"></p>
+            <pre id="primary"></pre>
             <h3><li>Major Changelog</li></h3>
-            <p id="major"></p>
+            <pre id="major"></pre>
             <h3><li>Minor Changelog</h3>
-            <p id="minor"></p>
+            <pre id="minor"></pre>
         </div>
         <div class="features" id="features">
             <h2 align="center">Features</h2>
@@ -137,19 +137,19 @@
         fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/primary-changelog.txt")
         .then(function(response) {
             response.text().then(function(text) {
-            document.getElementById('primary').textContent = text.replace(/-/g, "");;
+            document.getElementById('primary').textContent = text.replace(/-/g, "\n");;
             });
         });
         fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/major-changelog.txt")
         .then(function(response) {
             response.text().then(function(text) {
-            document.getElementById('major').textContent = text.replace(/-/g, "");;
+            document.getElementById('major').textContent = text.replace(/-/g, "\n");;
             });
         });
         fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/minor-changelog.txt")
         .then(function(response) {
             response.text().then(function(text) {
-            document.getElementById('minor').textContent = text.replace(/-/g, "");;
+            document.getElementById('minor').textContent = text.replace(/-/g, "\n");;
             });
         });
     </script>
