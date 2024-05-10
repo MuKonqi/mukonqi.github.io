@@ -2,74 +2,138 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>MuKonqi: Main Page</title>
+    <title>mukonqi.github.io</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
-    <meta name="description" content="Main page on MuKonqi's website.">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/konqi.png" type="image/x-icon">
+    <meta name="description" content="Starting page on MuKonqi's website.">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
 </head>
 <body>
-    <style>.text {text-align: center;}</style>
-    <div class="space"></div>
+    <div class="space_top"></div>
+    <div class="space_center"></div>
     <div class="header">
-        <div class="mukonqi" title="You're here right now."><a href="/index.html"><strong>Mu</strong><img src="/konqi.png" alt="Konqi"></a></div>
-        <div class="links">
-            <a href="/projects.html"><div class="link projects" title="Go to projects page."><strong>Projects</strong></div></a>
-            <a href="/setup.html"><div class="link setup" title="Go to setup page."><strong>Setup</strong></div></a>
+        <div class="mukonqi"><a href="/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
+    </div>
+    <div class="space_bottom"></div>
+    <div class="english" id="english">
+        <div class="content">
+            <div class="page">
+                <h3>Personal</h3>
+                <p>You can get information about me, my comments about my projects and my setup there.</p>
+                <div class="links">
+                    <div class="description"><strong>About Me</strong></div>
+                        <a href="/personal/english/index.html"><div class="link">English</div></a>
+                    <a href="/personal/turkish/index.html"><div class="link">Turkish</div></a>
+                </div>
+                <div class="links">
+                    <div class="description"><strong>Projects</strong></div>
+                        <a href="/personal/english/projects.html"><div class="link">English</div></a>
+                    <a href="/personal/turkish/projects.html"><div class="link">Turkish</div></a>
+                </div>
+                <div class="links">
+                    <div class="description"><strong>Setup</strong></div>
+                    <a href="/personal/english/setup.html"><div class="link">English</div></a>
+                    <a href="/personal/turkish/setup.html"><div class="link">Turkish</div></a>
+                </div>
+            </div>
+            <div class="page">
+                <h3>Blog</h3>
+                <p>I don't think I'll be active but why not?</p>
+                <div class="links">
+                    <a href="/blog/index.html"><div class="link">Turkish</div></a>
+                </div>
+            </div>
+            <div class="page">
+                <h3>GrelinTB</h3>
+                <p>"Great toolbox about some Linux distributions." Well, I'm trying something...</p>
+                <div class="links">
+                    <a href="/grelintb/index.html"><div class="link">English</div></a>
+                </div>
+            </div>
         </div>
+        <div class="footer" id="footer">
+            <div class="button" onclick="switch_turkish()">Switch to Turkish</div><br>
+            <p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
+            <pre id="license_english" style="display: none"></pre></div>
     </div>
-    <div class="text">
-        <h1>About Me</h1>
-        <h2>Summary</h2>
-        <p>Hello everyone, I'm MuKonqi (Muhammed S.)!</p>
-        <p>I finished my 15th year, I'm finishing my 16th year at the moment.</p>
-        <p>I am a student in Türkiye, I am in the 9th grade at Bursa Anatolian High School.</p>
-        <p>I love developing simple projects (like this one and GrelinTB), playing computer video games.</p>
-        <p>As for things which my favorites, my favorite color is <text style="color: #376296">#376296</text>, my favorite distribution is Fedora Linux and my favorite DE is KDE Plasma 6.</p>
-        <p>I'm interested in cars, buses, trucks and computers.</p>
-        <p>By the way I know Python, CustomTkinter, Tkinter, HTML, CSS more or less.</p>
-        <h2>Childhood</h2>
-        <p>I spent most of my childhood interested in cars, I love cars, but I'm not interested in them as much as I used to be.</p>
-        <h2>2021</h2>
-        <p>First, I signed up for a technology-releated forums, which I no longer use. I didn't stay there so lang. In fact, at first I was more interested in phones than computers.<br>
-            When my 10-year-old laptop started having problems, I started looking for other operating systems. That's when I discovered GNU/Linux distributions.<br>
-            I installed Linux Mint Xfce, the first distro I used, on February 24, 2021. But I wanted to sail in this sea, so I became a distrohopper.<br>
-            The distros I have tried in my distrohopper process, although I am not sure:
-            <li>Linux Mint</li>
-            <li>Debian GNU/Linux</li>
-            <li>Devuan</li>
-            <li>Ubuntu</li>
-            <li>Ubuntu Mate</li>
-            <li>Kubuntu</li>
-            <li>Ubuntu DDE</li>
-            <li>KDE neon</li>
-            <li>elementary OS</li>
-            <li>Pop!_OS</li>
-            <li>Zorin OS</li>
-            <li>Pardus</li>
-            <li>Arch Linux</li>
-            <li>EndeavourOS</li>
-            <li>Manjaro</li>
-            <li>Fedora Linux</li>
-            <li>OpenSUSE</li>
-            <li>Gentoo</li>
-            <li>Solus</li>
-            <li>Pisi Linux</li><br>
-            On March 6, 2021, I tried Terminalden kurtulun. I felt like doing something similar, so I developed BetterXP based on it. BetterXP removes the logo of Terminalden kurtulun in main page and brings Fedora Linux and Solus support with forced dark mode. BetterXP based MetterXP brings optimations and some improvements.<br></p>
-        <h2>2022</h2>
-        <p>In 2022 I played so much computer video games and increased the number of my projects.<br>
-            But the bad thing about 2021-2022 was that I was a GNU fanboy... I had read on the GNU page that it was wrong to call Linux GNU/Linux, and it affected me a lot. This fanboyism lasted for a long time.<br>
-            I also opened my Steam account, first bought ETS2, then my library grew and grew, and after switching to Steam dollars I bought generic games from Epic Games (which has the worst launcher I've ever seen).</p>
-        <h2>2023</h2>
-            <p>It was a bit too empty in terms of projects due to the LGS exam, the biggest advances were MetterXP v3.0 version and this site. I was playing games when I had time from classes.</p>
-        <h2>2024</h2>
-        <p>This year, one of my projects is <a href="https://github.com/mukonqi/grelintb" style="color: #376296">GrelinTB</a>, which I coded in Python3 and used the CustomTkinter library. I also plan to learn other programming languages.<br>For gaming, I'm hoping I can finish Ultrakill :D If I'm serious, I mean, I don't have very special goals, continue normal life :)</p>
+    <div class="turkish" id="turkish">
+        <div class="content">
+            <div class="page">
+                <h3>Kişisel</h3>
+                <p>Hakkımda kısa bilgiler alabileceğiniz, projelerim hakkında yorumlarıma bakabileceğiniz ve kurulumumu görebileceğiniz yer.</p>
+                <div class="links">
+                    <div class="description"><strong>Hakkımda</strong></div>
+                    <a href="/personal/turkish/index.html"><div class="link">Türkçe</div></a>
+                    <a href="/personal/english/index.html"><div class="link">İngilizce</div></a>
+                </div>
+                <div class="links">
+                    <div class="description"><strong>Projeler</strong></div>
+                    <a href="/personal/turkish/projects.html"><div class="link">Türkçe</div></a>
+                    <a href="/personal/english/projects.html"><div class="link">İngilizce</div></a>
+                </div>
+                <div class="links">
+                    <div class="description"><strong>Kurulum</strong></div>
+                    <a href="/personal/turkish/setup.html"><div class="link">Türkçe</div></a>
+                    <a href="/personal/english/setup.html"><div class="link">İngilizce</div></a>
+                </div>
+            </div>
+            <div class="page">
+                <h3>Blog</h3>
+                <p>Aktif olacağımı düşünmüyorum açıkcası fakat neden olmasın?</p>
+                <div class="links">
+                    <a href="/blog/index.html"><div class="link">Türkçe</div></a>
+                </div>
+            </div>
+            <div class="page">
+                <h3>GrelinTB</h3>
+                <p>"Bazı Linux dağıtımları için harika bir araç kutusu." Eh, kendimce bir şeyler deniyorum.</p>
+                <div class="links">
+                    <a href="/grelintb/index.html"><div class="link">İngilizce</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="button" onclick="switch_english()">İngilizceye Geç</div><br>
+            <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+            <pre id="license_turkish" style="display: none"></pre></div>
     </div>
-    <div class="footer"><p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed Under <a href="/LICENSE.txt">MIT License</a></p></div>
 </body>
+<script>
+    var language = navigator.language || navigator.browserLanguage || navigor.languages;
+    if (language.indexOf('en') > -1) {
+        document.getElementById('turkish').style.display = "none";
+    } else if (language.indexOf('tr') > -1) {
+        document.getElementById('english').style.display = "none";
+    }
+    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('license_english').textContent = text;
+        document.getElementById('license_turkish').textContent = text;
+        });
+    });
+    function switch_english() {
+        document.getElementById('turkish').style.display = "none";
+        document.getElementById('english').style.display = "block";
+    }
+    function switch_turkish() {
+        document.getElementById('english').style.display = "none";
+        document.getElementById('turkish').style.display = "block";       
+    }
+    function show_license() {
+        if (document.getElementById('license_english').style.display === "none" || document.getElementById('license_turkish').style.display === "none") {
+            document.getElementById('license_english').style.display = "block";
+            document.getElementById('license_turkish').style.display = "block";
+        }
+        else {
+            document.getElementById('license_english').style.display = "none";
+            document.getElementById('license_turkish').style.display = "none";
+        }
+    }
+</script>
 </html>

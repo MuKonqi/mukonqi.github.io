@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>MuKonqi: Merhaba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="description" content="MuKonqi'nin Blogı.">
+    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
+    <link rel="import" href="/blog/index.html">
+</head>
+<body>
+    <div class="header">
+        <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
+        <div class="title" id="title"><h1>Merhaba</h1></div>
+        <div class="left"><strong>09 Nis 2024</strong></div>
+    </div>
+    <div class="content">
+        <div class="title2" id="title2"></div>
+        <div class="text">
+            <p>Evet, uzun zaman geçti. Ama o vakit şimdi yine geldi!</p>
+            <p>Dünyanın en az aktif olunacak (sanırsam) bloğunun ilk paylaşımı!</p>
+            <p>Bu bloğun paylaşımları büyük ihtimalle çok farklı olacak. Belki yeri gelecek ciddilikten eser olmayacak; belki yeri gelecek makale, rehber paylaşılacak.</p>
+            <p>Neyse, bu paylaşım fazla uzun oldu. Herkese iyi günler!</p>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="links">
+            <a href="/index.html"><div class="link">Ana Sayfaya Git</div></a>
+            <a href="/personal/index.html"><div class="link">Kişisel Alana Git</div></a>
+            <a href="/grelintb/index.html"><div class="link">GrelinTB'nin Sayfasına Git</div></a>
+        </div>
+        <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
+<script>
+    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('license').textContent = text;
+        });
+    });
+    function show_license() {
+        if (document.getElementById('license').style.display === "none") {
+            document.getElementById('license').style.display = "block";
+        }
+        else {
+            document.getElementById('license').style.display = "none";
+        }
+    }
+    document.getElementById('title2').innerHTML = document.getElementById('title').innerHTML;
+</script>
+</html>

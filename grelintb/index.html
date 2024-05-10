@@ -10,12 +10,12 @@
     <meta name="keywords" content="MuKonqi, MuKonqi04, GrelinTB">
     <meta name="author" content="Muhammed S.">
     <meta name="description" content="GrelinTB's website.">
-    <link rel="stylesheet" href="/grelintb/style.css">
-    <link rel="icon" href="/grelintb/assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/grelintb.css">
+    <link rel="icon" href="/assets/Icon.png" type="image/x-icon">
 </head>
 <body>
     <div class="header">
-        <div class="grelintb"><a href="/grelintb/index.html"><img src="/grelintb/assets/icon.png" alt="GrelinTB" title="You're here right now."></a></div>      
+        <div class="grelintb"><a href="/grelintb/index.html"><img src="/grelintb/assets/Icon.png" alt="GrelinTB" title="You're here right now."></a></div>      
         <div class="description"><strong title="Short summary of GrelinTB.">Great toolbox for some Linux distributions.</strong></div>
         <div class="link download"><a href="https://github.com/mukonqi/grelintb/releases" target="_blank"><img alt="Downloads" src="https://img.shields.io/github/downloads/mukonqi/grelintb/total?label=Downloads" title="Go to releases section in GitHub."></a></div>
         <div class="link release"><a href="https://github.com/mukonqi/grelintb/releases/latest" target="_blank"><img alt="Release" src="https://img.shields.io/github/v/release/mukonqi/grelintb?label=Release" title="Go to latest release in GitHub."></a></div>
@@ -26,7 +26,7 @@
             <h1 align="center">GrelinTB</h1>
             <h2 align="center">Great toolbox for some Linux distributions.</h2>
             <h3><li>Why GrelinTB names as great toolbox?</li></h3>
-            <p>Because GrelinTB comes with various tools. Here are examples: Useful information about the system, a simple note editor, a simple store for applications and DEs and WMs, various scripts for applications, a simple configuration tool for Bash and Zsh, a tool to change the name of the computer, information about some distributions and a simple calculator. <a href="#features">For more details, scroll down the page or click this sentence.</a></p>
+            <p>Because GrelinTB comes with various tools. Here are examples: Useful information about the system, a simple note editor, a simple store for applications and DEs and WMs, various scripts for applications, a simple configuration tool for Bash and Zsh, a tool to change the name of the computer, information about some distributions and a simple calculator. <text onclick="show_features()" style="color: #376296;">For more details, scroll down the page or click this sentence.</text></p>
             <h3><li>Why GrelinTB only for "some" Linux distributions and what are they?</li></h3>
             <p>Because GrelinTB provides a store feature. There are so many Linux distributions today, it's hard for a developer to adapt store feature to all of them. But GrelinTB also provides support for Flatpak, which is universal.<br>Supportted Linux distributions:</p>
             <ul>
@@ -39,7 +39,12 @@
             <ul><li>For Fedora Linux based distributions:</li></ul>
             <ul>Just download <a href="https://github.com/mukonqi/grelintb/releases/latest/download/grelintb.rpm" target="_blank">RPM</a> file and install it!</ul>
             <ul><li>For Debian GNU/Linux, Solus, Arch Linux based distributions:</li></ul>
-            <ul>Type the following into the terminal: <code>wget https://raw.githubusercontent.com/MuKonqi/grelintb/main/install-grelintb.sh ; chmod +x install-grelintb.sh ; sudo ./install-grelintb.sh ; rm install-grelintb.sh</code></ul>
+            <ul>Type them in the terminal:
+                <li style="list-style-type: decimal;"><code>wget https://raw.githubusercontent.com/<br>MuKonqi/grelintb/main/install-grelintb.sh</code></li>
+                <li style="list-style-type: decimal;"><code>chmod +x install-grelintb.sh</code></li>
+                <li style="list-style-type: decimal;"><code>sudo ./install-grelintb.sh </code></li>
+                <li style="list-style-type: decimal;"><code>rm install-grelintb.sh</code> (if you want to delete script)</li>
+            </ul>
             <h3><li>What is GrelinTB's copyright notification, license and credit?</li></h3>
             <ul>
                 <li>Copyright (&copy;) 2024 <a href="https://mukonqi.github.io" target="_blank">MuKonqi (Muhammed S.)</a></li>
@@ -59,8 +64,9 @@
                 <li>GrelinTB's codes are really more optimize because it is coded from scratch with object oriented programming. MetterXP wasn't coded from scratch so it has very remnats because it is based on BetterXP and BetterXP based on Terminalden kurtulun.</li>
             </ul>
         </div>
-        <div class="changelogs">
-            <h2 align="center">Changelogs For <text id="version"></text></h2>
+        <div class="button" onclick="show_changelogs()">Changelogs</div>
+        <div class="changelogs" id="changelogs" style="display: none;">
+            <h2 align="center">Changelogs For <div id="version"></div></h2>
             <h3><li>Primary Changelog</li></h3>
             <pre id="primary"></pre>
             <h3><li>Major Changelog</li></h3>
@@ -68,7 +74,8 @@
             <h3><li>Minor Changelog</h3>
             <pre id="minor"></pre>
         </div>
-        <div class="features" id="features">
+        <div class="button" onclick="show_features()">Features</div>
+        <div class="features" id="features" style="display: none;">
             <h2 align="center">Features</h2>
             <h3><li>Sidebar</li></h3>
             <ul>
@@ -126,32 +133,70 @@
             </ul>
         </div>
     </div>
-    <div class="footer"><p>&copy; 2024 <a href="/index.html">MuKonqi (Muhammed S.)</a><br>Licensed Under <a href="/LICENSE.txt">MIT License</a></p></div>
-    <script>
-        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/version.txt")
-        .then(function(response) {
-            response.text().then(function(text) {
-            document.getElementById('version').textContent = text;
-            });
+    <div class="footer" id="footer">
+        <div class="links">
+            <a href="/index.html"><div class="link">Go to Main Page</div></a>
+            <a href="/personal/index.html"><div class="link">Go to MuKonqi's Personal Space</div></a>
+            <a href="/blog/index.html"><div class="link">Go to MuKonqi's Blog Space</div></a><br>
+        </div>
+        <p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
+<script>
+    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('license').textContent = text;
         });
-        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/primary-changelog.txt")
-        .then(function(response) {
-            response.text().then(function(text) {
-            document.getElementById('primary').textContent = text.replace(/-/g, "\n");;
-            });
+    });
+    function show_license() {
+        if (document.getElementById('license').style.display === "none") {
+            document.getElementById('license').style.display = "block";
+        }
+        else {
+            document.getElementById('license').style.display = "none";
+        }
+    }
+    function show_changelogs() {
+        if (document.getElementById('changelogs').style.display === "none") {
+            document.getElementById('changelogs').style.display = "block";
+        }
+        else {
+            document.getElementById('changelogs').style.display = "none";
+        }
+    }
+    function show_features() {
+        if (document.getElementById('features').style.display === "none") {
+            document.getElementById('features').style.display = "block";
+        }
+        else {
+            document.getElementById('features').style.display = "none";
+        }
+    }
+    fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/version.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('version').textContent = text;
         });
-        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/major-changelog.txt")
-        .then(function(response) {
-            response.text().then(function(text) {
-            document.getElementById('major').textContent = text.replace(/-/g, "\n");;
-            });
+    });
+    fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/primary-changelog.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('primary').textContent = text.replace(/-/g, "\n");;
         });
-        fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/minor-changelog.txt")
-        .then(function(response) {
-            response.text().then(function(text) {
-            document.getElementById('minor').textContent = text.replace(/-/g, "\n");;
-            });
+    });
+    fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/major-changelog.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('major').textContent = text.replace(/-/g, "\n");;
         });
-    </script>
+    });
+    fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/minor-changelog.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('minor').textContent = text.replace(/-/g, "\n");;
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,201 @@
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --color1: #000000;
+        --color2: #2f2f2f;
+        --color3: #a9a9a9;
+    }
+}
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --color1: #ffffff;
+        --color2: #a9a9a9;
+        --color3: #2f2f2f;
+    }
+}
+.space {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 10px;
+    background-color: var(--color1);
+}
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    background-color: var(--color2);
+    border-radius: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.header * {
+    display: flex;
+    align-items: center;
+    text-align: center;    
+}
+.header .mukonqi {
+    padding: 0px;
+    margin: 0px 0px 0px 25px;
+    align-items: center;
+    text-align: center;
+}
+.header .mukonqi img {
+    height: 50px;
+    width: 30px;
+    margin: 0px;
+}
+.header .links {
+    padding: 0px;
+    margin: 0px 25px 0px auto;
+    align-items: center;
+    text-align: center;
+}
+.header .link {
+    margin: 6px;
+    background-color: #376296;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+}
+.header .link:active, .header .link:hover, .header .clicked {
+    background-color: var(--color1);
+    outline: var(--color3) solid 10px;
+}
+.content {
+    margin: 80px 25vw 20px 25vw;
+}
+.content img {
+    margin: auto;
+    width: 75%;
+    height: 42,1874999999%;
+    border-radius: 10px;
+}
+.content #img *:hover, text #img *:active {
+    transform: scale(1.25);
+    background-color: var(--color3);
+    border-radius: 25px;
+    padding: 5px;
+}
+.content .button {
+    background-color: var(--color2);
+    color: #376296;
+    margin: 10px 25px 0px 25px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.content .button:hover, .content .button:active {
+    background-color: var(--color3);
+    transform: scale(1.25);
+}
+.content .page {
+    margin: 0px 50px;
+}
+.project {
+    background-color: var(--color2);
+    margin: 25px 10px;
+    border-radius: 10px;
+}
+.project .title {
+    background-color: var(--color3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.project .title:hover, .project .title:active {
+    padding: 1px;
+    border-radius: 10px;
+}
+.project p {
+    padding: 10px;
+}
+#archived * {
+    color: yellow;
+}
+#stopped *, #removed * {
+    color: darkred;
+}
+#removed * {
+    text-decoration: line-through var(--color1);
+}
+.footer {
+    display: absolute;
+    text-align: center;
+    color: var(--color3);
+    background-color: var(--color2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;  
+    padding: 10px;
+}
+.footer .links, .footer .links * {
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .links .link {
+    background-color: var(--color3);
+    color: #376296;
+    border-radius: 25px;
+    padding: 10px;
+}
+.footer .links .link:hover, .footer .links .link:active {
+    background-color: #376296;
+    color: var(--color2);
+    transform: scale(1.25);
+}
+.footer #license_button {
+    color: darkred;
+    cursor: pointer;
+}
+li, ul {
+    list-style: inside square;
+}
+pre {
+    white-space: pre-wrap;
+}
+body, pre {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color1);
+}
+html {
+    display: grid;
+    background-color: var(--color2);
+}
+a {text-decoration: none;}
+.content, .header .link * {color: var(--color3)}
+.header *, a, h1, h2, h3, h4, h5, h6 {color: #376296}
+* {text-align: center;}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .content {
+        margin: 80px 10vw 20px 10vw;
+    }
+    .content img {
+        width: 87,5%; 
+        height: 49,2187499999%;
+    }
+    .content .button {
+        margin: 10px 5px 0px 5px;
+    }
+    .content .page {
+        margin: 0px 7.5px;
+    }
+    .footer .links, .footer .links * {
+        display: block;
+    }
+    .footer .links .link {
+        margin: 0px 25px;
+    }
+}
