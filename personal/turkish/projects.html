@@ -9,16 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
-    <meta name="description" content="MuKonqi's projects.">
+    <meta name="description" content="MuKonqi's mainpage.">
     <link rel="stylesheet" href="/styles/personal.css">
     <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
 </head>
 <body>
-    <div class="space"></div>
     <div class="header">
         <div class="mukonqi" title="Hakkımda sayfasına geri dön."><a href="/personal/turkish/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>      
         <div class="links">
-            <a href="/personal/turkish/projects.html" title="Şu anda buradasınız."><div class="link projects clicked"><strong>Projeler</strong></div></a>
+            <a href="/personal/turkish/mainpage.html" title="Şu anda buradasınız."><div class="link mainpage clicked"><strong>Projeler</strong></div></a>
             <a href="/personal/turkish/setup.html" title="Kurulum sayfasına git."><div class="link setup"><strong>Kurulum</strong></div></a>
         </div>
     </div>
@@ -63,7 +62,7 @@
         <div class="project"><div class="title" id="removed"><h3>newtab (kaldırıldı)</h3></div>
         <p>Sadece yeni sekme sayfası. Tarayıcıların yeni sekmesi kadar kullanışlı değildi, bu yüzden kaldırdım.</p></div>
         <h1>Diğer Sayfalar</h1>
-        <div class="button" onclick="show_mainpage()">Hakkımda</div>
+        <div id="mainpage_button" class="button" onclick="show_mainpage()">Hakkımda</div>
         <div id="mainpage" class="page" style="display: none;">
             <h1>Hakkımda</h1>
             <h2>Özet</h2>
@@ -111,7 +110,7 @@
             <h2>2024</h2>
             <p>Bu yıl projelerimden biri Python3 ve CustomTkinter kütüphansiyle kodladığım <a href="https://github.com/mukonqi/grelintb" style="color: #376296">GrelinTB</a>'dir. Ayrıca diğer programlama dilleri öğrenmeyi planlıyorum.</p> Oyunculuk konusunda <div style="text-decoration: line-through;">Ultrakill'i bitirebileceğimi umuyorum :D</div> Onu bitirdim! Ciddi olursam çok özel hedeflerim yok, normal hayata devam :)</p>
         </div>
-        <div class="button" onclick="show_setup()">Kurulum</div>
+        <div id="setup_button" class="button" onclick="show_setup()">Kurulum</div>
         <div id="setup" class="page" style="display: none;">
             <h1>Linux'ta Masaüstüm</h1>
             <li><text style="color: #376296;">Dağıtım:</text> Fedora Linux 40</li><br>
@@ -145,7 +144,7 @@
     </div>
     <div class="footer">
         <div class="links">
-            <a href="/personal/english/projects.html"><div class="link">İngilizceye Geç</div></a>
+            <a href="/personal/english/mainpage.html"><div class="link">İngilizceye Geç</div></a>
             <a href="/index.html"><div class="link">Ana Sayfa</div></a>
             <a href="/blog/index.html"><div class="link">Blog</div></a>
             <a href="/grelintb/index.html"><div class="link">GrelinTB</div></a>
@@ -170,17 +169,45 @@
     }
     function show_mainpage() {
         if (document.getElementById('mainpage').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('mainpage_button').style.transform = "scale(1.25)";
             document.getElementById('mainpage').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('mainpage_button').style.transform = "scale(1.00)";
             document.getElementById('mainpage').style.display = "none";
         }
     }
     function show_setup() {
         if (document.getElementById('setup').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('setup_button').style.transform = "scale(1.25)";
             document.getElementById('setup').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('setup_button').style.transform = "scale(1.00)";
             document.getElementById('setup').style.display = "none";
         }
     }

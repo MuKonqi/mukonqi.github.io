@@ -14,7 +14,6 @@
     <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
 </head>
 <body>
-    <div class="space"></div>
     <div class="header">
         <div class="mukonqi" title="You're here right now."><a href="/personal/english/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
         <div class="links">
@@ -69,7 +68,7 @@
         <h2>2024</h2>
         <p>This year, one of my projects is <a href="https://github.com/mukonqi/grelintb" style="color: #376296">GrelinTB</a>, which I coded in Python3 and used the CustomTkinter library. I also plan to learn other programming languages.<br>For gaming, <div style="text-decoration: line-through;">I'm hoping I can finish Ultrakill :D</div> I finished it finally! If I'm serious, I mean, I don't have very special goals, continue normal life :)</p>
         <h1>Other Pages</h1>
-        <div class="button" onclick="show_projects()">Projects</div>
+        <div id="projects_button" class="button" onclick="show_projects()">Projects</div>
         <div id="projects" class="page" style="display: none;">
         <div class="project"><div class="title"><a href="/grelintb/index.html" id="normal"><h3>GrelinTB</h3></a></div>
         <p>I coded the first version when I had time during a 16-day vacation in 2024. Because default Tkinter was looking really bad also I was bored and wanted to learn something new.<br>
@@ -113,7 +112,7 @@
         <div class="project"><div class="title" id="removed"><h3>newtab (removed)</h3></div>
         <p>Just new tab page. It wasn't as useful as a browsers' new tab, so I removed it.</p></div>
         </div>
-        <div class="button" onclick="show_setup()">Setup</div>
+        <div id="setup_button" class="button" onclick="show_setup()">Setup</div>
         <div id="setup" class="page" style="display: none;">
             <h1>My Desktop In Linux</h1>
             <li><text style="color: #376296;">Distribution:</text> Fedora Linux 40</li><br>
@@ -172,17 +171,45 @@
     }
     function show_projects() {
         if (document.getElementById('projects').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('projects_button').style.transform = "scale(1.25)";
             document.getElementById('projects').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('projects_button').style.transform = "scale(1.00)";
             document.getElementById('projects').style.display = "none";
         }
     }
     function show_setup() {
         if (document.getElementById('setup').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('setup_button').style.transform = "scale(1.25)";
             document.getElementById('setup').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('setup_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('setup_button').style.transform = "scale(1.00)";
             document.getElementById('setup').style.display = "none";
         }
     }

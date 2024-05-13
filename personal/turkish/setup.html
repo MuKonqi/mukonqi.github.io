@@ -14,7 +14,6 @@
     <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
 </head>
 <body>
-    <div class="space"></div>
     <div class="header">
         <div class="mukonqi" title="Hakkımda sayfasına geri dön."><a href="/personal/turkish/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div> 
         <div class="links">
@@ -52,7 +51,7 @@
         <li><text style="color: #376296;">Tablet:</text> Lenovo Tab M10 X605L</li><br>
         <li><text style="color: #376296;">Kulaklık:</text> iPhone 6S Plus'ınki</li><br>
         <h1>Diğer Sayfalar</h1>
-        <div class="button" onclick="show_mainpage()">Hakkımda</div>
+        <div id="mainpage_button" class="button" onclick="show_mainpage()">Hakkımda</div>
         <div id="mainpage" class="page" style="display: none;">
             <h1>Hakkımda</h1>
             <h2>Özet</h2>
@@ -100,7 +99,7 @@
             <h2>2024</h2>
             <p>Bu yıl projelerimden biri Python3 ve CustomTkinter kütüphansiyle kodladığım <a href="https://github.com/mukonqi/grelintb" style="color: #376296">GrelinTB</a>'dir. Ayrıca diğer programlama dilleri öğrenmeyi planlıyorum.</p> Oyunculuk konusunda <div style="text-decoration: line-through;">Ultrakill'i bitirebileceğimi umuyorum :D</div> Onu bitirdim! Ciddi olursam çok özel hedeflerim yok, normal hayata devam :)</p>
         </div>
-        <div class="button" onclick="show_projects()">Projeler</div>
+        <div id="projects_button" class="button" onclick="show_projects()">Projeler</div>
         <div id="projects" class="page" style="display: none;">
         <div class="project"><div class="title"><a href="/grelintb/index.html" id="normal"><h3>GrelinTB</h3></a></div>
         <p>İlk sürümünü 2024'te 16 günlük tatilde kodladım. Çünkü Tkinter çok kötü gözüküyordu ayrıca sıkılmıştım ve yeni şeyler öğrenmek istiyordum.<br>
@@ -170,17 +169,45 @@
     }
     function show_mainpage() {
         if (document.getElementById('mainpage').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('mainpage_button').style.transform = "scale(1.25)";
             document.getElementById('mainpage').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('mainpage_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('mainpage_button').style.transform = "scale(1.00)";
             document.getElementById('mainpage').style.display = "none";
         }
     }
     function show_projects() {
         if (document.getElementById('projects').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('projects_button').style.transform = "scale(1.25)";
             document.getElementById('projects').style.display = "block";
         }
         else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('projects_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('projects_button').style.transform = "scale(1.00)";
             document.getElementById('projects').style.display = "none";
         }
     }
