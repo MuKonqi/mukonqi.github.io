@@ -71,11 +71,12 @@
     margin: 25px 25vw 0vh 25vw;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
 }
 .text .button:hover, .text .button:active {
-    background-color: var(--color2);
-    transform: scale(1.25);
-    outline: #376296 solid 5px;
+    background-color: var(--color2) !important;
+    transform: scale(1.25) !important;
+    outline: #376296 solid 5px !important;
 }
 .features a *:hover, .features a *:active {
     transform: scale(1.025);
@@ -116,8 +117,8 @@
     color: darkred;
     cursor: pointer;
 }
-.code {
-    padding: 2,5px;
+code {
+    padding: 5px;
     background-color: var(--color3);
     border-radius: 5px;
     color: var(--color1);

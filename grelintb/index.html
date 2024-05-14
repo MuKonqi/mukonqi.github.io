@@ -39,11 +39,8 @@
             <ul><li>For Fedora Linux based distributions:</li></ul>
             <ul>Just download <a href="https://github.com/mukonqi/grelintb/releases/latest/download/grelintb.rpm" target="_blank">RPM</a> file and install it!</ul>
             <ul><li>For Debian GNU/Linux, Solus, Arch Linux based distributions:</li></ul>
-            <ul>Type them in the terminal:
-                <li style="list-style-type: decimal;"><code>wget https://raw.githubusercontent.com/<br>MuKonqi/grelintb/main/install-grelintb.sh</code></li>
-                <li style="list-style-type: decimal;"><code>chmod +x install-grelintb.sh</code></li>
-                <li style="list-style-type: decimal;"><code>sudo ./install-grelintb.sh </code></li>
-                <li style="list-style-type: decimal;"><code>rm install-grelintb.sh</code> (if you want to delete script)</li>
+            <ul>Type it in the terminal:
+                <code>wget https://raw.githubusercontent.com/MuKonqi/grelintb/main/install-grelintb.sh ; chmod +x install-grelintb.sh ; sudo ./install-grelintb.sh ; rm install-grelintb.sh</code>
             </ul>
             <h3><li>What is GrelinTB's copyright notification, license and credit?</li></h3>
             <ul>
@@ -64,7 +61,7 @@
                 <li>GrelinTB's codes are really more optimize because it is coded from scratch with object oriented programming. MetterXP wasn't coded from scratch so it has very remnats because it is based on BetterXP and BetterXP based on Terminalden kurtulun.</li>
             </ul>
         </div>
-        <div class="button" onclick="show_changelogs()">Changelogs</div>
+        <div class="button" id="changelogs_button" onclick="show_changelogs()">Changelogs</div>
         <div class="changelogs" id="changelogs" style="display: none;">
             <h2 align="center">Changelogs For <div id="version"></div></h2>
             <h3><li>Primary Changelog</li></h3>
@@ -74,7 +71,7 @@
             <h3><li>Minor Changelog</h3>
             <pre id="minor"></pre>
         </div>
-        <div class="button" onclick="show_features()">Features</div>
+        <div class="button" id="features_button" onclick="show_features()">Features</div>
         <div class="features" id="features" style="display: none;">
             <h2 align="center">Features</h2>
             <h3><li>Sidebar</li></h3>
@@ -159,22 +156,6 @@
             document.getElementById('license').style.display = "none";
         }
     }
-    function show_changelogs() {
-        if (document.getElementById('changelogs').style.display === "none") {
-            document.getElementById('changelogs').style.display = "block";
-        }
-        else {
-            document.getElementById('changelogs').style.display = "none";
-        }
-    }
-    function show_features() {
-        if (document.getElementById('features').style.display === "none") {
-            document.getElementById('features').style.display = "block";
-        }
-        else {
-            document.getElementById('features').style.display = "none";
-        }
-    }
     fetch("https://raw.githubusercontent.com/MuKonqi/grelintb/main/app/version.txt")
     .then(function(response) {
         response.text().then(function(text) {
@@ -199,6 +180,54 @@
         document.getElementById('minor').textContent = text.replace(/-/g, "\n");;
         });
     });
+    function show_changelogs() {
+        if (document.getElementById('changelogs').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('changelogs_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('changelogs_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('changelogs_button').style.transform = "scale(1.25)";
+            document.getElementById('changelogs_button').style.outline = "#376296 solid 5px";
+            document.getElementById('changelogs').style.display = "block";
+        }
+        else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('changelogs_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('changelogs_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('changelogs_button').style.transform = "scale(1.00)";
+            document.getElementById('changelogs_button').style.outline = "0px";
+            document.getElementById('changelogs').style.display = "none";
+        }
+    }
+    function show_features() {
+        if (document.getElementById('features').style.display === "none") {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('features_button').style.backgroundColor = "#2f2f2f";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('features_button').style.backgroundColor = "#a9a9a9";
+            }
+            document.getElementById('features_button').style.transform = "scale(1.25)";
+            document.getElementById('features_button').style.outline = "#376296 solid 5px";
+            document.getElementById('features').style.display = "block";
+        }
+        else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('features_button').style.backgroundColor = "#a9a9a9";
+            }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.getElementById('features_button').style.backgroundColor = "#2f2f2f";
+            }
+            document.getElementById('features_button').style.transform = "scale(1.00)";
+            document.getElementById('features_button').style.outline = "0px";
+            document.getElementById('features').style.display = "none";
+        }
+    }
 </script>
 </body>
 </html>

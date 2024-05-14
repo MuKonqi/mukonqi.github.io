@@ -84,8 +84,8 @@
     text-align: center;
 }
 .content .button:hover, .content .button:active {
-    background-color: var(--color3);
-    transform: scale(1.25);
+    background-color: var(--color3) !important;
+    transform: scale(1.25) !important;
 }
 .content .page {
     margin: 0px 50px;
