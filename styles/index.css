@@ -12,8 +12,9 @@
         --color3: #2f2f2f;
     }
 }
-.space_top, .space_center, .space_bottom {
+.space {
     position: fixed;
+    top: 0px;
     left: 0px;
     right: 0px;
     height: 10px;

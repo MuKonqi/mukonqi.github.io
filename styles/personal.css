@@ -12,6 +12,14 @@
         --color3: #2f2f2f;
     }
 }
+.space {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 10px;
+    background-color: var(--color1);
+}
 .header {
     position: fixed;
     top: 10px;
