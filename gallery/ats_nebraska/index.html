@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MuKonqi: ATS - Nebraska</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="description" content="MuKonqi'nin blogu.">
+    <link rel="stylesheet" href="/styles/gallery.css">
+    <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="mukonqi"><a href="/gallery/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
+        <div class="title" id="title"><h1>ATS - Nebraska</h1></div>
+        <div class="left"><strong>Discovered: 8,97%<br>Keşfedildi: 8,97%</strong></div>
+    </div>
+    <div class="content">
+        <div class="title2" id="title2"></div>
+        <img src="/gallery/ats_nebraska/assets/photo (1).png" id="img_top">
+        <img src="/gallery/ats_nebraska/assets/photo (2).png">
+        <img src="/gallery/ats_nebraska/assets/photo (3).png">
+        <img src="/gallery/ats_nebraska/assets/photo (4).png">
+        <img src="/gallery/ats_nebraska/assets/photo (5).png">
+        <img src="/gallery/ats_nebraska/assets/photo (6).png">
+        <img src="/gallery/ats_nebraska/assets/photo (7).png">
+        <img src="/gallery/ats_nebraska/assets/photo (8).png">
+        <img src="/gallery/ats_nebraska/assets/photo (9).png">
+        <img src="/gallery/ats_nebraska/assets/photo (10).png">
+        <img src="/gallery/ats_nebraska/assets/photo (11).png">
+        <img src="/gallery/ats_nebraska/assets/photo (12).png">
+        <img src="/gallery/ats_nebraska/assets/photo (13).png">
+        <img src="/gallery/ats_nebraska/assets/photo (14).png">
+        <img src="/gallery/ats_nebraska/assets/photo (15).png">
+        <img src="/gallery/ats_nebraska/assets/photo (16).png">
+        <img src="/gallery/ats_nebraska/assets/photo (17).png" id="img_bottom">
+    </div>
+    <div class="footer" id="footer">
+        <div class="links">
+            <a href="/index.html"><div class="link">Main Page - Ana Sayfa</div></a>
+            <a href="/personal/index.html"><div class="link">About Me - Hakkımda</div></a>
+            <a href="/personal/projects.html"><div class="link">Projects - Projeler</div></a>
+            <a href="/personal/setup.html"><div class="link">Setup - Kurulum</div></a>
+            <a href="/blog/index.html"><div class="link">Blog</div></a>
+            <a href="/grelintb/index.html"><div class="link">GrelinTB</div></a>
+        </div>
+        <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT License</strong></p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
+<script>
+    fetch("/LICENSE.txt")
+    .then(function(response) {
+        response.text().then(function(text) {
+        document.getElementById('license').textContent = text;
+        });
+    });
+    function show_license() {
+        if (document.getElementById('license').style.display === "none") {
+            document.getElementById('license').style.display = "block";
+        }
+        else {
+            document.getElementById('license').style.display = "none";
+        }
+    }
+    document.getElementById('title2').innerHTML = document.getElementById('title').innerHTML;
+</script>
+</html>

@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="description" content="Starting page on MuKonqi's website.">
@@ -44,6 +48,13 @@
                 <p>I don't think I'll be active but why not?</p>
                 <div class="links">
                     <a href="/blog/index.html"><div class="link">Turkish</div></a>
+                </div>
+            </div>
+            <div class="page">
+                <h3>Gallery</h3>
+                <p>Photos of games I played. Yes, they are very precious for me.</p>
+                <div class="links">
+                    <a href="/gallery/index.html"><div class="link">Global</div></a>
                 </div>
             </div>
             <div class="page">
@@ -88,6 +99,13 @@
                 </div>
             </div>
             <div class="page">
+                <h3>Galeri</h3>
+                <p>Oynadığım oyunlardan fotoğraflar. Evet, onlar benim için çok değerli.</p>
+                <div class="links">
+                    <a href="/gallery/index.html"><div class="link">Global</div></a>
+                </div>
+            </div>
+            <div class="page">
                 <h3>GrelinTB</h3>
                 <p>"Bazı Linux dağıtımları için harika bir araç kutusu." Eh, kendimce bir şeyler deniyorum.</p>
                 <div class="links">
@@ -108,7 +126,7 @@
     } else if (language.indexOf('tr') > -1) {
         document.getElementById('english').style.display = "none";
     }
-    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    fetch("/LICENSE.txt")
     .then(function(response) {
         response.text().then(function(text) {
         document.getElementById('license_english').textContent = text;

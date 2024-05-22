@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
     <meta name="keywords" content="MuKonqi, MuKonqi04, GrelinTB">
     <meta name="author" content="Muhammed S.">
     <meta name="description" content="GrelinTB's website.">
@@ -137,12 +141,13 @@
             <a href="/personal/projects.html"><div class="link">MuKonqi's Projects</div></a>
             <a href="/personal/setup.html"><div class="link">MuKonqi's Setup</div></a>
             <a href="/blog/index.html"><div class="link">MuKonqi's Blog</div></a>
+            <a href="/gallery/index.html"><div class="link">MuKonqi's Gallery</div></a>
         </div>
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 <script>
-    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    fetch("/LICENSE.txt")
     .then(function(response) {
         response.text().then(function(text) {
         document.getElementById('license').textContent = text;

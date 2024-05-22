@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <link rel="stylesheet" href="/styles/blog.css">
@@ -50,13 +54,14 @@
             <a href="/personal/index.html"><div class="link">Hakkımda</div></a>
             <a href="/personal/projects.html"><div class="link">Projeler</div></a>
             <a href="/personal/setup.html"><div class="link">Kurulum</div></a>
+            <a href="/gallery/index.html"><div class="link">Galeri</div></a>
             <a href="/grelintb/index.html"><div class="link">GrelinTB</div></a>
         </div>
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 <script>
-    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    fetch("/LICENSE.txt")
     .then(function(response) {
         response.text().then(function(text) {
         document.getElementById('license').textContent = text;

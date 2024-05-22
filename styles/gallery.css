@@ -17,11 +17,10 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 45px;
+    height: 50px;
     display: flex;
     text-align: center;
     background-color: var(--color2);
-    border-bottom: 5px solid var(--color3);
 }
 .header * {
     display: flex;
@@ -34,8 +33,8 @@
     align-items: center;
 }
 .header .mukonqi img {
-    height: 45px;
-    width: 27px;
+    height: 50px;
+    width: 30px;
     margin: 0px;
 }
 .header .title {
@@ -49,70 +48,40 @@
     margin: 0px 25px 0px auto;
 }
 .content {
-    margin: calc(50px + 5vh) 25vw;
+    display: grid;
+    margin: calc(50px + 5vh) 5vw 5vh 5vw;
+    padding: 50px;
+    background-color: var(--color1);
+    border-radius: 25px;
 }
-.text {
-    margin-top: 5vh;
-}
-.post {
-    background-color: var(--color2);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 25px 0px;
-}
-.name {
-    background-color: var(--color3);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 0px;
-    text-align: center;
-    align-content: center;
-    color: #376296;
-}
-.name:hover, .name:active {
+.album {
     background-color: #376296;
-    transform: scale(1.25);
-    color: var(--color3);
+    margin: 1vh 10vw;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
 }
-.button {
+.album:hover, .album:active {
     background-color: var(--color3);
     color: #376296;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.button:hover, .button:active {
-    background-color: var(--color2);
-    transform: scale(1.125);
-}
-#spoiler {
-    color: red;
+    transform: scale(1.25);
 }
 .content img {
-    display: flex;
     margin: 10px auto;
     width: 100%;
     height: 56,24999999999999%;
     border-radius: 10px;
 }
-.content #img *:hover, text #img *:active {
-    transform: scale(1.25);
-    background-color: var(--color3);
-    border-radius: 25px;
-    padding: 5px;
+#img_top {
+    margin-top: 0px;
 }
-.content .img_with_text {
-    display: flex;
-    align-items: center;
-}
-.content .img_with_text img {
-    margin-right: 25px;
+#img_bottom {
+    margin-bottom: 0px;
 }
 .footer {
     text-align: center;
     color: var(--color3);
     background-color: var(--color2);
-    border-top: 5px solid var(--color3);
     padding: 10px;
 }
 .footer .links, .footer .links * {
@@ -150,7 +119,7 @@ body, pre {
 body {
     margin: 0px;
     padding: 0px;
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 html {
     display: grid;
@@ -170,15 +139,8 @@ h1, h2, h3, h4, h5, h6 {text-align: center;}
         display: block;
         text-align: center;
     }
-    .content img {
-        width: 87,5%;
-        height: 49,2187499999%;
-    }
-    .content .img_with_text {
-        display: grid;
-    }
-    .content .img_with_text img {
-        margin: 0px;
+    .content {
+        padding: 25px;
     }
     .footer .links, .footer .links * {
         display: block;

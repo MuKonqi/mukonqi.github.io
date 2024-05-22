@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="description" content="About MuKonqi.">
@@ -77,13 +81,12 @@
             Since I code object-oriented, everything except the changelogs and the license is in the whole window. It looks much more beautiful.<br>
             Until v1.2.0.0 there were 2 disadvantages compared to MetterXP, one was fixed with v1.2.0.0. The other one was fixed with v1.3.0.0. Finally there are no disadvantages compared to MetterXP.</p></div>
         <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukonqi.github.io" id="normal"><h3>mukonqi.github.io</h3></a></div>
-        <p>In 2021 there was no CSS, it was just plain HTML. Then, as I gradually learned CSS (I still learned it more fully), it became like this. Now I also started using JS.</p>
-        <ul>
-            <li>Main Page: A selection of important pages hosted here.</li>
-            <li>Personal: A place where you can learn about me, read my comments about my projects and look at my setup.</li>
-            <li>Blog: A blog place where I will not be active (may be).</li>
-            <li>GrelinTB: For my GrelinTB project.</li>
-        </ul></div>    
+        <p>In 2021 there was no CSS, it was just plain HTML. Then, as I gradually learned CSS (I still learned it more fully), it became like this. Now I also started using JS.<br>
+            <br>Main Page: A selection of important pages hosted here.
+            <br>Personal: A place where you can learn about me, read my comments about my projects and look at my setup.
+            <br>Blog: A blog place where I will not be active (may be).
+            <br>Gallery: My photos of games I play.
+            <br>GrelinTB: For my GrelinTB project</p></div>    
         <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukotes" id="archived"><h3>Mukotes (archived)</h3></a></div>
         <p>This is a very basic notes editor, but GrelinTB's notes feature is much better.</p>   </div>        
         <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukander" id="archived"><h3>Mukander (archived)</h3></a></div>
@@ -150,13 +153,14 @@
             <a href="/personal/turkish/index.html"><div class="link">Switch to Turkish</div></a>
             <a href="/index.html"><div class="link">Main Page</div></a>
             <a href="/blog/index.html"><div class="link">Blog</div></a>
+            <a href="/gallery/index.html"><div class="link">Gallery</div></a>
             <a href="/grelintb/index.html"><div class="link">GrelinTB</div></a>
         </div>
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 <script>
-    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    fetch("/LICENSE.txt")
     .then(function(response) {
         response.text().then(function(text) {
         document.getElementById('license').textContent = text;

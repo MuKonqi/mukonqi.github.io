@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name='og:title' content="MuKonqi's Website">
+    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name="og:type" content="website">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="description" content="MuKonqi's setup.">
@@ -108,10 +112,11 @@
             Nesne yönelimli kodladığım için, değişiklik günlükleri ve lisans dışında her şey tüm pencerede yer alıyor. Çok daha güzel görünüyor.<br>
             v1.2.0.0'a kadar MetterXP'ye göre 2 dezavantaj vardı, biri v1.2.0.0 ile giderildi. Diğeri ise v1.3.0.0 ile giderildi. Artık MetterXP ile karşılaştırıldığında hiçbir dezavantajı yoktur.</p></div>
         <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukonqi.github.io" id="normal"><h3>mukonqi.github.io</h3></a></div>
-        <p>2021'de CSS yoktu, sadece düz HTML idi. Sonra git gide CSS öğrendikçe (hala daha tam öğrendim) bu hale geldi. Artık JS de kullanmaya başladım.
+        <p>2021'de CSS yoktu, sadece düz HTML idi. Sonra git gide CSS öğrendikçe (hala daha tam öğrendim) bu hale geldi. Artık JS de kullanmaya başladım.<br>
             <br>Ana Sayfa: Burada barındırılan önemli sayfalar için bir seçim yeri.
             <br>Kişisel: Hakkımda bilgi alabileceğiniz, projelerim hakkında yorumlarımı okuyabileceğiniz ve kurulumuma bakabileceğiniz yer.
             <br>Blog: Aktif olmayacağım (sanırsam) bir blog yeri.
+            <br>Galeri: Oynadığım oyunlardan benim fotoğraflarım.
             <br>GrelinTB: GrelinTB projem için.</p></div> 
         <div class="project"><div class="title"><a href="https://github.com/mukonqi/mukotes" id="archived"><h3>Mukotes (arşivlendi)</h3></a></div>
         <p>Bu çok basit not editörüdür ama GrelinTB'ninki çok daha iyi.</p></div>        
@@ -148,13 +153,14 @@
             <a href="/personal/english/setup.html"><div class="link">İngilizceye Geç</div></a>
             <a href="/index.html"><div class="link">Ana Sayfa</div></a>
             <a href="/blog/index.html"><div class="link">Blog</div></a>
+            <a href="/gallery/index.html"><div class="link">Galeri</div></a>
             <a href="/grelintb/index.html"><div class="link">GrelinTB</div></a>
         </div>
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 <script>
-    fetch("https://raw.githubusercontent.com/MuKonqi/mukonqi.github.io/main/LICENSE.txt")
+    fetch("/LICENSE.txt")
     .then(function(response) {
         response.text().then(function(text) {
         document.getElementById('license').textContent = text;
