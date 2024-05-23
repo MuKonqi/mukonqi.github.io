@@ -101,13 +101,6 @@
     border-radius: 25px;
     padding: 5px;
 }
-.content .img_with_text {
-    display: flex;
-    align-items: center;
-}
-.content .img_with_text img {
-    margin-right: 25px;
-}
 .footer {
     text-align: center;
     color: var(--color3);
@@ -173,12 +166,6 @@ h1, h2, h3, h4, h5, h6 {text-align: center;}
     .content img {
         width: 87,5%;
         height: 49,2187499999%;
-    }
-    .content .img_with_text {
-        display: grid;
-    }
-    .content .img_with_text img {
-        margin: 0px;
     }
     .footer .links, .footer .links * {
         display: block;
