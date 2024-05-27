@@ -73,8 +73,9 @@
 .content img {
     margin: auto;
     width: 75%;
-    height: 42,1874999999%;
+    height: 42.1874999999%;
     border-radius: 10px;
+    margin-top: 20px;
 }
 .content #img *:hover, text #img *:active {
     transform: scale(1.25);
@@ -183,8 +184,8 @@ a {text-decoration: none;}
         margin: 80px 10vw 20px 10vw;
     }
     .content img {
-        width: 87,5%; 
-        height: 49,2187499999%;
+        width: 87.5%; 
+        height: 49.2187499999%;
     }
     .content .button {
         margin: 10px 5px 0px 5px;
