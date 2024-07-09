@@ -26,7 +26,7 @@
 .header * {
     display: flex;
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
 .header .mukonqi {
     margin: 0px auto 0px 25px;
@@ -68,6 +68,7 @@
     text-align: center;
     align-content: center;
     color: #376296;
+    transition: all 1s;
 }
 .name:hover, .name:active {
     background-color: #376296;
@@ -80,6 +81,7 @@
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 1s;
 }
 .button:hover, .button:active {
     background-color: var(--color2) !important;
@@ -119,6 +121,7 @@
     color: #376296;
     border-radius: 25px;
     padding: 10px;
+    transition: all 1s;
 }
 .footer .links .link:hover, .footer .links .link:active {
     background-color: #376296;

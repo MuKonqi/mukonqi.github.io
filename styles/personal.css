@@ -62,6 +62,7 @@
     align-items: center;
     text-align: center;
     border-radius: 25px;
+    transition: all 1s;
 }
 .header .link:active, .header .link:hover, .header .clicked {
     background-color: var(--color1);
@@ -91,6 +92,7 @@
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
+    transition: all 1s;
 }
 .content .button:hover, .content .button:active {
     background-color: var(--color3) !important;
@@ -145,6 +147,7 @@
     color: #376296;
     border-radius: 25px;
     padding: 10px;
+    transition: all 1s;
 }
 .footer .links .link:hover, .footer .links .link:active {
     background-color: #376296;
