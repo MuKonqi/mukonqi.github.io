@@ -77,6 +77,7 @@
     height: 42.1874999999%;
     border-radius: 10px;
     margin-top: 20px;
+    transition: all 1s;
 }
 .content #img *:hover, text #img *:active {
     transform: scale(1.25);
@@ -107,12 +108,17 @@
     border-radius: 10px;
 }
 .project .title {
+    padding: 5px;
     background-color: var(--color3);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: all 1s;
+}
+.project .title * {
+    margin: 0px;
 }
 .project .title:hover, .project .title:active {
-    padding: 1px;
+    transform: scale(1.125);
     border-radius: 10px;
 }
 .project p {

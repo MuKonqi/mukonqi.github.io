@@ -89,6 +89,7 @@
     width: 50%;
     height: 28.1249999993%;
     display: block;
+    transition: all 1s;
 }
 .footer {
     text-align: center;
