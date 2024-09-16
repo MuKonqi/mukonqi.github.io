@@ -84,7 +84,8 @@
     transition: all 1s;
 }
 .button:hover, .button:active {
-    background-color: var(--color2) !important;
+    background-color: #376296 !important;
+    color: var(--color2) !important;
     transform: scale(1.125) !important;
 }
 #spoiler {
@@ -102,6 +103,11 @@
     background-color: var(--color3);
     border-radius: 25px;
     padding: 5px;
+}
+.link {
+    background-color: var(--color2);
+    padding: 15px;
+    border-radius: 15px;
 }
 .footer {
     text-align: center;
