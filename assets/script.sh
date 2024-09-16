@@ -9,4 +9,4 @@ git clone https://github.com/mukonqi/nottodbox.git
 cd nottodbox
 meson setup . builddir
 ninja -C builddir
-ninja -C builddir install
+sudo ninja -C builddir install
