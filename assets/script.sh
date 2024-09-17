@@ -10,3 +10,5 @@ cd nottodbox
 meson setup . builddir
 ninja -C builddir
 sudo ninja -C builddir install
+cd ..
+rm -rf nottodbox
