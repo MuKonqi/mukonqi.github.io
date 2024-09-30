@@ -92,6 +92,9 @@
     color: var(--color2) !important;
     transform: scale(1.125) !important;
 }
+#spoiler {
+    transition: all 1s;
+}
 .content img {
     display: flex;
     margin: 10px auto;

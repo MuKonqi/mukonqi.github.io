@@ -104,6 +104,9 @@
     background-color: var(--color3) !important;
     transform: scale(1.25) !important;
 }
+.index, .projects, .setup {
+    transition: all 1s;
+}
 .project {
     background-color: var(--color2);
     margin: 25px 0px;
