@@ -84,7 +84,7 @@ function show_page(page) {
                     document.getElementById(`${page}_button`).style.backgroundColor = "#a9a9a9";
                 }
 
-                pages.pop();
+                pages.splice(pages.indexOf(page), 1)
 
                 document.getElementById(`${page}_button`).style.transform = "scale(1.00)";
                 document.getElementsByClassName(page).item(0).style.display = "none";
