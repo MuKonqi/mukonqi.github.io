@@ -3,6 +3,7 @@
         --color1: #000000;
         --color2: #2f2f2f;
         --color3: #a9a9a9;
+        --color4: #507090;
     }
 }
 @media screen and (prefers-color-scheme: light) {
@@ -10,10 +11,12 @@
         --color1: #ffffff;
         --color2: #a9a9a9;
         --color3: #2f2f2f;
+        --color4: #204060;
     }
 }
 .header {
     position: fixed;
+    z-index: 1;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -27,6 +30,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    color: #376296;    
 }
 .header .mukonqi {
     margin: 0px auto 0px 25px;
@@ -52,7 +56,7 @@
     margin: calc(50px + 5vh) 25vw;
 }
 .text {
-    margin-top: 5vh;
+    margin: 5vh;
 }
 .post {
     background-color: var(--color2);
@@ -87,9 +91,6 @@
     background-color: #376296 !important;
     color: var(--color2) !important;
     transform: scale(1.125) !important;
-}
-#spoiler {
-    color: red;
 }
 .content img {
     display: flex;
@@ -158,10 +159,9 @@ html {
     display: grid;
     background-color: var(--color2);
 }
-a {text-decoration: none;}
+a {color: var(--color4); text-decoration: none;}
+h1, h2, h3, h4, h5, h6 {color: #376296; text-align: center;}
 * {color: var(--color3)}
-a, h1, h2, h3, h4, h5, h6, .header * {color: #376296}
-h1, h2, h3, h4, h5, h6 {text-align: center;}
 .title2 {display: none;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .header .title {display: none;}

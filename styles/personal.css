@@ -3,6 +3,7 @@
         --color1: #000000;
         --color2: #2f2f2f;
         --color3: #a9a9a9;
+        --color4: #507090;
     }
 }
 @media screen and (prefers-color-scheme: light) {
@@ -10,10 +11,12 @@
         --color1: #ffffff;
         --color2: #a9a9a9;
         --color3: #2f2f2f;
+        --color4: #204060;
     }
 }
 .space {
     position: fixed;
+    z-index: 1;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -22,6 +25,7 @@
 }
 .header {
     position: fixed;
+    z-index: 1;
     top: 10px;
     left: 10px;
     right: 10px;
@@ -36,7 +40,8 @@
 .header * {
     display: flex;
     align-items: center;
-    text-align: center;    
+    text-align: center;   
+    color: #376296;     
 }
 .header .mukonqi {
     padding: 0px;
@@ -88,7 +93,7 @@
 .content .button {
     background-color: var(--color2);
     color: #376296;
-    margin: 10px 25px 0px 25px;
+    margin: 10px 0px 0px 0px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -99,12 +104,9 @@
     background-color: var(--color3) !important;
     transform: scale(1.25) !important;
 }
-.content .page {
-    margin: 0px 50px;
-}
 .project {
     background-color: var(--color2);
-    margin: 25px 10px;
+    margin: 25px 0px;
     border-radius: 10px;
 }
 .project .title {
@@ -184,10 +186,10 @@ html {
     display: grid;
     background-color: var(--color2);
 }
-a {text-decoration: none;}
+a {color: var(--color4); text-decoration: none;}
 .content, .header .link * {color: var(--color3)}
-.header *, a, h1, h2, h3, h4, h5, h6 {color: #376296}
-* {text-align: center;}
+h1, h2, h3, h4, h5, h6 {color: #376296}
+h1, h2, h3, h4, h5, h6 {text-align: center;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .content {
         margin: 80px 10vw 20px 10vw;

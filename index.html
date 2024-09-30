@@ -6,7 +6,7 @@
     <meta name='og:title' content="mukonqi.github.io">
     <meta name="og:type" content="website">
     <meta name='og:site_name' content='mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/assets/Konqi.png'>
+    <meta name='og:image' content='http://mukonqi.github.ioKonqi.png'>
     <meta name="og:description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
     <meta name="description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
@@ -17,13 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
+    <link rel="icon" href="/Konqi.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/scripts/license.js" async></script>
+    <script src="/scripts/index.js" async></script>
 </head>
 <body>
     <div class="space"></div>
     <div class="header">
-        <div class="mukonqi"><a href="/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
-    </div>    <div class="english" id="english">
+        <div class="mukonqi"><a href="/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+    </div>    
+    <div class="english" id="english">
         <div class="content">
             <div class="page">
                 <h3>Personal</h3>
@@ -51,18 +55,7 @@
                     <a href="/blog/index.html"><div class="link">Turkish</div></a>
                 </div>
             </div>
-            <div class="page">
-                <h3>GrelinTB</h3>
-                <p>"Great toolbox about some Linux distributions." Well, I'm trying something...</p>
-                <div class="links">
-                    <a href="/grelintb/index.html"><div class="link">English</div></a>
-                </div>
-            </div>
         </div>
-        <div class="footer" id="footer">
-            <div class="button" onclick="switch_turkish()">Switch to Turkish</div><br>
-            <p>&copy; 2024 MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
-            <pre id="license_english" style="display: none"></pre></div>
     </div>
     <div class="turkish" id="turkish">
         <div class="content">
@@ -92,51 +85,11 @@
                     <a href="/blog/index.html"><div class="link">Türkçe</div></a>
                 </div>
             </div>
-            <div class="page">
-                <h3>GrelinTB</h3>
-                <p>"Bazı Linux dağıtımları için harika bir araç kutusu." Eh, kendimce bir şeyler deniyorum.</p>
-                <div class="links">
-                    <a href="/grelintb/index.html"><div class="link">İngilizce</div></a>
-                </div>
-            </div>
         </div>
-        <div class="footer" id="footer">
-            <div class="button" onclick="switch_english()">İngilizceye Geç</div><br>
-            <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
-            <pre id="license_turkish" style="display: none"></pre></div>
     </div>
+    <div class="footer" id="footer">
+        <div class="button" onclick="switch_language()"></div><br>
+        <p></p>
+        <pre id="license" style="display: none"></pre></div>
 </body>
-<script>
-    var language = navigator.language || navigator.browserLanguage || navigor.languages;
-    if (language.indexOf('en') > -1) {
-        document.getElementById('turkish').style.display = "none";
-    } else if (language.indexOf('tr') > -1) {
-        document.getElementById('english').style.display = "none";
-    }
-    fetch("/LICENSE.txt")
-    .then(function(response) {
-        response.text().then(function(text) {
-        document.getElementById('license_english').textContent = text;
-        document.getElementById('license_turkish').textContent = text;
-        });
-    });
-    function switch_english() {
-        document.getElementById('turkish').style.display = "none";
-        document.getElementById('english').style.display = "block";
-    }
-    function switch_turkish() {
-        document.getElementById('english').style.display = "none";
-        document.getElementById('turkish').style.display = "block";       
-    }
-    function show_license() {
-        if (document.getElementById('license_english').style.display === "none" || document.getElementById('license_turkish').style.display === "none") {
-            document.getElementById('license_english').style.display = "block";
-            document.getElementById('license_turkish').style.display = "block";
-        }
-        else {
-            document.getElementById('license_english').style.display = "none";
-            document.getElementById('license_turkish').style.display = "none";
-        }
-    }
-</script>
 </html>

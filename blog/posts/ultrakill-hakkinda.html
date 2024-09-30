@@ -16,19 +16,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/blog.css">
-    <link rel="icon" href="/assets/Konqi.png" type="image/x-icon">
+    <link rel="icon" href="/Konqi.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/scripts/license.js" async></script>
+    <script src="/scripts/blog.js" async></script>
 </head>
 <body>
     <div class="header">
-        <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/assets/Konqi.png" alt="Konqi"></a></div>
+        <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
         <div class="title" id="title"><h1>ULTRAKILL Hakkında</h1></div>
         <div class="left"><strong>10 Nis 2024<br>16 Eyl 2024</strong></div>
     </div>
     <div class="content">
         <div class="title2" id="title2"></div>
         <div class="text">
-            <div class="button" id="spoiler_button" onclick="show_spoiler()">Çok önemli olmasa da sürprizbozan mevcut.<br>Sürprizbozanı göstermek için buraya tıklayın.</div>
-            <div id="spoiler" style="display: none;">
+            <div class="button" id="spoiler_button" onclick="show_spoiler()">Sürprizbozan içerik mevcut.<br>Sürprizbozanı göstermek için buraya tıklayın.</div>
+            <div id="spoiler" style="filter: blur(25px);">
                 <p>Öncelikle benim asıl video oyun tarzım araç ile simulasyon oyunları.
                     <br>Yani ULTRAKILL bambaşka bir tarz benim için.
                     <br>Fakat bunlara rağmen oyunu sevdim.</p>
@@ -79,59 +82,4 @@
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
-<script>
-    fetch("/LICENSE.txt")
-    .then(function(response) {
-        response.text().then(function(text) {
-        document.getElementById('license').textContent = text;
-        });
-    });
-    function show_license() {
-        if (document.getElementById('license').style.display === "none") {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#2f2f2f";
-            }
-            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#a9a9a9";
-            }
-            document.getElementById('spoiler_button').style.transform = "scale(1.125)";
-            document.getElementById('license').style.display = "block";
-        }
-        else {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#a9a9a9";
-            }
-            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#2f2f2f";
-            }
-            document.getElementById('spoiler_button').style.transform = "scale(1.000)";
-            document.getElementById('license').style.display = "none";
-        }
-    }
-    function show_spoiler() {
-        if (document.getElementById('spoiler').style.display === "none") {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#2f2f2f";
-            }
-            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#a9a9a9";
-            }
-            document.getElementById('spoiler_button').style.transform = "scale(1.125)";
-            document.getElementById('spoiler_button').innerHTML = "Çok önemli olmasa da sürprizbozan mevcut.<br>Sürprizbozanı gizlemek için buraya tıklayın.";
-            document.getElementById('spoiler').style.display = "block";
-        }
-        else {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#a9a9a9";
-            }
-            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                document.getElementById('spoiler_button').style.backgroundColor = "#2f2f2f";
-            }
-            document.getElementById('spoiler_button').style.transform = "scale(1.000)";
-            document.getElementById('spoiler_button').innerHTML = "Çok önemli olmasa da sürprizbozan mevcut.<br>Sürprizbozanı göstermek için buraya tıklayın.";
-            document.getElementById('spoiler').style.display = "none";
-        } 
-    }
-    document.getElementById('title2').innerHTML = document.getElementById('title').innerHTML;
-</script>
 </html>

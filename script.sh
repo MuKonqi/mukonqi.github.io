@@ -1,6 +1,5 @@
 #!/bin/bash
-# "I maded this for make it easier testing using DistroSea."
-# "I'm publishing this for using when I can't use computer."
+# "I did it to make the testing of Nottodbox even easier using DistroSea."
 
 setxkbmap tr
 sudo apt install git pip ninja-build meson libxcb-cursor0 -y
