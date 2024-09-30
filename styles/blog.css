@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {color: #376296; text-align: center;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .header .title {display: none;}
     .content {
-        margin: calc(50px + 5vh) 10vw;
+        margin: calc(50px + 5vh) 5vw;
     }
     .title2 {
         display: block;
