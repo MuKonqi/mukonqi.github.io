@@ -106,6 +106,7 @@
 }
 .index, .projects, .setup {
     transition: all 1s;
+    transform: translate3d(0, 0, 0);
 }
 .project {
     background-color: var(--color2);
