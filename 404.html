@@ -2,95 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>404 | mukonqi.github.io</title>
-    <meta name='og:title' content="404 | mukonqi.github.io">
-    <meta name="og:type" content="website">
-    <meta name='og:site_name' content='404 | mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/Konqi.png'>
-    <meta name="og:description" content="404 | MuKonqi's website. - 404 | MuKonqi'nin internet sitesi.">
-    <meta name="description" content="404 | MuKonqi's website. - 404 | MuKonqi'nin internet sitesi.">
-    <meta name="keywords" content="MuKonqi, MuKonqi04">
-    <meta name="author" content="Muhammed S.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/index.css">
+    <title>Redirecting | mukonqi.github.io</title>
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/scripts/license.js" async></script>
-    <script src="/scripts/index.js" async></script>
 </head>
-<body>
-    <div class="space"></div>
-    <div class="header">
-        <div class="mukonqi"><a href="/index.html"><strong>404 | Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
-    </div>
-    <div class="english" id="english">
-        <div class="content">
-            <h3 style="color: red">Whoops. We couldn't find the page you wanted.<br>So now you're at the beginning of everything.</h3>
-            <div class="page">
-                <h3>Personal</h3>
-                <p>You can get information about me, my comments about my projects and my setup there.</p>
-                <div class="links">
-                    <div class="description"><strong>About Me</strong></div>
-                        <a href="/personal/english/index.html"><div class="link">English</div></a>
-                    <a href="/personal/turkish/index.html"><div class="link">Turkish</div></a>
-                </div>
-                <div class="links">
-                    <div class="description"><strong>Projects</strong></div>
-                        <a href="/personal/english/projects.html"><div class="link">English</div></a>
-                    <a href="/personal/turkish/projects.html"><div class="link">Turkish</div></a>
-                </div>
-                <div class="links">
-                    <div class="description"><strong>Setup</strong></div>
-                    <a href="/personal/english/setup.html"><div class="link">English</div></a>
-                    <a href="/personal/turkish/setup.html"><div class="link">Turkish</div></a>
-                </div>
-            </div>
-            <div class="page">
-                <h3>Blog</h3>
-                <p>I share my thoughts and opinions there.</p>
-                <div class="links">
-                    <a href="/blog/index.html"><div class="link">Turkish</div></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="turkish" id="turkish">
-        <div class="content">
-            <h3 style="color: red;">Hay aksi. İstediğiniz sayfayı bulamadık.<br>Bundan dolayı şimdi her şeyin başlangıcındasınız.</h3>
-            <div class="page">
-                <h3>Kişisel</h3>
-                <p>Hakkımda kısa bilgiler alabileceğiniz, projelerim hakkında yorumlarıma bakabileceğiniz ve kurulumumu görebileceğiniz yer.</p>
-                <div class="links">
-                    <div class="description"><strong>Hakkımda</strong></div>
-                    <a href="/personal/turkish/index.html"><div class="link">Türkçe</div></a>
-                    <a href="/personal/english/index.html"><div class="link">İngilizce</div></a>
-                </div>
-                <div class="links">
-                    <div class="description"><strong>Projeler</strong></div>
-                    <a href="/personal/turkish/projects.html"><div class="link">Türkçe</div></a>
-                    <a href="/personal/english/projects.html"><div class="link">İngilizce</div></a>
-                </div>
-                <div class="links">
-                    <div class="description"><strong>Kurulum</strong></div>
-                    <a href="/personal/turkish/setup.html"><div class="link">Türkçe</div></a>
-                    <a href="/personal/english/setup.html"><div class="link">İngilizce</div></a>
-                </div>
-            </div>
-            <div class="page">
-                <h3>Blog</h3>
-                <p>Orada düşüncülerimi ve görüşlerimi paylaşıyorum.</p>
-                <div class="links">
-                    <a href="/blog/index.html"><div class="link">Türkçe</div></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer" id="footer">
-        <div class="button" onclick="switch_language()">İngilizceye Geç</div><br>
-        <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
-        <pre id="license" style="display: none"></pre></div>
-</body>
+<script>
+    var language = navigator.language || navigator.browserLanguage || navigator.languages;
+
+    
+    if (language.indexOf('tr') > -1) {
+        document.location.href = '/index/turkish.html?404=true';
+    }
+
+    else {
+        document.location.href = '/index/english.html?404=true';
+    }
+</script>
 </html>
