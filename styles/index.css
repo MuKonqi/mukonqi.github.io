@@ -54,20 +54,23 @@
     width: 30px;
     margin: 0px;
 }
+#description {
+    margin: calc(60px + 2.5vh) 0px 2.5vh 0px;
+}
 .content {
-    margin: calc(60px + 5vh) 20px 0px 20px;
+    margin: 60px 20px 0px 20px;
 }
 .page {
     background-color: var(--color2);
     margin: 0px 25vw 5vh 25vw;
     border-radius: 10px;
-    text-align: center;
 }
 .page h3 {
     padding: 5px;
 }
 .page p {
     margin: 0px 10px;
+    text-align: center;
 }
 .page .links, .page .links * {
     display: flex;

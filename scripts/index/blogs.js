@@ -1,3 +1,5 @@
+var language = document.currentScript.dataset.language;
+
 $.ajax({
     url: `/blog/index.html`,
     dataType: "html",
@@ -20,7 +22,13 @@ $.ajax({
 
             var link = document.createElement("a");
             link.setAttribute("href", href);
-            link.innerHTML = "<div class = 'link'>Türkçe</div>"
+            if (language === "english") {
+                link.innerHTML = "<div class='link'>Turkish</div>"
+            }
+
+            else if (language === "turkish") {
+                link.innerHTML = "<div class='link'>Türkçe</div>"
+            }
 
             container.appendChild(description)
             container.appendChild(link)
