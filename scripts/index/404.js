@@ -4,9 +4,9 @@ const parameters = new URLSearchParams(window.location.search);
 
 if (parameters.has("404")) {
     if (parameters.get("404") === "true") {
-        document.title = "404 | mukonqi.github.io";
+        document.title = "404 | mukonqi.github.io"; 
 
-        document.getElementById("header").innerHTML = '<a href="/index.html"><strong>404 | Mu</strong><img src="/Konqi.png" alt="Konqi"></a>';
+        document.getElementById("header").innerHTML = '<a href="/404.html"><strong>404 | Mu</strong><img src="/Konqi.png" alt="Konqi"></a>';
 
         var description = document.getElementById("description");
 
