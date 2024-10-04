@@ -28,10 +28,12 @@ function set_informations(expand) {
         document.getElementById("informations_button").innerText = "Küçült";
 
         if (screen.width > 480) {
+            document.getElementsByClassName("header").item(0).style.height = "95px";
             document.getElementsByClassName("content").item(0).style.margin = "calc(100px + 5vh) 25vw";
         }
         
         else if (screen.width >= 320 && screen.width <= 480) {
+            document.getElementsByClassName("header").item(0).style.height = "145px";
             document.getElementsByClassName("content").item(0).style.margin = "calc(150px + 5vh) 5vw";
         }
     }
@@ -39,6 +41,8 @@ function set_informations(expand) {
     else {
         document.getElementById("informations").style.display = "none";
         document.getElementById("informations_button").innerText = "Genişlet";
+
+        document.getElementsByClassName("header").item(0).style.height = "45px";
 
         if (screen.width > 480) {
             document.getElementsByClassName("content").item(0).style.margin = "calc(50px + 5vh) 25vw";
@@ -65,7 +69,7 @@ function show_informations() {
 document.addEventListener("scroll", (event) => {
     position = window.scrollY;
     
-    if (position > 50 && !clicked) {
+    if (position > 0 && !clicked) {
         set_informations(false)
     }
 
