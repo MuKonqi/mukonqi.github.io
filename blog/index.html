@@ -19,36 +19,48 @@
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/scripts/global/license.js" async></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
+    <script src="/scripts/blog/title.js" async></script>
     <script src="/scripts/blog/spoiler.js" async></script>
+    <script src="/scripts/blog/informations.js" async></script>
 </head>
 <body>
     <div class="header">
-        <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
-        <div class="title" id="title"><h1>Bloglar</h1></div>
-        <div class="left"><strong>Blog Sayısı: 3</strong></div>
+        <div class="general">
+            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+            <div class="title" id="title"><h1>Bloglar</h1></div>
+            <div id="informations_button">Blog Sayısı: 3</div>
+        </div>        
     </div>
+
     <div class="content">
         <div class="title2" id="title2"></div>
         <div class="post">
             <a href="/blog/posts/fan-yapimi-ifsam.html"><div class="name">Fan Yapımı İfşam (Sürprizbozan)</div></a>
             <div class="description"><p>En ironik fan yapımı ifşam hakkında.</p></div>
         </div>
+
         <div class="post">
             <a href="/blog/posts/ultrakill-hakkinda.html"><div class="name">ULTRAKILL Hakkında (Sürprizbozan)</div></a>
             <div class="description"><p>Hızlı ve retro bir tarzı olan birinci şahıs nişancı oyunu ULTRAKILL'de yaşadıklarım ve düşüncelerim.</p></div>
         </div>
+
         <div class="post">
             <a href="/blog/posts/merhaba.html"><div class="name">Merhaba</div></a>
             <div class="description"><p>Klasik bir selamlaşma paylaşımı.</p></div>
         </div>
     </div>
-    <div class="footer" id="footer">
+
+    <div class="scroller" onclick="go_top()">↑</div>
+
+    <div class="footer">
         <div class="links">
             <a href="/index.html"><div class="link">Ana Sayfa</div></a>
             <a href="/personal/index.html"><div class="link">Hakkımda</div></a>
             <a href="/personal/projects.html"><div class="link">Projeler</div></a>
             <a href="/personal/setup.html"><div class="link">Kurulum</div></a>
         </div>
+
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>

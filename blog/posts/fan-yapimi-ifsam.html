@@ -19,18 +19,28 @@
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/scripts/global/license.js" async></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
     <script src="/scripts/blog/spoiler.js" async></script>
+    <script src="/scripts/blog/informations.js" async></script>
 </head>
 <body>
     <div class="header">
-        <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
-        <div class="title" id="title"><h1>Fan Yapımı İfşam</h1></div>
-        <div class="left"><strong>10 Nis 2024<br>16 Eyl 2024</strong></div>
+        <div class="general">
+            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+            <div class="title" id="title"><h1>Fan Yapımı İfşam</h1></div>
+            <div class="button" id="informations_button" onclick="show_informations()">Küçült</div>
+        </div>        
+
+        <div class="informations" id="informations">
+            <p class="left read_time">Okuma süresi: x dk</p>
+            <p class="right">Yazılış: 10 Nis 2024<br>Son düzenleme: 16 Eyl 2024</p>
+        </div>
     </div>
+
     <div class="content">
         <div class="title2" id="title2"></div>
+        <div class="button" id="spoiler_button" onclick="show_spoiler()">Sürprizbozan içerik mevcut.<br>Sürprizbozanı göstermek için buraya tıklayın.</div>
         <div class="text">
-            <div class="button" id="spoiler_button" onclick="show_spoiler()">Sürprizbozan içerik mevcut.<br>Sürprizbozanı göstermek için buraya tıklayın.</div>
             <div id="spoiler" style="filter: blur(25px);">
                 <p>Düzenleme 1: Arkadaş siteyi çökerttiği için sildi ama arşiv unutmaz.</p>
                 <p>Düzenleme 2: Arkadaş bir süre önce siteyi tekrardan açtı ama alan adını değiştirdi.</p>
@@ -59,13 +69,17 @@
             </div>
         </div>
     </div>
-    <div class="footer" id="footer">
+
+    <div class="scroller" onclick="go_top()">↑</div>
+
+    <div class="footer">
         <div class="links">
             <a href="/index.html"><div class="link">Ana Sayfa</div></a>
             <a href="/personal/index.html"><div class="link">Hakkımda</div></a>
             <a href="/personal/projects.html"><div class="link">Projeler</div></a>
             <a href="/personal/setup.html"><div class="link">Kurulum</div></a>
         </div>
+        
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>

@@ -6,6 +6,7 @@
         --color4: #507090;
     }
 }
+
 @media screen and (prefers-color-scheme: light) {
     :root {
         --color1: #ffffff;
@@ -14,6 +15,7 @@
         --color4: #204060;
     }
 }
+
 .space {
     position: fixed;
     z-index: 1;
@@ -23,6 +25,7 @@
     height: 10px;
     background-color: var(--color1);
 }
+
 .header {
     position: fixed;
     z-index: 1;
@@ -37,6 +40,7 @@
     color: #376296;
     border-radius: 10px;
 }
+
 .header * {
     display: flex;
     align-items: center;
@@ -49,38 +53,51 @@
     align-items: center;
     text-align: center;
 }
+
 .header .mukonqi img {
     height: 50px;
     width: 30px;
     margin: 0px;
 }
+
 #description {
     margin: calc(60px + 2.5vh) 0px 2.5vh 0px;
 }
+
 .content {
     margin: 60px 20px 0px 20px;
 }
+
+.content, .header .link * {
+    color: var(--color3);
+}
+
 .page {
     background-color: var(--color2);
     margin: 0px 25vw 5vh 25vw;
     border-radius: 10px;
 }
+
 .page h3 {
     padding: 5px;
 }
+
 .page p {
     margin: 0px 10px;
     text-align: center;
 }
+
 .page .links, .page .links * {
     display: flex;
     padding: 5px 15px;
     align-items: center;
     justify-content: center;
 }
+
 .page .description {
     margin: 0px auto 0px 0px;
 }
+
 .page .link {
     background-color: #376296;
     color: var(--color3);
@@ -88,10 +105,12 @@
     padding: 10px;
     transition: all 1s;
 }
+
 .page .link:hover, .page .link:active {
     transform: scale(1.5);
     outline: var(--color3) 10px solid;
 }
+
 .footer {
     text-align: center;
     color: var(--color3);
@@ -100,6 +119,7 @@
     border-top-right-radius: 10px; 
     padding: 10px;
 }
+
 .footer .button {
     background-color: var(--color3);
     color: #376296;
@@ -109,40 +129,75 @@
     cursor: pointer;
     transition: all 1s;
 }
+
 .footer .button:hover, .footer .button:active {
     background-color: #376296;
     color: var(--color2);
     transform: scale(1.25);
 }
+
 .footer #license_button {
     color: darkred;
     cursor: pointer;
 }
+
+.scroller {
+    position: fixed;
+    bottom: 25px;
+    left: calc(calc(100vw - 33px) / 2);
+    right: calc(calc(100vw - 33px) / 2);
+    border-radius: 25px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: var(--color4);
+}
+
+.scroller:hover, .scroller:active {
+    transform: scale(2);
+}
+
+h1, h2, h3, h4, h5, h6, .description {
+    color: #376296;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+a {
+    color: var(--color4);
+    text-decoration: none;
+}
+
 pre {
     white-space: pre-wrap;
 }
+
 body, pre {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
+
 body {
     margin: 0px;
     padding: 0px;
     background-color: var(--color1);
 }
+
 html {
     display: grid;
     background-color: var(--color2);
 }
-a {color: var(--color4); text-decoration: none;}
-.content, .header .link * {color: var(--color3)}
-h1, h2, h3, h4, h5, h6, .description {color: #376296}
-h1, h2, h3, h4, h5, h6 {text-align: center;}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .page {
         margin: 0px auto 5vh auto;
     }
+
     .page .links, .page .links * {
         padding: 5px 5px;
     }

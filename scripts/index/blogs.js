@@ -33,7 +33,6 @@ $.ajax({
             container.appendChild(description)
             container.appendChild(link)
 
-
             var last = document.getElementById("blog").getElementsByClassName("links").item(
                 document.getElementById("blog").getElementsByClassName("links").length - 1
             )

@@ -35,23 +35,22 @@
     height: 50px;
     display: flex;
     text-align: center;
+    align-items: center;
     background-color: var(--color2);
     border-radius: 50px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-.header * {
-    display: flex;
-    align-items: center;
-    text-align: center;   
-    color: #376296;     
-}
 .header .mukonqi {
     padding: 0px;
-    margin: 0px 0px 0px 25px;
+    margin: 0px 25px;
+}
+
+.header .mukonqi * {
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
 .header .mukonqi img {
@@ -60,34 +59,25 @@
     margin: 0px;
 }
 
-.header .links {
-    padding: 0px;
-    margin: 0px 25px 0px auto;
-    align-items: center;
-    text-align: center;
-}
-
-.header .link {
-    margin: 6px;
-    background-color: #376296;
-    padding: 10px;
-    align-items: center;
-    text-align: center;
+.header .back {
+    background-color: var(--color4);
     border-radius: 25px;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
     transition: all 1s;
 }
 
-.header .link:active, .header .link:hover, .header .clicked {
-    background-color: var(--color1);
-    outline: var(--color3) solid 10px;
+.header .back:hover, .header .back:active {
+    transform: scale(1.125);
+    background-color: #376296;
 }
 
 .content {
     margin: 80px 25vw 20px 25vw;
-}
-
-.content, .header .link * {
-    color: var(--color3);
+    text-align: center;
+    color: #376296;
 }
 
 .content img {
@@ -99,80 +89,14 @@
     transition: all 1s;
 }
 
-.content #img *:hover, text #img *:active {
-    transform: scale(1.25);
-    background-color: var(--color3);
-    border-radius: 25px;
-    padding: 5px;
-}
-
-.content .button {
-    background-color: var(--color2);
-    color: #376296;
-    margin: 10px 0px 0px 0px;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    transition: all 1s;
-}
-
-.content .button:hover, .content .button:active {
-    background-color: var(--color3) !important;
-    transform: scale(1.25) !important;
-}
-
-.index, .projects, .setup {
-    transition: all 1s;
-    transform: translate3d(0, 0, 0);
-}
-
-.project {
-    background-color: var(--color2);
-    margin: 25px 0px;
-    border-radius: 10px;
-}
-
-.project .title {
-    padding: 5px;
-    background-color: var(--color3);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transition: all 1s;
-}
-
-.project .title * {
-    margin: 0px;
-}
-
-.project .title:hover, .project .title:active {
-    transform: scale(1.125);
-    border-radius: 10px;
-}
-
-.project p {
-    padding: 10px;
-}
-
-#archived * {
-    color: yellow;
-}
-
-#stopped *, #removed * {
-    color: darkred;
-}
-
-#removed * {
-    text-decoration: line-through var(--color1);
-}
-
 .footer {
     text-align: center;
-    color: var(--color3);
+    color: #376296;
     background-color: var(--color2);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;  
     padding: 10px;
+    height: 10px;
 }
 
 .footer .links, .footer .links * {
@@ -225,25 +149,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: var(--color4); 
     text-decoration: none;
-}
-
-li, ul {
-    list-style: inside square;
-}
-
-pre {
-    white-space: pre-wrap;
-}
-
-body, pre {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    color: #376296;
 }
 
 body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     margin: 0px;
     padding: 0px;
     background-color: var(--color1);
@@ -255,6 +168,10 @@ html {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .header .mukonqi {
+        margin: 0px 10px;
+    }
+
     .content {
         margin: 80px 10vw 20px 10vw;
     }

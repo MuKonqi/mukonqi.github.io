@@ -20,6 +20,7 @@
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/scripts/global/license.js" async></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
     <script src="/scripts/index/blogs.js" data-language="turkish" async></script>
     <script src="/scripts/index/404.js" data-language="turkish" async></script>
 </head>
@@ -66,7 +67,9 @@
         </div>
     </div>
 
-    <div class="footer" id="footer">
+    <div class="scroller" onclick="go_top()">↑</div>
+
+    <div class="footer">
         <a href="/index/english.html" id="switcher"><div class="button">İngilizceye Geç</div></a><br>
         <p>&copy; 2024 MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
