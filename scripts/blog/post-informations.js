@@ -30,8 +30,8 @@ function set_informations(expand) {
         }
         
         else if (screen.width >= 320 && screen.width <= 480) {
-            document.getElementsByClassName("header").item(0).style.height = "145px";
-            document.getElementsByClassName("content").item(0).style.margin = "calc(150px + 5vh) 5vw 5vh";
+            document.getElementsByClassName("header").item(0).style.height = "120px";
+            document.getElementsByClassName("content").item(0).style.margin = "calc(125px + 5vh) 5vw 5vh";
         }
     }
 

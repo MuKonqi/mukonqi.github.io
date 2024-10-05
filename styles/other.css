@@ -125,7 +125,7 @@
     cursor: pointer;
 }
 
-.scroller{
+.scroller {
     display: grid;
     position: fixed;
     bottom: 25px;
