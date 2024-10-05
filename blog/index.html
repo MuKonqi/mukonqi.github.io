@@ -18,38 +18,57 @@
     <link rel="stylesheet" href="/styles/blog.css">
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/scripts/global/license.js" async></script>
+    <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="turkish" async></script>
-    <script src="/scripts/blog/spoiler.js" async></script>
+    <script src="/scripts/blog/index-informations.js" defer></script>
 </head>
 <body>
+    <style>
+        .header {
+            height: 45px;
+        }
+
+        .blogs {
+            margin: calc(50px + 5vh) 25vw 5vh;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .blogs {
+                margin: calc(50px + 5vh) 5vw 5vh;
+            }
+        }
+    </style>
+
     <div class="header">
         <div class="general">
             <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
             <div class="title" id="title"><h1>Bloglar</h1></div>
-            <div id="informations_button">Blog Sayısı: 3</div>
+            <div id="informations_button">Blog Sayısı: Hesaplanıyor</div>
         </div>        
     </div>
 
-    <div class="content">
-        <div class="title2" id="title2">Bloglar</div>
+    <div class="blogs">
+        <div class="title2" id="title2"></div>
         <div class="post">
-            <a href="/blog/posts/fan-yapimi-ifsam.html"><div class="name">Fan Yapımı İfşam (Sürprizbozan)</div></a>
-            <div class="description"><p>En ironik fan yapımı ifşam hakkında.</p></div>
+            <a href="/blog/posts/fan-yapimi-ifsam.html"><div class="name">Fan Yapımı İfşam</div></a>
+            <p class="read_time">Okuma süresi: Hesaplanıyor</p>
+            <p class="description">En ironik fan yapımı ifşam hakkında.</p>
         </div>
 
         <div class="post">
-            <a href="/blog/posts/ultrakill-hakkinda.html"><div class="name">ULTRAKILL Hakkında (Sürprizbozan)</div></a>
-            <div class="description"><p>Hızlı ve retro bir tarzı olan birinci şahıs nişancı oyunu ULTRAKILL'de yaşadıklarım ve düşüncelerim.</p></div>
+            <a href="/blog/posts/ultrakill-hakkinda.html"><div class="name">ULTRAKILL Hakkında</div></a>
+            <p class="read_time">Okuma süresi: Hesaplanıyor</p>
+            <p class="description">Hızlı ve retro bir tarzı olan birinci şahıs nişancı oyunu ULTRAKILL'de yaşadıklarım ve düşüncelerim.</p>
         </div>
 
         <div class="post">
             <a href="/blog/posts/merhaba.html"><div class="name">Merhaba</div></a>
-            <div class="description"><p>Klasik bir selamlaşma paylaşımı.</p></div>
+            <p class="read_time">Okuma süresi: Hesaplanıyor</p>
+            <p class="description">Klasik bir selamlaşma paylaşımı.</p>
         </div>
     </div>
 
-    <div class="scroller" onclick="go_top()">↑</div>
+    <p class="scroller" onclick="go_top()">↑</p>
 
     <div class="footer">
         <div class="links">

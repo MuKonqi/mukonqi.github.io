@@ -125,22 +125,26 @@
     cursor: pointer;
 }
 
-.scroller {
+.scroller{
+    display: grid;
     position: fixed;
     bottom: 25px;
-    left: calc(calc(100vw - 33px) / 2);
-    right: calc(calc(100vw - 33px) / 2);
+    height: 25px;
+    left: calc(calc(100vw - 25px) / 2);
+    right: calc(calc(100vw - 25px) / 2);
     border-radius: 25px;
     text-align: center;
     aspect-ratio: 1 / 1;
     z-index: 1;
     cursor: pointer;
     transition: all 1s;
+    align-content: center;
     background-color: var(--color4);
+    color: var(--color3);
 }
 
 .scroller:hover, .scroller:active {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 h1, h2, h3, h4, h5, h6 {

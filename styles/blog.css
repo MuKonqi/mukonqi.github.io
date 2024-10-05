@@ -26,7 +26,7 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 45px;
+    height: 95px;
     display: grid;
     text-align: center;
     background-color: var(--color2);
@@ -80,6 +80,7 @@
 
 .post {
     background-color: var(--color2);
+    display: grid;
     border-radius: 10px;
     padding: 10px;
     margin: 25px 0px;
@@ -100,6 +101,15 @@
     background-color: #376296;
     transform: scale(1.1);
     color: var(--color3);
+}
+
+.read_time {
+    float: left;
+    margin-left: 25px;
+}
+
+.description {
+    text-align: center;
 }
 
 .button {
@@ -124,7 +134,7 @@
 
 .content {
     transition: all 1s;
-    margin: calc(100px + 5vh) 25vw;
+    margin: calc(100px + 5vh) 25vw 5vh;
 }
 
 .content img {
@@ -155,6 +165,10 @@
     background-color: var(--color2);
     padding: 15px;
     border-radius: 15px;
+}
+
+.blogs {
+    margin: 5vh 25vw;
 }
 
 .footer {
@@ -191,25 +205,29 @@
     cursor: pointer;
 }
 
-.scroller {
+.scroller{
+    display: grid;
     position: fixed;
     bottom: 25px;
-    left: calc(calc(100vw - 33px) / 2);
-    right: calc(calc(100vw - 33px) / 2);
+    height: 25px;
+    left: calc(calc(100vw - 25px) / 2);
+    right: calc(calc(100vw - 25px) / 2);
     border-radius: 25px;
     text-align: center;
     aspect-ratio: 1 / 1;
     z-index: 1;
     cursor: pointer;
     transition: all 1s;
+    align-content: center;
     background-color: var(--color4);
+    color: var(--color3);
 }
 
 .scroller:hover, .scroller:active {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
-.post p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #376296; 
     text-align: center;
 }
@@ -247,6 +265,7 @@ html {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .header {
         display: grid;
+        height: 145px;
     }
 
     .header .general {
@@ -269,13 +288,17 @@ html {
         margin: 0px auto 0px 25px;
     }
 
+    .read_time {
+        margin-left: 10px;
+    }
+
     .title2 {
         display: block;
         text-align: center;
     }
 
     .content {
-        margin: calc(150px + 5vh) 5vw;
+        margin: calc(150px + 5vh) 5vw 5vh;
     }
 
     .content img {
@@ -283,8 +306,11 @@ html {
         height: 49.2187499999%;
     }
 
+    .blogs {
+        margin: 5vh 5vw;
+    }
+
     .footer .links, .footer .links * {
-       
         display: block;
     }
     .footer .links .link {

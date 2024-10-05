@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="/styles/blog.css">
     <link rel="icon" href="/Konqi.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/scripts/global/license.js" async></script>
+    <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="turkish" async></script>
     <script src="/scripts/blog/spoiler.js" async></script>
-    <script src="/scripts/blog/informations.js" async></script>
+    <script src="/scripts/blog/post-informations.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -32,7 +32,7 @@
         </div>        
 
         <div class="informations" id="informations">
-            <p class="left read_time">Okuma süresi: x dk</p>
+            <p class="left read_time">Okuma süresi: Hesaplanıyor</p>
             <p class="right">Yazılış: 10 Nis 2024<br>Son düzenleme: 16 Eyl 2024</p>
         </div>
     </div>
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="scroller" onclick="go_top()">↑</div>
+    <p class="scroller" onclick="go_top()">↑</p>
 
     <div class="footer">
         <div class="links">
