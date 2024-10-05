@@ -116,11 +116,11 @@ $.ajax({
                         var count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
             
                         if (count >= 1) {
-                            var text = `${count} dk`
+                            var text = `${count} dk`;
                         }
             
                         else {
-                            var text = `1 dk'dan az`
+                            var text = `1 dk'dan az`;
                         }
             
                         post.getElementsByClassName("read_time").item(0).innerText = `Okuma süresi: ${text}`;
