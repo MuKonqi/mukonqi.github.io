@@ -26,7 +26,7 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 95px;
+    height: 45px;
     display: grid;
     text-align: center;
     background-color: var(--color2);
@@ -247,7 +247,6 @@ html {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .header {
         display: grid;
-        height: 145px;
     }
 
     .header .general {

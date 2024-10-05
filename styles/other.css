@@ -153,10 +153,17 @@ a {
     color: #376296;
 }
 
-body {
+pre {
+    white-space: pre-wrap;
+}
+
+body, pre {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+
+body {
     margin: 0px;
     padding: 0px;
     background-color: var(--color1);

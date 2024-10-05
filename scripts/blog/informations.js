@@ -1,20 +1,21 @@
-document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML; 
+window.onload = function() {
+    document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML; 
 
+    let element = document.getElementsByClassName("text").item(0).textContent;
 
-let element = document.getElementsByClassName("text").item(0).textContent;
+    let count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
 
-let count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
+    if (count >= 1) {
+        var text = `${count} dk`
+    }
 
-if (count >= 1) {
-    var text = `${count} dk`
-}
+    else {
+        var text = `1 dk'dan az`
+    }
 
-else {
-    var text = `1 dk'dan az`
-}
-
-for (let read_time of document.getElementsByClassName("read_time")) {
-    read_time.innerText = `Okuma süresi: ${text}`;
+    for (let read_time of document.getElementsByClassName("read_time")) {
+        read_time.innerText = `Okuma süresi: ${text}`;
+    }
 }
 
 
@@ -77,3 +78,15 @@ document.addEventListener("scroll", (event) => {
         set_informations(true)
     }
 })
+
+window.onresize = function() {
+    if (document.getElementsByClassName("informations").item(0).style.display === "none") {
+        set_informations(false);    
+    }
+
+    else {
+        set_informations(true);
+    }
+}
+
+set_informations(true);

@@ -5,31 +5,44 @@ All website projects related with me.
 - Main Page
 
 A selection of important pages hosted here.
+
 - Personal
 
 A place where you can learn about me, read my comments about my projects and look at my setup.
+
 - Blog
 
 A classic blog place.
-
-> By the way, they have their own themes!
 
 ## Directories
 - /
 
 Subdirectories, global-like assets (images, read me, license etc.), index and 404 pages.
+
 - /assets
 
 Other images.
+
 - /blog
 
 Blog section's HTML files.
+
+- /index
+
+Index page's language-specific HTML files.
+
+- /other
+
+Various HTML files.
+
 - /personal
 
 Personal section's HTML files.
+
 - /scripts
 
 JavaScript scripts.
+
 - /styles
 
 CSS files.
@@ -51,3 +64,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - [jQuery](https://jquery.com/)
 - [Roboto Black Font](https://fonts.google.com/specimen/Roboto)
 - [Tyton Tan](https://tysontan.com)'s [Konqi](https://community.kde.org/Promo/Material/Mascots) [artwork](https://community.kde.org/File:Mascot_konqi.png)
+- [mehs1616](https://github.com/mehs1616) for some artworks
