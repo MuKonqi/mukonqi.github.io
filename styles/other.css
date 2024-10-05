@@ -1,19 +1,5 @@
-@media screen and (prefers-color-scheme: dark) {
-    :root {
-        --color1: #000000;
-        --color2: #2f2f2f;
-        --color3: #a9a9a9;
-        --color4: #507090;
-    }
-}
-
-@media screen and (prefers-color-scheme: light) {
-    :root {
-        --color1: #ffffff;
-        --color2: #a9a9a9;
-        --color3: #2f2f2f;
-        --color4: #204060;
-    }
+* {
+    color: #376296;
 }
 
 .space {
@@ -60,7 +46,8 @@
 }
 
 .header .back {
-    background-color: var(--color4);
+    background-color: #376296;
+    color: var(--color2);
     border-radius: 25px;
     padding: 10px;
     width: 100px;
@@ -70,8 +57,9 @@
 }
 
 .header .back:hover, .header .back:active {
-    transform: scale(1.125);
-    background-color: #376296;
+    transform: scale(1.25);
+    background-color: var(--color3);
+    color: #376296;
 }
 
 .content {
@@ -90,92 +78,8 @@
 }
 
 .footer {
-    text-align: center;
-    color: #376296;
-    background-color: var(--color2);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;  
-    padding: 10px;
-    height: 10px;
-}
-
-.footer .links, .footer .links * {
-    display: flex;
-    padding: 5px 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer .links .link {
-    background-color: var(--color3);
-    color: #376296;
-    border-radius: 25px;
-    padding: 10px;
-    transition: all 1s;
-}
-
-.footer .links .link:hover, .footer .links .link:active {
-    background-color: #376296;
-    color: var(--color2);
-    transform: scale(1.25);
-}
-
-.footer #license_button {
-    color: darkred;
-    cursor: pointer;
-}
-
-.scroller {
-    display: grid;
-    position: fixed;
-    bottom: 25px;
-    height: 25px;
-    left: calc(calc(100vw - 25px) / 2);
-    right: calc(calc(100vw - 25px) / 2);
-    border-radius: 25px;
-    text-align: center;
-    aspect-ratio: 1 / 1;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 1s;
-    align-content: center;
-    background-color: var(--color4);
-    color: var(--color3);
-}
-
-.scroller:hover, .scroller:active {
-    transform: scale(1.5);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #376296; 
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #376296;
-}
-
-pre {
-    white-space: pre-wrap;
-}
-
-body, pre {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: var(--color1);
-}
-
-html {
-    display: grid;
-    background-color: var(--color2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;  
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -198,13 +102,5 @@ html {
 
     .content .page {
         margin: 0px 7.5px;
-    }
-
-    .footer .links, .footer .links * {
-        display: block;
-    }
-    
-    .footer .links .link {
-        margin: 0px 25px;
     }
 }
