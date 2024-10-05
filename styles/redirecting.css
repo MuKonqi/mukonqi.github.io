@@ -1,0 +1,11 @@
+@media screen and (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #000000;
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    html, body {
+        background-color: #ffffff;
+    }
+}
