@@ -149,6 +149,10 @@
     text-decoration: line-through var(--color1);
 }
 
+.title {
+    color: #376296;
+}
+
 .footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;  

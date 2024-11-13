@@ -46,6 +46,13 @@
     margin: calc(60px + 2.5vh) 0px 2.5vh 0px;
 }
 
+.title {
+    color: #376296;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
 .content {
     margin: 60px 20px 0px 20px;
 }
@@ -58,10 +65,6 @@
     background-color: var(--color2);
     margin: 0px 25vw 5vh 25vw;
     border-radius: 10px;
-}
-
-.page h3 {
-    padding: 5px;
 }
 
 .page p {
