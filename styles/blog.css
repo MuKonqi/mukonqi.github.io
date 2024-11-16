@@ -95,12 +95,13 @@
 }
 
 .button {
-    background-color: var(--color3);
-    color: #376296;
     margin: 0px 2.5vw;
     padding: 10px;
-    border-radius: 10px;
     cursor: pointer;
+    background-color: var(--color3);
+    color: #376296;
+    border: 0px;
+    border-radius: 10px;
     transition: all 1s;
 }
 

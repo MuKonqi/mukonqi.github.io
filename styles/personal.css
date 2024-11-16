@@ -126,6 +126,7 @@
 
 .project .title * {
     margin: 0px;
+    color: #376296;
 }
 
 .project .title:hover, .project .title:active {
@@ -133,24 +134,20 @@
     border-radius: 10px;
 }
 
-.project p {
-    padding: 10px;
-}
-
-#archived * {
+.project .archived {
     color: yellow;
 }
 
-#stopped *, #removed * {
+.project .removed, .project .stopped {
     color: darkred;
 }
 
-#removed * {
+.project .removed {
     text-decoration: line-through var(--color1);
 }
 
-.title {
-    color: #376296;
+.project p {
+    padding: 10px;
 }
 
 .footer {

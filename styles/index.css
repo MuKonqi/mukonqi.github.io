@@ -46,13 +46,6 @@
     margin: calc(60px + 2.5vh) 0px 2.5vh 0px;
 }
 
-.title {
-    color: #376296;
-    text-align: center;
-    font-size: large;
-    padding: 10px;
-}
-
 .content {
     margin: 60px 20px 0px 20px;
 }
