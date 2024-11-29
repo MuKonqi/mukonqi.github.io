@@ -110,44 +110,44 @@
     transform: translate3d(0, 0, 0);
 }
 
-.project {
+.projects .project {
     background-color: var(--color2);
     margin: 25px 0px;
     border-radius: 10px;
 }
 
-.project .title {
+.projects .title {
     padding: 5px;
     background-color: var(--color3);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transition: all 1s;
+    display: block;
 }
 
-.project .title * {
-    margin: 0px;
-    color: #376296;
-}
-
-.project .title:hover, .project .title:active {
+.projects .title:hover, .title:active {
     transform: scale(1.125);
     border-radius: 10px;
 }
 
-.project .archived {
+.projects .archived {
     color: yellow;
 }
 
-.project .removed, .project .stopped {
+.projects .removed, .projetcs .stopped {
     color: darkred;
 }
 
-.project .removed {
+.projects .removed {
     text-decoration: line-through var(--color1);
 }
 
-.project p {
+.projects p {
     padding: 10px;
+}
+
+.setup .title {
+    text-align: left;
 }
 
 .footer {
