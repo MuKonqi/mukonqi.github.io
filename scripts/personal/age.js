@@ -4,7 +4,7 @@ const birth = new Date("2008-12-04");
 
 const today = new Date();
 
-var difference = Math.round((today.getTime() - birth.getTime()) / 1000 / (60 * 60 * 24) / 365.25);
+var difference = Math.floor((today.getTime() - birth.getTime()) / 1000 / (60 * 60 * 24) / 365.25);
 
 if (difference < 16) {
     difference = 16;
