@@ -1,21 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting | mukonqi.github.io</title>
-    <link rel="stylesheet" href="/styles/redirecting.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
+    <title>MuKonqi: Projeler</title>
+    <meta name='og:title' content="MuKonqi: Projeler">
+    <meta name="og:type" content="website">
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="Projelerim hakkında yorumlarım.">
+    <meta name="description" content="Projelerim hakkında yorumlarım.">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/personal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
+    <script src="/scripts/global/license.js" defer></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
+    <script src="/scripts/personal/pages.js" data-root="projects" async></script>
 </head>
-<script>
-    var language = navigator.language || navigator.browserLanguage || navigator.languages;
+<body>
+    <div class="space"></div>
 
-    
-    if (language.indexOf('tr') > -1) {
-    document.location.href = '/personal/turkish/projects.html';
-    }
+    <div class="header">
+        <div class="mukonqi" title="Hakkımda sayfasına geri dön."><a href="/personal/index.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>  
 
-    else {
-    document.location.href = '/personal/english/projects.html';
-    }
-</script>
+        <div class="links">
+            <a href="/personal/index.html" title="Şu anda buradasınız."><div class="link clicked"><strong>Projeler</strong></div></a>
+            <a href="/personal/setup.html" title="Kurulum sayfasına git."><div class="link"><strong>Kurulum</strong></div></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="projects">
+            <div class="project"><a class="title" href="https://github.com/mukonqi/nottodbox">Nottodbox</a>
+            <p>3 şeyi birleştirmeyi amaçlayan fazla kişiselleştirilebilen bir proje: Notlar alma, yapılacaklar listeleri oluşturma ve günlükler tutma
+                <br>Kodlarken Python, Qt, Sqlite üçlüsünün kullandım.
+                <br>Aklımda halen bir kaç özellik var ve belki QML ile tekrar yazabilirim.
+            </p></div>
+
+            <div class="project"><a class="title" href="https://github.com/mukonqi/honey-dl">honey-dl</a>
+            <p>Kim bal indirmeyi sevmez ki?
+                <br>İlk %50/%50 de olsa vibe-coded projemdir kendisi.
+            </p></div>
+
+            <div class="project"><a class="title" href="https://github.com/mukonqi/fake-captcha">fake-captcha</a>
+            <p>Eğitimsel olmayan eğlence amaçları için yazılmış bir Tampermonkey betiği.
+                <br>2 aşamalı robot doğrulamadan oluşur: Tıklamak ve resim seçmek
+            </p></div>
+
+            <div class="project"><a class="title" href="https://github.com/mukonqi/mukonqi.github.io">mukonqi.github.io</a>
+            <p>Neredeyse asla durdurmadığım proje artık diyemiyorum. Durdu.</p></div>
+
+            <div class="project"><a class="title" href="https://github.com/mukonqi/yasfetch">Yasfetch</a>
+            <p>PyQt6 ile yazılmış bir getirme (fetch) uygulaması: Basit bir kullanıcı arayüzü ile bazı sistem bilgilerini ve sistem kaynakları kullanımlarını alın</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/grelintb">GrelinTB (arşivlendi)</a>
+            <p>Bu, MetterXP'nin yerini aldı ama kendisinin yeri alınmayacak, gerek yok. CustomTkinter kullandım çünkü varsayılan Tkinter çok kötü gözüküyordu.</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/mukotes">Mukotes (arşivlendi)</a>
+            <p>Çok ama çok basit bir not editörü.</p></div>        
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/mukander">Mukander (arşivlendi)</a>
+            <p>Terminal ve pkexec'in yeniden icadı...</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/muktart">Muktart (arşivlendi)</a>
+            <p>Başlat menüsünü başlat listesi olarak yeniden yapmaya ne dersiniz?</p></div>   
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/projgit">Projgit (arşivlendi)</a>
+            <p>`git pull` ya da IDE'lerdeki/kod editörlerindeki Git eklentilerine ne gerek var?</p></div>
+
+            <div class="project"><a class="title archived" href="https:/github.com/mukonqi/peytehow">Peytehow (arşivlendi)</a>
+            <p>"Python ve Tkinter ile arayüze sahip bir program nasıl yapılır?" sorusunu amaçlayan ama temel özelliklerin olmadığı bir proje.</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/apiutaller">Apiutaller (arşivlendi)</a>
+            <p>Haydi yine bir başka program yükleyicisi (?) yapmaya! Yapma motivasyonum projelerimde kullanmaktı ama çok şişirince (bloat) mesela GrelinTB'de kullanmadım, bash betiği (script) kullandım.</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/mukonqi/teaf">TEAf (arşivlendi)</a>
+            <p>Sadece Apiutaller'ın iyi çalıştığını ve işe yaradığını göstermek istemiştim.</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/MuKonqi/metterxp">MetterXP (arşivlendi)</a>
+            <p>GrelinTB'nin Tkinter'lı hali. Yine bir araç kutusu. BetterXP'nin iyileştirilmiş hali.</p></div>
+
+            <div class="project"><a class="title archived" href="https://github.com/MuKonqi/metterxp/tree/betterxp">BetterXP (arşivlendi)</a>
+            <p>Terminalden kurtulun'u temel alarak BetterXP projesini geliştirmeye başladım. İlk yenilik, Terminalden kurtulun ana sayfasından logonun kaldırılmasıydı. Sonrasında Fedora Linux ve Solus için destek ekledim. 2. sürümde renkleri de değiştirdim ve hepsi bu kadar.</p></div>
+           
+            <div class="project"><a class="title archived" href="https://github.com/MuKonqi/betterss">BetterSS (arşivlendi)</a>
+            <p>Bu benim ikinci projemdi fakat tek yaptığı Flameshot programını çalıştırmaktı.</p></div>
+            
+            <div class="project"><span class="title removed">ASLA (kaldırıldı)</span>
+            <p>Bahsetmeye gerek yok, bir can sıkıntısı sonucu eğlence projesi.</p></div>
+            
+            <div class="project"><span class="title removed">MetterXP'nin ve BetterXP'nin internet siteleri</span>
+            <p>Her ikisi de büyüdükçe ve daha karmaşık hale geldikçe bir site yapma ihtiyacı hissettim, ancak v3.0 ile bir viki ekledim.</p></div>
+            
+            <div class="project"><span class="title removed">newtab (kaldırıldı)</span>
+            <p>Sadece yeni sekme sayfası. Tarayıcıların yeni sekmesi kadar iyi değildi, ondan kaldırdım.</p></div>
+        </div>
+
+        <h1>Diğer Sayfalar</h1>
+        <div id="index_button" class="button" onclick="show_page('index')">Hakkımda</div>
+        <div class="index" style="display: none;"></div>
+
+        <div id="setup_button" class="button" onclick="show_page('setup')">Kurulum</div>
+        <div class="setup" style="display: none;"></div>
+    </div>
+
+    <p class="scroller" onclick="go_top()">↑</p>
+
+    <div class="footer">
+        <div class="links">
+            <a href="/index/turkish.html"><div class="link">Ana Sayfa</div></a>
+            <a href="/blog/index.html"><div class="link">Blog</div></a>
+        </div>
+
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
 </html>

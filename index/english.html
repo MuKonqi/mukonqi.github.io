@@ -6,9 +6,9 @@
     <meta name='og:title' content="mukonqi.github.io">
     <meta name="og:type" content="website">
     <meta name='og:site_name' content='mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/Konqi.png'>
-    <meta name="og:description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
-    <meta name="description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="MuKonqi's (Muhammed S.) personal website.">
+    <meta name="description" content="MuKonqi's (Muhammed S.) personal website.">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,52 +17,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
     <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="english" async></script>
-    <script src="/scripts/index/blogs.js" data-language="english" defer></script>
-    <script src="/scripts/index/404.js" data-language="english" defer></script>
+    <script src="/scripts/global/age.js" data-language="english" defer></script>
 </head>
 <body>
     <div class="space"></div>
 
     <div class="header">
-        <div class="mukonqi" id="header"><a href="/index/english.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+        <div class="mukonqi" id="header"><a href="/index/english.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>
     </div>    
 
     <div class="content">
-        <p class="title" id="description">Welcome to the beginning of everything.</p>
+        <h2 class="title" id="description">Welcome to the beginning of everything for this personal space.</h2>
+
         <div class="page">
-            <p class="title">Personal</p>
-            <p>You can get information about me, my comments about my projects and my setup there.</p>
+            <h3 class="title">About Me</h3>
+            <p class="description">Note: English translation is less because I wanted to be more natural.
 
-            <div class="links">
-                <div class="description"><strong>About Me</strong></div>
-                    <a href="/personal/english/index.html"><div class="link">English</div></a>
-                <a href="/personal/turkish/index.html"><div class="link">Turkish</div></a>
+            <div class="link-box">
+                <div class="source"><p class="text">Hello! I'm MuKonqi (Muhammed S.)!</p></div>
+                <div class="target text">Who am I?</div>
             </div>
 
-            <div class="links">
-                <div class="description"><strong>Projects</strong></div>
-                    <a href="/personal/english/projects.html"><div class="link">English</div></a>
-                <a href="/personal/turkish/projects.html"><div class="link">Turkish</div></a>
+            <div class="link-box">
+                <div class="source"><p class="text">I'm a student which lives in Turkey (Türkiye).</p></div>
+                <div class="target text">I knew it.</div>
             </div>
 
-            <div class="links">
-                <div class="description"><strong>Setup</strong></div>
-                <a href="/personal/english/setup.html"><div class="link">English</div></a>
-                <a href="/personal/turkish/setup.html"><div class="link">Turkish</div></a>
+            <div class="link-box">
+                <div class="source"><p class="text" id="age">I finished my 17th year, now I'm finishing my 18th year in the world.</p></div>
+                <div class="target text">So important!</div>
+            </div>
+
+            <div class="link-box">
+                <div class="source"><p class="text">My favorite color is <span style="color: #376296">#376296</span>.</p></div>
+                <div class="target text" style="color: #376296">Is this the color?</div>
+            </div>
+
+            <div clsss="link-box">
+                <div class="source"></div>
+                <div class="tarfet text" style="color: #376296"></div>
+            </div>
+
+            <div class="link-box">
+                <div class="source"><p class="text">I love developing basic projects, playing video games and data management.</p></div>
+                <div class="target text">Which "data"(s)?</div>
+            </div>
+
+            <div class="link-box">
+                <div class="source"><p class="text">I'm interested in technology and vehicles.</p></div>
+                <div class="target text">I can see.</div>
+            </div>
+
+            <div class="link-box">
+                <div class="source"><p class="text">By the way, I'm using openSUSE Tumbleweed with KDE Plasma 6.</p></div>
+                <div class="target text">Looks strange.</div> 
             </div>
         </div>
 
-        <div class="page" id="blog">
-            <p class="title">Blog</p>
-            <p>I share my thoughts and opinions there.</p>
+        <div class="page">
+            <h3 class="title">Contact</h3>
+            <p class="description">I generally don't check them. I can say I don't use them actively.</p>
 
-            <div class="links">
-                <div class="description"><strong>Main Page</strong></div>
-                <a href="/blog/index.html"><div class="link">Turkish</div></a>
+            <div class="link-box">
+                <div class="source">E-mail</div>
+                <a href="mailto:mukonqi@gmail.com"><div class="target link">mukonqi@gmail.com</div></a>
+            </div>
+
+            <div class="link-box">
+                <div class="source">Matrix (main)</div>
+                <a href="https://matrix.to/#/@mukonqi:kde.org"><div class="target link">mukonqi@kde.org</div></a>
+            </div>
+
+            <div class="link-box">
+                <div class="source">Matrix (backup)</div>
+                <a href="https://matrix.to/#/@mukonqi:matrix.org"><div class="target link">mukonqi@matrix.org</div></a>
             </div>
         </div>
     </div>
@@ -73,7 +105,7 @@
         <a href="/index/turkish.html" id="switcher">
             <div class="links"><div class="link">Switch to Turkish</div></div></a>
 
-        <p>&copy; 2024-<span id="copyright">2025</span> MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br>Licensed with <strong id="license_button" onclick="show_license()">MIT License</strong></p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 </html>

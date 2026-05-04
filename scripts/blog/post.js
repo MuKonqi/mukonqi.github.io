@@ -88,54 +88,33 @@ window.onresize = function() {
 
 const delegates = [];
 
+ajax("/blog/index.html").then(function(data) {
+    var parent = document.createElement("html"); parent.innerHTML = data;
 
-$.ajax({
-    url: `/blog/index.html`,
-    dataType: "html",
-    success: function(data) {
-        var parent = document.createElement("html"); parent.innerHTML = data;
+    const posts = parent.getElementsByClassName("post");
 
-        const posts = parent.getElementsByClassName("post");
-
-        for (let post of posts) {
-            if (post.getElementsByClassName("name").item(0).textContent === document.getElementById("title").textContent) {
-                delegates.push(post);
-            }
-
-            else {
-                var href = post.getElementsByTagName("a").item(0).getAttribute("href");
-
-                $.ajax({
-                    url: href,
-                    dataType: "html",
-                    success: function(data) {
-                        var parent_ = document.createElement("html"); parent_.innerHTML = data;
-                
-                        var element = parent_.getElementsByClassName("text").item(0).textContent;
-            
-                        var count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
-            
-                        if (count >= 1) {
-                            var text = `${count} dk`;
-                        }
-            
-                        else {
-                            var text = `1 dk'dan az`;
-                        }
-            
-                        post.getElementsByClassName("read_time").item(0).innerText = `Okuma süresi: ${text}`;
-                    }});
-            }
+    for (let post of posts) {
+        if (post.getElementsByClassName("name").item(0).textContent === document.getElementById("title").textContent) {
+            delegates.push(post);
         }
 
-        for (let delegate of delegates) {
-            delegate.remove();
+        else {
+            var url = post.getElementsByTagName("a").item(0).getAttribute("href");
+
+            calc(url, post)
         }
+    }
 
-        parent.getElementsByClassName("title2").item(0).id = "";
-        parent.getElementsByClassName("title2").item(0).className = "title";
-        parent.getElementsByClassName("title").item(1).innerHTML = "<h1>Diğer Bloglar</h1>";
+    for (let delegate of delegates) {
+        delegate.remove();
+    }
 
-        document.getElementsByClassName("content").item(0).after(parent.getElementsByClassName("blogs").item(0))
+    parent.getElementsByClassName("title2").item(0).removeAttribute("id");
+    parent.getElementsByClassName("title2").item(0).className = "title";
+    parent.getElementsByClassName("title").item(1).innerHTML = "<h1>Diğer Bloglar</h1>";
 
-    }});
+    let blogs = parent.getElementsByClassName("blogs").item(0);
+    blogs.removeAttribute("id");
+
+    document.getElementsByClassName("content").item(0).after(blogs);
+});

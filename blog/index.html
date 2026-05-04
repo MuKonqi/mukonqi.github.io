@@ -6,9 +6,9 @@
     <meta name='og:title' content="MuKonqi: Blog">
     <meta name="og:type" content="website">
     <meta name='og:site_name' content='mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/Konqi.png'>
-    <meta name="og:description" content="Burada düşüncülerimi ve görüşlerimi paylaşıyorum.">
-    <meta name="description" content="Burada düşüncülerimi ve görüşlerimi paylaşıyorum.">
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="Dünyanın en aktif (!) bloğu.">
+    <meta name="description" content="Dünyanın en aktif (!) bloğu.">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,55 +17,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/blog.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
+    <script src="/scripts/calc.js"></script>
     <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="turkish" async></script>
-    <script src="/scripts/blog/index-informations.js" defer></script>
+    <script src="/scripts/blog/index.js" defer></script>
 </head>
 <body>
-    <style>
-        .header {
-            height: 45px;
-        }
-
-        .blogs {
-            margin: calc(50px + 5vh) 25vw 5vh;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 480px) {
-            .blogs {
-                margin: calc(50px + 5vh) 5vw 5vh;
-            }
-        }
-    </style>
-
-    <div class="header">
+    <div class="header" id="header-main">
         <div class="general">
-            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>
             <div class="title" id="title"><h1>Bloglar</h1></div>
             <div id="informations_button">Blog Sayısı: Hesaplanıyor</div>
         </div>        
     </div>
 
-    <div class="blogs">
+    <div class="blogs" id="blogs-main">
         <div class="title2" id="title2"></div>
+
+        <div class="post">
+            <a href="/blog/posts/fan-yapimi-ifsam-v2.html"><div class="name">Fan Yapımı İfşam v2</div></a>
+            <p class="read_time">Okuma süresi: Hesaplanıyor</p>
+            <p class="description"></p>
+        </div>
+
         <div class="post">
             <a href="/blog/posts/fan-yapimi-ifsam.html"><div class="name">Fan Yapımı İfşam</div></a>
             <p class="read_time">Okuma süresi: Hesaplanıyor</p>
-            <p class="description">En ironik fan yapımı ifşam hakkında.</p>
+            <p class="description"></p>
         </div>
 
         <div class="post">
             <a href="/blog/posts/ultrakill-hakkinda.html"><div class="name">ULTRAKILL Hakkında</div></a>
             <p class="read_time">Okuma süresi: Hesaplanıyor</p>
-            <p class="description">Hızlı ve retro bir tarzı olan birinci şahıs nişancı oyunu ULTRAKILL'de yaşadıklarım ve düşüncelerim.</p>
+            <p class="description"></p>
         </div>
 
         <div class="post">
             <a href="/blog/posts/merhaba.html"><div class="name">Merhaba</div></a>
             <p class="read_time">Okuma süresi: Hesaplanıyor</p>
-            <p class="description">Klasik bir selamlaşma paylaşımı.</p>
+            <p class="description"></p>
         </div>
     </div>
 
@@ -73,13 +65,13 @@
 
     <div class="footer">
         <div class="links">
-            <a href="/index.html"><div class="link">Ana Sayfa</div></a>
+            <a href="/index/turkish.html"><div class="link">Ana Sayfa</div></a>
             <a href="/personal/index.html"><div class="link">Hakkımda</div></a>
             <a href="/personal/projects.html"><div class="link">Projeler</div></a>
             <a href="/personal/setup.html"><div class="link">Kurulum</div></a>
         </div>
 
-        <p>&copy; 2024-<span id="copyright">2025</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 </html>

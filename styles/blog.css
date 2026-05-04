@@ -40,6 +40,14 @@
     margin: 0px;
 }
 
+#header-main {
+    height: 45px;
+}
+
+#blogs-main {
+    margin: calc(50px + 5vh) 25vw 5vh;
+}
+
 #informations_button {
     margin: 0px 0px 0px auto;
 }
@@ -175,6 +183,14 @@
 
     .header .title {
         display: none;
+    }
+
+    #header-main {
+        height: 45px;
+    }
+
+    #blogs-main {
+        margin: calc(50px + 5vh) 5vw 5vh;
     }
 
     .informations {

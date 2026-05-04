@@ -1,21 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting | mukonqi.github.io</title>
-    <link rel="stylesheet" href="/styles/redirecting.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
+    <title>MuKonqi: Hakkımda</title>
+    <meta name='og:title' content="MuKonqi: Hakkımda">
+    <meta name="og:type" content="website">
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="İşte, hakkımda...">
+    <meta name="description" content="İşte, hakkımda...">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/personal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
+    <script src="/scripts/global/license.js" defer></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
+    <script src="/scripts/global/age.js" data-language="turkish" defer></script>
+    <script src="/scripts/personal/pages.js" data-root="index" async></script>
 </head>
-<script>
-    var language = navigator.language || navigator.browserLanguage || navigator.languages;
+<body>
+    <div class="space"></div>
 
+    <div class="header">
+        <div class="mukonqi" title="Şu anda buradasınız."><a href="/personal/index.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>
+
+        <div class="links">
+            <a href="/personal/projects.html"><div class="link" title="Projeler sayfasına git."><strong>Projeler</strong></div></a>
+            <a href="/personal/setup.html"><div class="link" title="Kurulum sayfasına git."><strong>Kurulum</strong></div></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="index">
+        <h1>Genel</h1>
+        <p>Herkese merhaba, ben MuKonqi (Muhammed S.)!</p>
+        <p id="age">Dünyada 17. yılımı bitirdim, 18. yılımı bitiriyorum.</p>
+        <p>Basit projeler geliştirmeyi, video oyunları oynamayı ve verileri yönetmeyi, maalesef ki, severim.</p>
+        <p>Favorilerime gelirsek, favori rengim <span style="color: #376296">#376296</span>, favori dağıtımım openSUSE Tumbleweed ve favori masaüstü ortamım KDE Plasma 6.</p>
+        <p>Taşıtlarla ve teknolojiyle de ilgiliyim.</p>
+        
+        <h1>Çocukluk</h1>
+        <p>Çocukken ana hobim arabalardı.</p>
+        
+        <h1>2020</h1>
+        <p>Ailem bana ilk kez akıllı telefon onu kurcalarken telefonun forum uygulamasını fark ettim. Orada hesap açtım. Forum hayatım aslında öyle başladı. O forumu artık kullanmıyorum bu arada.
+            <br>Onun haricinde Covid-19 başladığından evdeydim elbette. Kendime tahtalardan kurgusal arabalar yapmak gibi uğraşlar benim sıkılmamamı sağladı. Tabii, derslerin de etkisi var bunda.</p>
+        
+        <h1>2021</h1>
+        <p>Genel bir teknoloji forumuna kaydoldum ama orada çok fazla durmadım. O forumu artık kullanmıyorum.
+            <br>10 yaşındaki laptop problemler yaşamaya başlayınca diğer işletim sistemlerine bakmaya başladım. İşte bu sırada GNU/Linux dağıtımlarını keşfettim.
+            <br>2021'in başlarında ilk kullandığım dağıtım olan Linux Mint'i Xfce masaüstüyle kurdum. Fakat bu okyanuslara açılmak istedim ve bir dağıtım kararsızı (distrohopper) oldum.
+            <br>Emin olmasam da bu süreçte denediğim dağıtımlar, sırasız:</p>
+            <li>Linux Mint</li>
+            <li>Debian GNU/Linux</li>
+            <li>Devuan</li>
+            <li>Ubuntu</li>
+            <li>Ubuntu Mate</li>
+            <li>Kubuntu</li>
+            <li>Ubuntu DDE</li>
+            <li>KDE neon</li>
+            <li>elementary OS</li>
+            <li>Pop!_OS</li>
+            <li>Zorin OS</li>
+            <li>Pardus</li>
+            <li>Arch Linux</li>
+            <li>EndeavourOS</li>
+            <li>Manjaro</li>
+            <li>Fedora Linux</li>
+            <li>openSUSE</li>
+            <li>Gentoo</li>
+            <li>Solus</li>
+            <li>Pisi Linux</li><br>
+            
+            <p>Yine bu zamanların başlarında "Terminalden kurtulun" diye bir araç kiti denedim. Canım benzer bir şeyler yapmak isteyince onu taban alan BetterXP'yi geliştirirdim. BetterXP Terminalden kurtulun ana sayfasında logoyu kaldırldı ve Fedora Linux ile Solus desteğini zorunlu karanlık modla ekledi. BetterXP tabanlı MetterXP ise optimizasyonla bazı iyileştirmeler getirdi.
+            <br>Ayrıca ilk kez Steam kullanmaya başladım. Steam kullanma sebebim ise ETS2'ye başlamam oldu.</p>
+        
+        <h1>2022</h1>
+        <p>Video oyunları oynadım ve projelerimin sayısını arttırdım.
+            <br>2021-2022 sürecinde kötü şey, GNU fanboyu olmam... GNU sayfasında Linux'a GNU/Linux demenin yanlış olduğunu okumuştum, bu beni çok etkiledi ve uzun süre sürdü.
+            <br>Steam kütüphanem de büyümeye devam etti.</p>
+
+        <h1>2023</h1>
+        <p>LGS sınavından dolayı çok boş kaldı. En büyük avantajları MetterXP v3.0 sürümüyle bu site oldu. Derslerden vakit buldukça video oyunları oynadım.
+            <br>Ayrıca Steam'in TL'yi bırakması yüzünden Epic Games üzerinden pek hatrı sayılmayacak kadar oyun aldım. Ve hayallerimden birine kavuştum: Thrustmaster T300 RS GT (direksiyon seti) ile TH8S (vites)</p>
+
+        <h1>2024</h1>
+        <p>Bu yılki en büyük hedefim <a href="https://github.com/mukonqi/nottodbox">Nottodbox</a>'un stabil sürümünü serbest bırakmak.
+            <br>Eğlence konusunda ise yeni oyunlar olarak ULTRAKILL'i bitirdim.
+            <br>(dipnot: 2 yıl sonra bu zamanlarda ne yaptığımı pek hatırlamıyorum muhtemelen 2023'ün daha az dersi ama daha eğlenceli halidir.)</p>
+
+        <h1>2025</h1>
+        <p><a href="https://github.com/mukonqi/nottodbox">Nottodbox</a>'un'un stabil sürümü yayınladım. Çoğu her istediğimi yaptım ama her şeyi değil. Hala aklımda bir kaç özellik var. QML ile yazmak güzel olurdu açıkçası.
+            <br>Ve genel olarak yapay zeka furyası... Biraz bilgisayarımda yerel modeller (gerek difuzyon gerek LLM) denedim, açıkçası memnum kaldım. Ama tabii ki VRAM beni zorladı. Özel mülk modeller de aktif kullanıyorum elbette, projelerimi hızlandıracak şekilde. Fakat büyük (bana göre) projelerde kullanmak pek istemiyorum, gururla en azından şu anda Nottodbox'un, bu sitenin, fake-captcha'nın vibe-coded olmadığını söylebilirim :)
+            <br>Eğlence konusunda, video oyunları oynamada, ise pek bir şey diyemem. Git gide daha az oyun oynuyorum...
+            <br>Unutmadan, *basit* olacak şekilde veri indirilmesi ile yönetimi ve bunların bir nevi betiklerle yönetimine, otomasyouna, merak saldım. En çok vaktimi bunlar aldı diyeblirim ve önümüzdeki yıl da devam edecek, ediyor. Aldığı vakte göre pek değmiyor, ondan dolayı bana yardım edecek bir self-hosted AI güzel olurdu.
+            <br>Ek olarak 14 Şubat 2025'ten beri openSUSE Tumbleweed'te sürükleniyorum.</p>
+        
+        </div>
     
-    if (language.indexOf('tr') > -1) {
-    document.location.href = '/personal/turkish/index.html';
-    }
+        <h1>Diğer Sayfalar</h1>
+        <div id="projects_button" class="button" onclick="show_page('projects')">Projeler</div>
+        <div class="projects" style="display: none;"></div>
 
-    else {
-    document.location.href = '/personal/english/index.html';
-    }
-</script>
+        <div id="setup_button" class="button" onclick="show_page('setup')">Kurulum</div>
+        <div class="setup" style="display: none;"></div>
+    </div>
+
+    <p class="scroller" onclick="go_top()">↑</p>
+
+    <div class="footer">
+        <div class="links">
+            <a href="/index/turkish.html"><div class="link">Ana Sayfa</div></a>
+            <a href="/blog/index.html"><div class="link">Blog</div></a>
+        </div>
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
 </html>

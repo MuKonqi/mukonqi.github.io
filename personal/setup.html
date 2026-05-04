@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting | mukonqi.github.io</title>
-    <link rel="stylesheet" href="/styles/redirecting.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
+    <title>MuKonqi: Kurulum</title>
+    <meta name='og:title' content="MuKonqi: Kurulum">
+    <meta name="og:type" content="website">
+    <meta name='og:site_name' content='mukonqi.github.io'>
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="Kurulumum (setup).">
+    <meta name="description" content="Kurulumum (setup).">
+    <meta name="keywords" content="MuKonqi, MuKonqi04">
+    <meta name="author" content="Muhammed S.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/personal.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
+    <script src="/scripts/global/license.js" defer></script>
+    <script src="/scripts/global/top.js" data-language="turkish" async></script>
+    <script src="/scripts/personal/pages.js" data-root="setup" async></script>
 </head>
-<script>
-    var language = navigator.language || navigator.browserLanguage || navigator.languages;
+<body>
+    <div class="space"></div>
 
-    
-    if (language.indexOf('tr') > -1) {
-    document.location.href = '/personal/turkish/setup.html';
-    }
+    <div class="header">
+        <div class="mukonqi" title="Hakkımda sayfasına geri dön."><a href="/personal/index.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div> 
+        
+        <div class="links">
+            <a href="/personal/projects.html" title="Projeler sayfasına git."><div class="link"><strong>Projeler</strong></div></a>
+            <a href="/personal/setup.html" title="Şu anda buradasınız."><div class="link clicked"><strong>Kurulum</strong></div></a>
+        </div>
+    </div>
 
-    else {
-    document.location.href = '/personal/english/setup.html';
-    }
-</script>
+    <div class="content">
+        <div class="setup">
+            <h1>Bilgisayar</h1>
+            <li><span class="title">Model Adı:</span> HP Victus 16-e0073nt (68P42EA)</li><br>
+            <li><span class="title">İşletim Sistemi:</span> openSUSE Tumbleweed</li><br>
+            <li><span class="title">Masaüstü Ortamı:</span> KDE Plasma 6, Wayland ile</li><br>
+
+            <h1>Ekipmanlar</h1>
+            <li><span class="title">Direksiyon Seti:</span> Thrustmaster T300 RS GT</li><br>
+            <li><span class="title">Vites:</span> Thrustmaster TH8S</li><br>
+            <li><span class="title">Oyun Kolu:</span> Logitech F710</li><br>
+            <li><span class="title">Fare:</span> Logitech M171 Light Blue</li><br>
+        </div>
+
+        <h1>Diğer Sayfalar</h1>
+        <div id="index_button" class="button" onclick="show_page('index')">Hakkımda</div>
+        <div class="index" style="display: none;"></div>
+
+        <div id="projects_button" class="button" onclick="show_page('projects')">Projeler</div>
+        <div class="projects" style="display: none;"></div>
+    </div>
+
+    <p class="scroller" onclick="go_top()">↑</p>
+
+    <div class="footer">
+        <div class="links">
+
+            <a href="/index/turkish.html"><div class="link">Ana Sayfa</div></a>
+            <a href="/blog/index.html"><div class="link">Blog</div></a>
+        </div>
+
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <pre id="license" style="display: none"></pre></div>
+</body>
 </html>

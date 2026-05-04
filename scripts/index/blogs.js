@@ -1,42 +1,36 @@
-var language = document.currentScript.dataset.language;
+ajax("/blog/index.html").then(function(data) {
+    var parent = document.createElement("html"); parent.innerHTML = data;
 
-$.ajax({
-    url: `/blog/index.html`,
-    dataType: "html",
-    success: function(data) {
-        var parent = document.createElement("html"); parent.innerHTML = data;
+    const posts = parent.getElementsByClassName("post");
 
-        const posts = parent.getElementsByClassName("post");
+    for (let post of posts) {
+        let href = post.getElementsByTagName("a").item(0).getAttribute("href");
 
-        for (let post of posts) {
-            var href = post.getElementsByTagName("a").item(0).getAttribute("href");
+        let name = post.getElementsByTagName("a").item(0).textContent;
+        
+        let container = document.createElement("div");
+        container.className = "link-box";
 
-            var name = post.getElementsByTagName("a").item(0).textContent;
-            
-            var container = document.createElement("div");
-            container.className = "links";
+        let source = document.createElement("div");
+        source.className = "source";
 
-            var description = document.createElement("div");
-            description.className = "description";
-            description.innerHTML = `<strong>${name}</strong>`
+        let target = document.createElement("a");
+        target.setAttribute("href", href);
+        target.innerHTML = `<div class='target link'>${name}</div>`;
 
-            var link = document.createElement("a");
-            link.setAttribute("href", href);
-            if (language === "english") {
-                link.innerHTML = "<div class='link'>Turkish</div>"
-            }
+        container.appendChild(source)
+        container.appendChild(target)
 
-            else if (language === "turkish") {
-                link.innerHTML = "<div class='link'>Türkçe</div>"
-            }
+        ajax(target).then(function(data) {
+            let child = document.createElement("html"); child.innerHTML = data;
+            let description = child.querySelector('meta[name="description"]').content;
+            source.innerHTML = description;
+        });
 
-            container.appendChild(description)
-            container.appendChild(link)
+        let last = document.getElementById("blog").getElementsByClassName("link-box").item(
+            document.getElementById("blog").getElementsByClassName("link-box").length - 1
+        )
 
-            var last = document.getElementById("blog").getElementsByClassName("links").item(
-                document.getElementById("blog").getElementsByClassName("links").length - 1
-            )
-
-            last.after(container)
-        }
-    }});
+        last.after(container)
+    }
+})

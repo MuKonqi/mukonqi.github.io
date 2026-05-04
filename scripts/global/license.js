@@ -7,13 +7,7 @@ if (year < 2025) {
 document.getElementById("copyright").textContent = year;
 
 
-$.ajax({
-    url: "/LICENSE.txt",
-    dataType: "text",
-    success: function(data) {
-        document.getElementById('license').textContent = data;
-    }});
-
+ajax("/LICENSE.txt").then(function(data) {document.getElementById('license').textContent = data;});
 
 function show_license() {
     if (document.getElementById('license').style.display === "none") {

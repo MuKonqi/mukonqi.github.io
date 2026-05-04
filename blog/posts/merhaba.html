@@ -6,7 +6,7 @@
     <meta name='og:title' content="MuKonqi: Merhaba">
     <meta name="og:type" content="website">
     <meta name='og:site_name' content='mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/Konqi.png'>
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
     <meta name="og:description" content="Klasik bir selamlaşma paylaşımı.">
     <meta name="description" content="Klasik bir selamlaşma paylaşımı.">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
@@ -17,24 +17,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/blog.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
+    <script src="/scripts/calc.js"></script>
     <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="turkish" async></script>
     <script src="/scripts/blog/spoiler.js" async></script>
-    <script src="/scripts/blog/post-informations.js" defer></script>
+    <script src="/scripts/blog/post.js" defer></script>
 </head>
 <body>
     <div class="header">
         <div class="general">
-            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+            <div class="mukonqi"><a href="/blog/index.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>
             <div class="title" id="title"><h1>Merhaba</h1></div>
             <div class="button" id="informations_button" onclick="show_informations()">Küçült</div>
         </div>        
 
         <div class="informations" id="informations">
             <p class="left read_time">Okuma süresi: Hesaplanıyor</p>
-            <p class="right">Yazılış: 09 Nis 2024</p>
+            <p class="right">Yazılış: 9 Nis 2024<br>Son düzenleme: 1 Mayıs 2026</p>
         </div>
     </div>
 
@@ -42,8 +43,8 @@
         <div class="title2" id="title2"></div>
         <div class="text">
             <p>Evet, uzun zaman geçti. Ama o vakit şimdi yine geldi!</p>
-            <p>Dünyanın en az aktif olunacak (sanırsam) bloğunun ilk paylaşımı!</p>
-            <p>Bu bloğun paylaşımları büyük ihtimalle çok farklı olacak. Belki yeri gelecek ciddilikten eser olmayacak; belki yeri gelecek makale, rehber paylaşılacak.</p>
+            <p>Dünyanın en az aktif olunacak bloğunun ilk paylaşımı.</p>
+            <p>Bu bloğun paylaşımları büyük ihtimalle çok farklı olmayı hedefleyecek. Belki yeri gelecek ciddilikten eser olmayacak; belki yeri gelecek makale, rehber paylaşılacak.</p>
             <p>Neyse, bu paylaşım fazla uzun oldu. Herkese iyi günler!</p>
         </div>
     </div>
@@ -52,13 +53,13 @@
 
     <div class="footer">
         <div class="links">
-            <a href="/index.html"><div class="link">Ana Sayfa</div></a>
+            <a href="/index/turkish.html"><div class="link">Ana Sayfa</div></a>
             <a href="/personal/index.html"><div class="link">Hakkımda</div></a>
             <a href="/personal/projects.html"><div class="link">Projeler</div></a>
             <a href="/personal/setup.html"><div class="link">Kurulum</div></a>
         </div>
         
-        <p>&copy; 2024-<span id="copyright">2025</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 </html>

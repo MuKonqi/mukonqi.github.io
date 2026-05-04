@@ -6,9 +6,9 @@
     <meta name='og:title' content="mukonqi.github.io">
     <meta name="og:type" content="website">
     <meta name='og:site_name' content='mukonqi.github.io'>
-    <meta name='og:image' content='http://mukonqi.github.io/Konqi.png'>
-    <meta name="og:description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
-    <meta name="description" content="MuKonqi's website. - MuKonqi'nin internet sitesi.">
+    <meta name='og:image' content='http://mukonqi.github.io/favicon.ico'>
+    <meta name="og:description" content="MuKonqi'nin (Muhammed S.) kişisel internet sitesi.">
+    <meta name="description" content="MuKonqi'nin (Muhammed S.) kişisel internet sitesi.">
     <meta name="keywords" content="MuKonqi, MuKonqi04">
     <meta name="author" content="Muhammed S.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,52 +17,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="shortcut icon" href="/Konqi.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/scripts/ajax.js"></script>
     <script src="/scripts/global/license.js" defer></script>
     <script src="/scripts/global/top.js" data-language="turkish" async></script>
-    <script src="/scripts/index/blogs.js" data-language="turkish" defer></script>
     <script src="/scripts/index/404.js" data-language="turkish" defer></script>
+    <script src="/scripts/index/blogs.js" defer></script>
+    <script src="/scripts/index/datas.js" defer></script>
 </head>
 <body>
     <div class="space"></div>
 
     <div class="header">
-        <div class="mukonqi" id="header"><a href="/index/turkish.html"><strong>Mu</strong><img src="/Konqi.png" alt="Konqi"></a></div>
+        <div class="mukonqi" id="header"><a href="/index/turkish.html"><strong>Mu</strong><img src="/favicon.ico" alt="Konqi"></a></div>
     </div>    
 
     <div class="content">
-        <p class="title" id="description">Her şeyin başlangıcına hoş geldiniz.</p>
+        <h2 class="title" id="description">Bu kişisel alan için her şeyin başlangıcına hoş geldiniz.</h2>
+
         <div class="page">
-            <p class="title">Kişisel</p>
-            <p>Hakkımda kısa bilgiler alabileceğiniz, projelerim hakkında yorumlarıma bakabileceğiniz ve kurulumumu görebileceğiniz yer.</p>
+            <h3 class="title">İletişim</h3>
+            <p class="description">Genellikle onları kontrol etmem. Pek aktif kullandığım söylenemez.</p>
 
-            <div class="links">
-                <div class="description"><strong>Hakkımda</strong></div>
-                <a href="/personal/turkish/index.html"><div class="link">Türkçe</div></a>
-                <a href="/personal/english/index.html"><div class="link">İngilizce</div></a>
+            <div class="link-box">
+                <div class="source">E-posta</div>
+                <a href="mailto:mukonqi@gmail.com"><div class="target link">mukonqi@gmail.com</div></a>
             </div>
 
-            <div class="links">
-                <div class="description"><strong>Projeler</strong></div>
-                <a href="/personal/turkish/projects.html"><div class="link">Türkçe</div></a>
-                <a href="/personal/english/projects.html"><div class="link">İngilizce</div></a>
+            <div class="link-box">
+                <div class="source">Matrix (birincil)</div>
+                <a href="https://matrix.to/#/@mukonqi:kde.org"><div class="target link">mukonqi@kde.org</div></a>
             </div>
 
-            <div class="links">
-                <div class="description"><strong>Kurulum</strong></div>
-                <a href="/personal/turkish/setup.html"><div class="link">Türkçe</div></a>
-                <a href="/personal/english/setup.html"><div class="link">İngilizce</div></a>
+            <div class="link-box">
+                <div class="source">Matrix (yedek)</div>
+                <a href="https://matrix.to/#/@mukonqi:matrix.org"><div class="target link">mukonqi@matrix.org</div></a>
+            </div>
+        </div>
+
+        <div class="page" id="personal">
+            <h3 class="title">Kişisel</h3>
+            <p class="description">Hakkımda kısa bilgiler alabileceğiniz, projelerim hakkında yorumlarıma bakabileceğiniz ve kurulumumu görebileceğiniz yer.</p>
+
+            <div class="link-box">
+                <div class="source"></div>
+                <a href="/personal/index.html"><div class="target link">Hakkımda</div></a>
+            </div>
+
+            <div class="link-box">
+                <div class="source"></div>
+                <a href="/personal/projects.html"><div class="target link">Projeler</div></a>
+            </div>
+
+            <div class="link-box">
+                <div class="source"></div>
+                <a href="/personal/setup.html"><div class="target link">Kurulum</div></a>
             </div>
         </div>
 
         <div class="page" id="blog">
-            <p class="title">Blog</p>
-            <p>Orada düşüncülerimi ve görüşlerimi paylaşıyorum.</p>
+            <h3 class="title">Blog</h3>
+            <p class="description">Orada düşüncülerimi ve görüşlerimi paylaşıyorum.</p>
 
-            <div class="links">
-                <div class="description"><strong>Ana Sayfa</strong></div>
-                <a href="/blog/index.html"><div class="link">Türkçe</div></a>
+            <div class="link-box">
+                <div class="source">Dünyanın en aktif (!) bloğu.</div>
+                <a href="/blog/index.html"><div class="target link">Ana Sayfa</div></a>
             </div>
         </div>
     </div>
@@ -73,7 +92,7 @@
         <a href="/index/english.html" id="switcher">
             <div class="links"><div class="link">İngilizceye Geç</div></div></a>
 
-        <p>&copy; 2024-<span id="copyright">2025</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
+        <p>&copy; 2024-<span id="copyright">2026</span> MuKonqi (Muhammed S.)<br><strong id="license_button" onclick="show_license()">MIT Lisansı</strong> ile Lisanslandı</p>
         <pre id="license" style="display: none"></pre></div>
 </body>
 </html>
