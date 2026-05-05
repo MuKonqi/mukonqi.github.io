@@ -2,7 +2,7 @@ const root = document.currentScript.dataset.root;
 
 const pages = [root];
 
-function update_document() {
+function updateDocument() {
     const page = pages[pages.length - 1]
 
     if (page === "index") {
@@ -67,5 +67,5 @@ function show_page(page) {
             document.getElementsByClassName(page).item(0).style.display = "none";
         }
 
-        update_document();
+        updateDocument();
     })};

@@ -13,7 +13,7 @@ let position = 0;
 
 let clicked = false;
 
-function set_informations(expand) {
+function setInformations(expand) {
     if (expand) {
         document.getElementById("informations").style.display = "";
         document.getElementById("informations_button").innerText = "Küçült";
@@ -45,13 +45,13 @@ function set_informations(expand) {
     }
 }
 
-function show_informations() {
+function showInformations() {
     if (document.getElementById("informations").style.display != "none") {
-        set_informations(false)
+        setInformations(false)
     }
 
     else {
-        set_informations(true)
+        setInformations(true)
     }
 
     clicked = true;
@@ -61,21 +61,21 @@ document.addEventListener("scroll", (event) => {
     position = window.scrollY;
     
     if (position > 0 && !clicked) {
-        set_informations(false)
+        setInformations(false)
     }
 
     else if (!clicked) {
-        set_informations(true)
+        setInformations(true)
     }
 })
 
 window.onresize = function() {
     if (document.getElementsByClassName("informations").item(0).style.display === "none") {
-        set_informations(false);    
+        setInformations(false);    
     }
 
     else {
-        set_informations(true);
+        setInformations(true);
     }
 }
 

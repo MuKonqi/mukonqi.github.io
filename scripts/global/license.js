@@ -9,7 +9,7 @@ document.getElementById("copyright").textContent = year;
 
 ajax("/LICENSE.txt").then(function(data) {document.getElementById('license').textContent = data;});
 
-function show_license() {
+function showLicense() {
     if (document.getElementById('license').style.display === "none") {
         document.getElementById('license').style.display = "block";
     }

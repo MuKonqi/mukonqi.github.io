@@ -3,20 +3,20 @@ const language = document.currentScript.dataset.language;
 let clicks = 0;
 
 if (document.currentScript.dataset.bottom) {
-    bottom(86400)
+    bottomSet(86400)
 }
 
 function come_back() {
     history.back();
 }
 
-function bottom(time) {
+function bottomSet(time) {
     document.cookie = `muk_bottom=true; max-age=${time}; samesite=None; path=/; secure=None`
 }
 
-function bottom_2() {
+function bottomSwitch() {
     if (clicks === 1) {
-        bottom(2592000);
+        bottomSet(2592000);
 
         document.documentElement.style.backgroundImage = 'url("/assets/other/Ağlayan Konqi.gif")';
         document.body.style.backgroundColor = 'transparent';
@@ -29,7 +29,7 @@ function bottom_2() {
     clicks = 1;
 }
 
-function go_top() {
+function goTop() {
     const not_bottom = document.cookie.split("; ").find((row) => row.startsWith("muk_bottom="))?.split("=")[1] === undefined;
 
     if (window.scrollY === not_bottom ? 0 : document.body.scrollHeight) {

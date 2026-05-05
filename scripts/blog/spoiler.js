@@ -1,4 +1,4 @@
-function show_spoiler() {
+function showSpoiler() {
     if (document.getElementById('spoiler').style.filter === "blur(25px)") {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.getElementById('spoiler_button').style.backgroundColor = "#2f2f2f";
