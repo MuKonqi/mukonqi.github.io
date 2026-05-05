@@ -1,9 +1,9 @@
-var root = document.currentScript.dataset.root;
+const root = document.currentScript.dataset.root;
 
 const pages = [root];
 
 function update_document() {
-    let page = pages[pages.length - 1]
+    const page = pages[pages.length - 1]
 
     if (page === "index") {
         document.getElementsByClassName("index").item(0).style.filter = "blur(0px)";
@@ -32,9 +32,9 @@ function update_document() {
 
 function show_page(page) {
     ajax(`/personal/${page}.html`).then(function(data) {
-        let parent = document.createElement("html"); parent.innerHTML = data;
+        const parent = document.createElement("html"); parent.innerHTML = data;
 
-        let content = parent.getElementsByClassName(page).item(0).innerHTML;
+        const content = parent.getElementsByClassName(page).item(0).innerHTML;
 
         if (document.getElementsByClassName(page).item(0).style.display === "none") {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {

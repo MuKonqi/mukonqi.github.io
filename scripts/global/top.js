@@ -1,4 +1,4 @@
-var language = document.currentScript.dataset.language;
+const language = document.currentScript.dataset.language;
 
 let clicks = 0;
 
@@ -18,7 +18,7 @@ function bottom_2() {
     if (clicks === 1) {
         bottom(2592000);
 
-        document.documentElement.style.backgroundImage = 'url("/assets/other/Konqi1.gif")';
+        document.documentElement.style.backgroundImage = 'url("/assets/other/Ağlayan Konqi.gif")';
         document.body.style.backgroundColor = 'transparent';
         document.getElementsByClassName("footer").item(0).style.backgroundColor = 'transparent';
         document.getElementsByClassName("space").item(0).style.display = "none";

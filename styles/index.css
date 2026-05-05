@@ -65,7 +65,7 @@
     text-align: center;
 }
 
-.page .link-box, .page .link-box .target, .page .link-box .source {
+.page .link_box, .page .link_box .target, .page .link_box .source {
     display: flex;
     padding: 10px;
     align-items: center;

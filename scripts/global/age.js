@@ -1,10 +1,10 @@
-var language = document.currentScript.dataset.language;
+const language = document.currentScript.dataset.language;
 
 const birth = new Date("2008-12-04"); // OPSEC
 
 const today = new Date();
 
-var difference = Math.floor((today.getTime() - birth.getTime()) / 1000 / (60 * 60 * 24) / 365.25);
+let difference = Math.floor((today.getTime() - birth.getTime()) / 1000 / (60 * 60 * 24) / 365.25);
 
 if (difference < 17) {
     difference = 17;

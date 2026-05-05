@@ -1,7 +1,7 @@
-var year = new Date().getFullYear();
+const year = new Date().getFullYear();
 
-if (year < 2025) {
-    year = 2025;
+if (year < 2026) {
+    year = 2026;
 }
 
 document.getElementById("copyright").textContent = year;

@@ -1,16 +1,10 @@
 document.getElementById("title2").innerHTML = document.getElementById("title").innerHTML; 
 
-let element = document.getElementsByClassName("text").item(0).textContent;
+const element = document.getElementsByClassName("text").item(0).textContent;
 
-let count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
+const count = Math.round(element.split(" ").filter(function(n) {return n != ""}).length / 200);
 
-if (count >= 1) {
-    var text = `${count} dk`
-}
-
-else {
-    var text = `1 dk'dan az`
-}
+const text = count >= 1 ? `${count} dk` : "1 dk'dan az"
 
 document.getElementsByClassName("read_time").item(0).innerText = `Okuma süresi: ${text}`;
 
@@ -89,7 +83,7 @@ window.onresize = function() {
 const delegates = [];
 
 ajax("/blog/index.html").then(function(data) {
-    var parent = document.createElement("html"); parent.innerHTML = data;
+    const parent = document.createElement("html"); parent.innerHTML = data;
 
     const posts = parent.getElementsByClassName("post");
 

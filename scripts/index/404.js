@@ -1,4 +1,4 @@
-var language = document.currentScript.dataset.language;
+const language = document.currentScript.dataset.language;
 
 const parameters = new URLSearchParams(window.location.search);
 
@@ -8,7 +8,7 @@ if (parameters.has("404")) {
 
         document.getElementById("header").innerHTML = '<a href="/404.html"><strong>404 | Mu</strong><img src="/favicon.ico" alt="Konqi"></a>';
 
-        var description = document.getElementById("description");
+        const description = document.getElementById("description");
 
         description.style.color = "red";
         if (language === "english") {

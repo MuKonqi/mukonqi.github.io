@@ -134,12 +134,12 @@
     color: yellow;
 }
 
-.projects .removed, .projetcs .stopped {
-    color: darkred;
+.projects .stopped {
+    color: crimson;
 }
 
 .projects .removed {
-    text-decoration: line-through var(--color1);
+    color: darkred;
 }
 
 .projects p {

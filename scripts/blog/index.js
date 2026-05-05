@@ -6,7 +6,7 @@ document.getElementById("title2").innerHTML = document.getElementById("title").i
 
 
 for (let post of posts) {
-    let url = post.getElementsByTagName("a").item(0).getAttribute("href");
+    const url = post.getElementsByTagName("a").item(0).getAttribute("href");
 
     calc(url, post)
 }
